@@ -122,7 +122,7 @@ const Navbar = ({ main }) => {
                 {location?.pathname !== "/signin" && (
                   <Link
                     to="/signin"
-                    className="inline-flex items-center px-6 py-2.5 text-sm font-medium rounded text-white bg-primary hover:bg-primary/90 transition-colors"
+                    className="inline-flex items-center px-6 py-2.5 text-sm font-medium rounded text-white bg-secondary hover:bg-secondary/90 transition-colors"
                   >
                     {t("nav.signIn")}
                   </Link>

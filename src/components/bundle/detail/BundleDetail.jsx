@@ -471,7 +471,7 @@ const BundleDetail = ({
                   ) : (
                     <Button
                       variant={"contained"}
-                      color="primary"
+                      className="action-button"
                       style={{ marginTop: "2px" }}
                       type={"submit"}
                       disabled={
@@ -522,7 +522,7 @@ const BundleDetail = ({
         <Button
           disabled={isSubmitting || checkingCode}
           variant={"contained"}
-          color="primary"
+          className="action-button"
           onClick={() => handleCheckExist()}
         >
           <p className={"font-bold !text-base truncate max-w-20px"}>

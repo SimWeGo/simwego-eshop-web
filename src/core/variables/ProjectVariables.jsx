@@ -5,7 +5,7 @@ export const supportPhone = "+44 207 370 53 10";
 export const supportWhatsappPhone = "+442073705310";
 export const supportedPrefix = ["93", "99"];
 export const dcbMessage = "dcbMessage";
-export const footerProjectName = "Sim We Go";
+export const footerProjectName = "eSIM Go";
 export const supportAddress = (
   <>
     <p>Headquarters, Bridge House,</p>

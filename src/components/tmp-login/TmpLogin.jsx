@@ -196,7 +196,7 @@ const TmpLogin = () => {
                         <div className="flex flex-row gap-[0.5rem] items-center">
                           <Typography
                             fontWeight={"bold"}
-                            color="primary"
+                            className="action-button"
                             fontSize={"1rem"}
                           >
                             {t("auth.verifyByChannel", {
@@ -254,7 +254,7 @@ const TmpLogin = () => {
       <div className={"flex flex-row justify-center sm:justify-start "}>
         <Button
           disabled={isSubmitting}
-          color="primary"
+          className="action-button"
           type="submit"
           variant="contained"
           sx={{ width: "30%" }}

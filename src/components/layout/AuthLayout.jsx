@@ -10,7 +10,7 @@ const AuthLayout = ({ children, isPublic }) => {
     <>
       <Navbar />
       <main
-        className={clsx("bg-gray-50 flex-1", {
+        className={clsx("flex-1 bg-background", {
           "!bg-white": isPublic,
         })}
       >

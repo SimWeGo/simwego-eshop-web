@@ -159,7 +159,7 @@ const PaymentFlow = (props) => {
           <div className={"flex flex-row "}>
             <Button
               variant={"contained"}
-              color="primary"
+              className="action-button"
               disabled={loading}
               onClick={() => {
                 setCheckedMethod(true);

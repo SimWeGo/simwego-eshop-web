@@ -350,7 +350,7 @@ const OtpVerification = ({
         <div className={"flex flex-row gap-[0.5rem]"}>
           <Button
             type={"submit"}
-            color="primary"
+                    className="action-button"
             variant="contained"
             disabled={isVerifying || shouldBeDisabled}
           >

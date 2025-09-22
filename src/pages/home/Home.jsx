@@ -53,8 +53,8 @@ const Home = () => {
               component={Link}
               to={"/plans"}
               variant="contained"
-              color="primary"
               sx={{ width: "fit-content", padding: "10px 20px" }}
+              className="action-button"
             >
               {t("btn.view_all_plans")}
             </Button>
@@ -71,13 +71,13 @@ const Home = () => {
         </button>
       </div>
       {/* Bestsellers Section */}
-      <section className="py-24 bg-gray-50" ref={featuresRef}>
+      <section className="py-24 bg-background" ref={featuresRef}>
         <Container>
           <Plans cruises={sea_option} />
         </Container>
       </section>
       {/* Benefits Section */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-background">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="relative">
@@ -128,7 +128,7 @@ const Home = () => {
         </Container>
       </section>
       {/* Setup Instructions Section */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-24 bg-background">
         <Container>
           <div className="text-center mb-16 flex flex-col gap-[1rem] items-center justify-center">
             <h2 className="text-4xl font-bold">How to set up your eSIM?</h2>
@@ -137,7 +137,7 @@ const Home = () => {
             </p>
             <Button
               variant="contained"
-              color="primary"
+              className="action-button"
               component={Link}
               onClick={() => window.scrollTo(0, 0)}
               to={"/how-it-works"}

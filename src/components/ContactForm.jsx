@@ -32,7 +32,7 @@ const schema = ({ t }) =>
         t("errors.maxCharacter", {
           field: t("contactUs.message"),
           character: 255,
-        }),
+        })
       ),
   });
 
@@ -159,7 +159,7 @@ const ContactForm = ({ bg }) => {
                 sx={{ width: "fit-content", padding: "10px" }}
                 type="submit"
                 variant={"contained"}
-                color="primary"
+                className="action-button"
                 disabled={isSubmitting}
               >
                 {isSubmitting ? t("btn.sending") : t("btn.sendMessage")}

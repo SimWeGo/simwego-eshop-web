@@ -54,7 +54,7 @@ const LanguageSwitcher = () => {
     >
       <button
         onClick={() => setOpenModal(!openModal)}
-        className="bg-white rounded p-1 flex items-center space-x-1 text-base font-medium"
+        className="bg-background rounded p-1 flex items-center space-x-1 text-base font-medium"
       >
         {languages?.find((lang) => lang.code === i18n?.language)?.flag}
         <KeyboardArrowDownIcon fontSize="small" />

@@ -172,7 +172,7 @@ const BundleCard = ({
             />
           ) : (
             <Button
-              color="primary"
+              className="action-button"
               variant="contained"
               onClick={() => {
                 handleDetail();

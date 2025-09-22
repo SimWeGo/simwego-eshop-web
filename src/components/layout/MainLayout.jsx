@@ -8,11 +8,10 @@ const MainLayout = ({ children, isAuthRestricted, restricted }) => {
     <>
       <Navbar main />
       <main
-        className={clsx("flex-grow", {
-          "bg-gray-50": isAuthRestricted,
+        className={clsx("flex-grow bg-background", {
+          "bg-background": isAuthRestricted,
         })}
       >
-        {" "}
         <div
           className={clsx({ "w-[90%] max-w-xxl mx-auto py-8": !restricted })}
         >

@@ -156,7 +156,7 @@ const InjectedCheckout = ({
             {t("btn.payNow")}
           </Button>
           <Button
-            color="primary"
+            className="action-button"
             variant="contained"
             sx={{ width: "60%" }}
             onClick={() => {

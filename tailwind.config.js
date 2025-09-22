@@ -5,37 +5,37 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#1560AA",
-        secondary: "#7CCFF1",
-
+        primary: "#2E3786",
+        secondary: "#FF6912",
+        background: "#FAF2E0",
         primary: {
-          DEFAULT: "#1560AA",
-          900: "#0A1F3C",
-          800: "#0F3570",
-          700: "#124B9E",
-          600: "#1560AA",
-          500: "#3380C1",
-          400: "#5599D6",
-          300: "#7AB2EB",
-          200: "#A0C9F2",
-          100: "#C7E0F9",
-          50: "#EDF5FE",
-        },
+          DEFAULT: "#2E3786",
+          900: "#1A1F4A",
+          800: "#222D64",
+          700: "#293B7D",
+          600: "#314997",
+          500: "#3A57B1",
+          400: "#6277C1",
+          300: "#8A98D1",
+          200: "#B3BAE1",
+          100: "#D9DCF0",
+          50: "#F0F2FA",
+        },        
         secondary: {
-          DEFAULT: "#7CCFF1",
-          900: "#093040",
-          800: "#135270",
-          700: "#1D73A0",
-          600: "#2791C9",
-          500: "#7CCFF1",
-          400: "#96DAF4",
-          300: "#B0E4F7",
-          200: "#CBEEF9",
-          100: "#E5F7FC",
-          50: "#F4FCFE",
-        },
+          DEFAULT: "#FF6912",
+          900: "#4A1B00",
+          800: "#732800",
+          700: "#993400",
+          600: "#CC4400",
+          500: "#FF6912",
+          400: "#FF863F",
+          300: "#FFA066",
+          200: "#FFBB8C",
+          100: "#FFD6B3",
+          50:  "#FFF0E6",
+        },        
         title: {
-          DEFAULT: "#A28B6F",
+          DEFAULT: "#2E3786",
         },
 
         error: "#FF0000",
@@ -83,6 +83,7 @@ export default {
         quicksandMedium: ["quicksand-medium"],
         quicksandSemibold: ["quicksand-semibold"],
         quicksandBold: ["quicksand-bold"],
+        inter: ["Inter"],
       },
 
       fontSize: {
@@ -118,52 +119,106 @@ export default {
     function ({ addComponents, addBase, theme }) {
       addComponents({
         ".font-bold": {
-          fontFamily: theme("fontFamily.quicksandBold"),
+          fontFamily: theme("fontFamily.inter"),
+          fontWeight: "700",
         },
         ".font-medium": {
-          fontFamily: theme("fontFamily.quicksandMedium"),
+          fontFamily: theme("fontFamily.inter"),
+          fontWeight: "500",
         },
         ".font-semibold": {
-          fontFamily: theme("fontFamily.quicksandSemibold"),
+          fontFamily: theme("fontFamily.inter"),
+          fontWeight: "600",
         },
       }),
-        addBase({
-          ":root": {
-            "--error": theme("colors.error"),
-            "--warning": theme("colors.warning"),
-            "--success": theme("colors.success"),
-          },
-          body: {
-            color: "#122644",
-            fontSize: "1rem",
-            fontFamily: "quicksand-regular",
-          },
-          h1: {
-            fontSize: "1.5rem",
-            color: "#A28B6F",
-            fontFamily: "quicksand-bold",
-          },
-          h2: {
-            color: "#A28B6F",
-          },
-          h4: {
-            color: "#A28B6F",
-          },
-          h3: {
-            fontSize: "1.25",
-            color: "#A28B6F",
-            fontFamily: "quicksand-bold",
-          },
-
-          h6: {
-            color: "#A28B6F",
-            fontFamily: "quicksand-semibold",
-          },
-          label: {
-            fontFamily: "quicksand-semibold",
-            color: "#1560AA",
-          },
-        });
+      
+      addBase({
+        ":root": {
+          "--error": theme("colors.error"),
+          "--warning": theme("colors.warning"),
+          "--success": theme("colors.success"),
+        },
+        body: {
+          color: "#122644",
+          fontSize: "1rem",
+          fontFamily: "Inter",
+          fontWeight: "400",
+        },
+        h1: {
+          fontSize: "48px",
+          lineHeight: "60px",
+          color: "#2E3786",
+          fontFamily: "Inter",
+          fontWeight: "600",
+        },
+        h2: {
+          fontSize: "36px",
+          lineHeight: "44px",
+          color: "#2E3786",
+          fontFamily: "Inter",
+          fontWeight: "500",
+        },
+        h3: {
+          fontSize: "24px",
+          lineHeight: "32px",
+          color: "#2E3786",
+          fontFamily: "Inter",
+          fontWeight: "700",
+        },
+        h4: {
+          fontSize: "20px",
+          lineHeight: "28px",
+          color: "#2E3786",
+          fontFamily: "Inter",
+          fontWeight: "400",
+        },
+        h6: {
+          fontSize: "16px",
+          lineHeight: "24px",
+          color: "#2E3786",
+          fontFamily: "Inter",
+          fontWeight: "600",
+        },
+        label: {
+          fontFamily: "Inter",
+          fontWeight: "600",
+          color: "#1560AA",
+        },
+        p: {
+          fontSize: "16px",
+          lineHeight: "24px",
+          fontFamily: "Inter",
+          fontWeight: "400",
+        },
+      });
+      
+      
     },
+    function ({ addComponents, theme }) {
+      addComponents({
+        ".action-button": {
+          backgroundColor: `${theme("colors.secondary.DEFAULT")} !important`,
+          color: `${theme("colors.white")} !important`,
+          fontWeight: "600 !important",
+          padding: "0.5rem 1rem !important",
+          borderRadius: `${theme("borderRadius.md")} !important`,
+          transition: "background-color 0.2s ease, transform 0.2s ease !important",
+          display: "inline-flex !important",
+          alignItems: "center !important",
+          justifyContent: "center !important",
+        },
+        ".action-button:hover": {
+          backgroundColor: `${theme("colors.secondary.600")} !important`,
+        },
+        ".action-button:active": {
+          backgroundColor: `${theme("colors.secondary.700")} !important`,
+        },
+        ".action-button:disabled": {
+          opacity: "0.5 !important",
+          cursor: "not-allowed !important",
+        },
+      });
+    }
+    
   ],
 };

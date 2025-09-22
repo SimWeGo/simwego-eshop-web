@@ -129,7 +129,7 @@ const SignIn = () => {
 
   if (showOtpVerification) {
     return (
-      <div className="bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
+      <div className="flex flex-col justify-center py-12 sm:px-6 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-md">
           <OtpVerification
             email={getValues("email")}
@@ -155,7 +155,7 @@ const SignIn = () => {
   }
 
   return (
-    <div className="bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
+    <div className="flex flex-col justify-center py-12 sm:px-6 lg:px-8">
       <div className="sm:mx-auto sm:w-full sm:max-w-md flex flex-col gap-[1.5rem] px-[30px]">
         <h1 className="text-center text-4xl font-bold">
           {t("auth.signInTitle")}
@@ -306,7 +306,7 @@ const SignIn = () => {
             <Button
               disabled={isSubmitting}
               type="submit"
-              color="primary"
+              className="action-button"
               variant="contained"
             >
               {isSubmitting ? t("auth.signingIn") : t("auth.signIn")}
