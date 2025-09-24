@@ -18,7 +18,8 @@ import AuthValidation from "../../pages/auth-validation/AuthValidation";
 import Profile from "../../pages/profile/Profile";
 import UserNotifications from "../../pages/user-notification/UserNotifications";
 import EsimDetail from "../../pages/my-esim/esim-detail/EsimDetail";
-import PrivacyPolicy from "../../pages/privacy-policy/PrivacyPolicy";
+import PolicyPage from "../../pages/privacy-policy/PolicyPage";
+import Partnership from "../../pages/partnership/Partnership";
 import MyWallet from "../../pages/my-wallet/MyWallet";
 import ReferAndEarn from "../../pages/refer-earn/ReferAndEarn";
 
@@ -80,7 +81,11 @@ export const allRoutes = [
   },
   {
     path: "/privacy",
-    element: <PrivacyPolicy />,
+    element: <PolicyPage />,
+  },
+  {
+    path: "/partnership",
+    element: <Partnership />,
   },
   {
     path: "/signin",
