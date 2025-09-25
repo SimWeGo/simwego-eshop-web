@@ -368,5 +368,98 @@
     "failedToLoadPrivacyPolicyData": "Failed to load Privacy Policy Data",
     "noContentAvailable": "No content available at this moment",
     "Privacy Policy": "Privacy Policy"
+  },
+  "partnership": {
+    "hero": {
+      "title": "Boost Your Customers' Experience with eSIM",
+      "subtitle": "Offer your travelers instant and seamless mobile connectivity in +220 destinations.",
+      "cta": "Discover Our Solutions"
+    },
+    "problems": {
+      "title": "Today, travelers want to be connected upon arrival — but current solutions disappoint.",
+      "unreliable": {
+        "title": "Unreliable",
+        "description": "Public Wi-Fi: convenient for you, perfect for hackers."
+      },
+      "expensive": {
+        "title": "Too Expensive",
+        "description": "Posting a selfie for €60? That's the price of forgetting your eSIM."
+      },
+      "complex": {
+        "title": "Too Complex",
+        "description": "Spending 1 hour for a SIM? eSIM takes 10 seconds."
+      }
+    },
+    "roaming": {
+      "title": "Expensive roaming, frustrating user experiences... Your customers deserve better!",
+      "description": "Give your customers the ability to purchase and activate data plans directly through your app or website. We provide the technology, webstore, connectivity, and support.",
+      "cta": "Discover Our Solutions",
+      "stats": {
+        "destinations": "+220 destinations",
+        "destinationsDesc": "Global connectivity",
+        "activation": "10 seconds",
+        "activationDesc": "eSIM activation"
+      }
+    },
+    "solutions": {
+      "title": "Our Partnership Solutions",
+      "api": {
+        "title": "API Integration",
+        "description": "Integrate eSIM plan sales directly into your existing mobile application",
+        "features": {
+          "restApi": "Complete REST API",
+          "sdk": "iOS/Android SDK",
+          "documentation": "Technical documentation",
+          "support": "Developer support",
+          "webhooks": "Real-time webhooks"
+        },
+        "cta": "Documentation"
+      },
+      "whiteLabel": {
+        "title": "White Label Solution",
+        "description": "Webstore and/or iOS/Android apps provided by SimWeGo, branded with your colors, integrable into your site",
+        "features": {
+          "webstore": "Complete webstore in your colors",
+          "apps": "Custom iOS/Android applications",
+          "integration": "Integration with your existing site",
+          "support": "Technical support included",
+          "updates": "Automatic updates"
+        },
+        "cta": "Discover",
+        "popular": "Popular"
+      },
+      "affiliate": {
+        "title": "Affiliate Program",
+        "description": "Earn commissions by recommending SimWeGo to your customers through our partner program",
+        "features": {
+          "commissions": "Attractive commissions",
+          "links": "Personalized referral links",
+          "dashboard": "Tracking dashboard",
+          "marketing": "Marketing support",
+          "payments": "Monthly payments"
+        },
+        "cta": "Join"
+      },
+      "conclusion": "Choose the solution that best fits your needs and start offering your customers an unparalleled connectivity experience."
+    },
+    "benefits": {
+      "title": "A solution designed for you... and your customers",
+      "experience": {
+        "title": "Enhance Your Customers' Experience",
+        "description": "Improve your customers' experience from the moment they arrive at their destination."
+      },
+      "integration": {
+        "title": "Simple and Quick Integration",
+        "description": "Simple and quick integration with no technical constraints."
+      },
+      "positioning": {
+        "title": "Strengthen Your Positioning",
+        "description": "Strengthen your positioning with an innovative digital service."
+      },
+      "revenue": {
+        "title": "A New Revenue Stream",
+        "description": "A new revenue stream with no operational management required."
+      }
+    }
   }
 }

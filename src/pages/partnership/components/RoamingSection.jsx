@@ -3,8 +3,10 @@ import Container from "../../../components/Container";
 import { BackgroundGradient } from "@/components/ui/background-gradient";
 import RoamingImage from "../../../assets/images/partnership/roaming/simwe.png";
 import { MapPin, Zap } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const RoamingSection = () => {
+  const { t } = useTranslation();
   return (
     <div className="w-full bg-white py-12 md:py-16 rounded-3xl shadow-lg">
       <Container>
@@ -22,16 +24,12 @@ const RoamingSection = () => {
           <div className="flex-1 space-y-4 md:space-y-5 text-center lg:text-left">
             <div>
               <Typography variant="h4" component="h2" className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-title leading-tight mb-2">
-                Roaming hors de prix,<br/>
-                expériences utilisateurs frustrantes...<br/>
-                <span className="text-primary">Vos clients méritent mieux !</span>
+                {t("partnership.roaming.title")}
               </Typography>
             </div>
             
             <Typography variant="h6" className="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed px-4 lg:px-0">
-              Offrez à vos clients la possibilité d'acheter et d'activer des forfaits data directement via votre application ou site internet.
-              <br/>
-              Nous vous fournissons la technologie, le webstore, la connectivité et le support.
+              {t("partnership.roaming.description")}
             </Typography>
 
             <div className="space-y-4 md:space-y-6">
@@ -55,23 +53,23 @@ const RoamingSection = () => {
                   transition: 'all 0.3s ease'
                 }}
               >
-                Découvrir nos solutions
+                {t("partnership.roaming.cta")}
               </Button>
               
               <div className="flex flex-col sm:flex-row gap-4 md:gap-8 justify-center lg:justify-start">
                 <div className="text-center lg:text-left">
                   <div className="flex items-center justify-center lg:justify-start gap-2 mb-1">
                     <MapPin className="w-5 h-5 md:w-6 md:h-6 text-primary" />
-                    <Typography variant="h5" className="text-lg md:text-xl font-bold text-primary">+220 destinations</Typography>
+                    <Typography variant="h5" className="text-lg md:text-xl font-bold text-primary">{t("partnership.roaming.stats.destinations")}</Typography>
                   </div>
-                  <Typography variant="body2" className="text-sm md:text-base text-gray-600">Connectivité mondiale</Typography>
+                  <Typography variant="body2" className="text-sm md:text-base text-gray-600">{t("partnership.roaming.stats.destinationsDesc")}</Typography>
                 </div>
                 <div className="text-center lg:text-left">
                   <div className="flex items-center justify-center lg:justify-start gap-2 mb-1">
                     <Zap className="w-5 h-5 md:w-6 md:h-6 text-secondary" />
-                    <Typography variant="h5" className="text-lg md:text-xl font-bold text-secondary">10 secondes</Typography>
+                    <Typography variant="h5" className="text-lg md:text-xl font-bold text-secondary">{t("partnership.roaming.stats.activation")}</Typography>
                   </div>
-                  <Typography variant="body2" className="text-sm md:text-base text-gray-600">Activation eSIM</Typography>
+                  <Typography variant="body2" className="text-sm md:text-base text-gray-600">{t("partnership.roaming.stats.activationDesc")}</Typography>
                 </div>
               </div>
             </div>

@@ -3,34 +3,36 @@ import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 import { FloatingIcons } from "@/components/ui/floating-icons";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
+import { useTranslation } from "react-i18next";
 import userImage from "../../../assets/images/partnership/solution/lamp.png";
 import integrationImage from "../../../assets/images/partnership/solution/puzzle.png";
 import positioningImage from "../../../assets/images/partnership/solution/rocket.png";
 import revenueImage from "../../../assets/images/partnership/solution/money.png";
 
 const BenefitsSection = () => {
+  const { t } = useTranslation();
   const benefits = [
     {
-      title: "Améliorez l'expérience de vos clients",
-      description: "Améliorez l'expérience de vos clients, dès leur arrivée à destination.",
+      title: t("partnership.benefits.experience.title"),
+      description: t("partnership.benefits.experience.description"),
       image: userImage,
       link: "#"
     },
     {
-      title: "Une intégration simple et rapide",
-      description: "Une intégration simple et rapide, sans contrainte technique.",
+      title: t("partnership.benefits.integration.title"),
+      description: t("partnership.benefits.integration.description"),
       image: integrationImage,
       link: "#"
     },
     {
-      title: "Renforcez votre positionnement",
-      description: "Renforcez votre positionnement avec un service digital innovant.",
+      title: t("partnership.benefits.positioning.title"),
+      description: t("partnership.benefits.positioning.description"),
       image: positioningImage,
       link: "#"
     },
     {
-      title: "Un nouveau levier de revenus",
-      description: "Un nouveau levier de revenus, sans gestion opérationnelle.",
+      title: t("partnership.benefits.revenue.title"),
+      description: t("partnership.benefits.revenue.description"),
       image: revenueImage,
       link: "#"
     }
@@ -48,7 +50,7 @@ const BenefitsSection = () => {
         <div className="py-10 md:py-12 lg:py-16">
           <div className="text-center mb-8 md:mb-10 px-4">
             <TextGenerateEffect
-              words="Une solution pensée pour vous... et pour vos clients"
+              words={t("partnership.benefits.title")}
               className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-tight mb-4 md:mb-6"
               duration={0.5}
               filter={false}

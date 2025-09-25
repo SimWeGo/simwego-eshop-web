@@ -8,62 +8,65 @@ import {
   Zap,
   ExternalLink
 } from "lucide-react";
-
-const solutions = [
-  {
-    title: "Intégration API",
-    description: "Intégrer la vente de forfaits eSIM directement dans votre application mobile existante",
-    icon: <Code className="w-8 h-8 text-primary" />,
-    popular: false,
-    features: [
-      "API REST complète",
-      "SDK iOS/Android",
-      "Documentation technique",
-      "Support développeur",
-      "Webhooks en temps réel"
-    ],
-    buttonText: "Documentation",
-    highlight: null
-  },
-  {
-    title: "Solution en marque blanche",
-    description: "Webstore et/ou app iOS/Android fournis par SimWeGo, à vos couleurs, intégrables à votre site",
-    icon: <Palette className="w-8 h-8 text-primary" />,
-    popular: true,
-    features: [
-      "Webstore complet à vos couleurs",
-      "Applications iOS/Android personnalisées",
-      "Intégration sur votre site existant",
-      "Support technique inclus",
-      "Mise à jour automatique"
-    ],
-    buttonText: "Découvrir",
-    highlight: "Populaire"
-  },
-  {
-    title: "Affiliation",
-    description: "Gagnez des commissions en recommandant SimWeGo à vos clients via notre programme partenaire",
-    icon: <Users className="w-8 h-8 text-primary" />,
-    popular: false,
-    features: [
-      "Commissions attractives",
-      "Liens de parrainage personnalisés",
-      "Dashboard de suivi",
-      "Support marketing",
-      "Paiement mensuel"
-    ],
-    buttonText: "Rejoindre",
-    highlight: null
-  }
-];
+import { useTranslation } from "react-i18next";
 
 const SolutionsSection = () => {
+  const { t } = useTranslation();
+
+  const solutions = [
+    {
+      title: t("partnership.solutions.api.title"),
+      description: t("partnership.solutions.api.description"),
+      icon: <Code className="w-8 h-8 text-primary" />,
+      popular: false,
+      features: [
+        t("partnership.solutions.api.features.restApi"),
+        t("partnership.solutions.api.features.sdk"),
+        t("partnership.solutions.api.features.documentation"),
+        t("partnership.solutions.api.features.support"),
+        t("partnership.solutions.api.features.webhooks")
+      ],
+      buttonText: t("partnership.solutions.api.cta"),
+      highlight: null
+    },
+    {
+      title: t("partnership.solutions.whiteLabel.title"),
+      description: t("partnership.solutions.whiteLabel.description"),
+      icon: <Palette className="w-8 h-8 text-primary" />,
+      popular: true,
+      features: [
+        t("partnership.solutions.whiteLabel.features.webstore"),
+        t("partnership.solutions.whiteLabel.features.apps"),
+        t("partnership.solutions.whiteLabel.features.integration"),
+        t("partnership.solutions.whiteLabel.features.support"),
+        t("partnership.solutions.whiteLabel.features.updates")
+      ],
+      buttonText: t("partnership.solutions.whiteLabel.cta"),
+      highlight: t("partnership.solutions.whiteLabel.popular")
+    },
+    {
+      title: t("partnership.solutions.affiliate.title"),
+      description: t("partnership.solutions.affiliate.description"),
+      icon: <Users className="w-8 h-8 text-primary" />,
+      popular: false,
+      features: [
+        t("partnership.solutions.affiliate.features.commissions"),
+        t("partnership.solutions.affiliate.features.links"),
+        t("partnership.solutions.affiliate.features.dashboard"),
+        t("partnership.solutions.affiliate.features.marketing"),
+        t("partnership.solutions.affiliate.features.payments")
+      ],
+      buttonText: t("partnership.solutions.affiliate.cta"),
+      highlight: null
+    }
+  ];
+
   return (
     <div id="solutions" className="w-full py-16 md:py-20">
       <Container>
         <div className="text-center mb-12 md:mb-16 px-4">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-title mb-4 md:mb-6">
-            Nos solutions <span className="text-primary">partenaires</span>
+            {t("partnership.solutions.title")}
           </h2>
         </div>
 
@@ -132,7 +135,7 @@ const SolutionsSection = () => {
 
         <div className="text-center mt-12 md:mt-16 px-4">
           <Typography variant="h6" className="text-gray-600 mb-2 text-sm md:text-base lg:text-lg">
-            Choisissez la solution qui correspond le mieux à vos besoins et commencez à offrir à vos clients une expérience de connectivité inégalée.
+            {t("partnership.solutions.conclusion")}
           </Typography>
         </div>
       </Container>

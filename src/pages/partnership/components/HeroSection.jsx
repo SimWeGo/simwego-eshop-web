@@ -3,9 +3,12 @@ import Container from "../../../components/Container";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 import { FloatingIcons } from "@/components/ui/floating-icons";
+import { useTranslation } from "react-i18next";
 import heroImage from "../../../assets/images/partnership/hero/simwe.png";
 
 const HeroSection = () => {
+  const { t, i18n } = useTranslation();
+  const isArabic = i18n.language === 'ar';
   return (
     <div className="w-full bg-gradient-to-br from-secondary to-primary relative overflow-hidden rounded-3xl shadow-2xl">
       {/* Background Beams */}
@@ -19,11 +22,22 @@ const HeroSection = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div className="space-y-4 md:space-y-6 text-center lg:text-left">
               <div className="relative">
-                <TextGenerateEffect
-                  words="Boostez l'expérience de vos clients avec l'eSIM"
-                  className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight mb-4"
-                  duration={1}
-                />
+                {isArabic ? (
+                  <Typography 
+                    variant="h1" 
+                    component="h1" 
+                    className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight mb-4"
+                    sx={{ direction: 'rtl' }}
+                  >
+                    {t("partnership.hero.title")}
+                  </Typography>
+                ) : (
+                  <TextGenerateEffect
+                    words={t("partnership.hero.title")}
+                    className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight mb-4"
+                    duration={1}
+                  />
+                )}
               </div>
               
               <Typography 
@@ -31,10 +45,7 @@ const HeroSection = () => {
                 component="p" 
                 className="text-white/90 text-base sm:text-lg md:text-xl leading-relaxed px-4 lg:px-0"
               >
-                Proposez à vos voyageurs une connexion mobile{" "}
-                <span className="font-semibold text-white">immédiate</span> et{" "}
-                <span className="font-semibold text-white">sans contraintes</span> dans{" "}
-                <span className="font-semibold text-white">+220 destinations</span>.
+                {t("partnership.hero.subtitle")}
               </Typography>
               
               <div className="pt-2 md:pt-4">
@@ -57,7 +68,7 @@ const HeroSection = () => {
                     transition: 'all 0.3s ease'
                   }}
                 >
-                  Découvrir nos solutions
+                  {t("partnership.hero.cta")}
                 </Button>
               </div>
             </div>

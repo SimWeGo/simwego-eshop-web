@@ -1,25 +1,27 @@
 import Container from "../../../components/Container";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 import { Shield, DollarSign, AlertCircle } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
-//mettre #F17901 au lieu du rouge
 const ProblemsSection = () => {
+  const { t } = useTranslation();
+  
   const problems = [
     {
-      title: "Peu fiable",
-      description: "Wi-Fi public : pratique pour toi, parfait pour les hackers.",
+      title: t("partnership.problems.unreliable.title"),
+      description: t("partnership.problems.unreliable.description"),
       icon: <Shield className="w-12 h-12 text-[#F17901] mb-4" />,
       link: "#"
     },
     {
-      title: "Trop coûteuses", 
-      description: "Poster un selfie à 60 € ? C'est le prix de l'oubli de sa eSIM.",
+      title: t("partnership.problems.expensive.title"),
+      description: t("partnership.problems.expensive.description"),
       icon: <DollarSign className="w-12 h-12 text-[#F17901] mb-4" />,
       link: "#"
     },
     {
-      title: "Trop complexe",
-      description: "Perdre 1h pour une SIM ? L'eSIM prend 10 secondes.",
+      title: t("partnership.problems.complex.title"),
+      description: t("partnership.problems.complex.description"),
       icon: <AlertCircle className="w-12 h-12 text-[#F17901] mb-4" />,
       link: "#"
     }
@@ -30,11 +32,7 @@ const ProblemsSection = () => {
       {/* Section titre pleine largeur */}
       <div className="w-full text-center mb-6 md:mb-8 px-4">
         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-title mb-4 md:mb-6 max-w-none mx-auto leading-tight">
-          Aujourd'hui, les voyageurs veulent être{" "}
-          <span className="text-primary font-extrabold">connectés</span>
-          <br />
-          dès leur arrivée — mais les{" "}
-          <span className="text-primary font-extrabold">solutions déçoivent.</span>
+          {t("partnership.problems.title")}
         </h2>
       </div>
 

@@ -78,7 +78,7 @@ export const CardTitle = ({
   children,
 }) => {
   return (
-    <h4 className={cn("text-title font-bold tracking-wide mt-4 text-xl", className)}>
+    <h4 className={cn("text-title font-bold tracking-wide mt-4 text-xl text-center", className)}>
       {children}
     </h4>
   );
@@ -91,7 +91,7 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        "mt-4 text-gray-600 tracking-wide leading-relaxed text-base",
+        "mt-4 text-gray-600 tracking-wide leading-relaxed text-base text-center",
         className
       )}
     >

@@ -22,5 +22,98 @@
     "orContinueWith": "Ou continuer avec",
     "signInWithGoogle": "Se connecter avec Google",
     "signInWithFacebook": "Se connecter avec Facebook"
+  },
+  "partnership": {
+    "hero": {
+      "title": "Boostez l'expérience de vos clients avec l'eSIM",
+      "subtitle": "Proposez à vos voyageurs une connexion mobile immédiate et sans contraintes dans +220 destinations.",
+      "cta": "Découvrir nos solutions"
+    },
+    "problems": {
+      "title": "Aujourd'hui, les voyageurs veulent être connectés dès leur arrivée — mais les solutions déçoivent.",
+      "unreliable": {
+        "title": "Peu fiable",
+        "description": "Wi-Fi public : pratique pour toi, parfait pour les hackers."
+      },
+      "expensive": {
+        "title": "Trop coûteuses",
+        "description": "Poster un selfie à 60 € ? C'est le prix de l'oubli de sa eSIM."
+      },
+      "complex": {
+        "title": "Trop complexe",
+        "description": "Perdre 1h pour une SIM ? L'eSIM prend 10 secondes."
+      }
+    },
+    "roaming": {
+      "title": "Roaming hors de prix, expériences utilisateurs frustrantes... Vos clients méritent mieux !",
+      "description": "Offrez à vos clients la possibilité d'acheter et d'activer des forfaits data directement via votre application ou site internet. Nous vous fournissons la technologie, le webstore, la connectivité et le support.",
+      "cta": "Découvrir nos solutions",
+      "stats": {
+        "destinations": "+220 destinations",
+        "destinationsDesc": "Connectivité mondiale",
+        "activation": "10 secondes",
+        "activationDesc": "Activation eSIM"
+      }
+    },
+    "solutions": {
+      "title": "Nos solutions partenaires",
+      "api": {
+        "title": "Intégration API",
+        "description": "Intégrer la vente de forfaits eSIM directement dans votre application mobile existante",
+        "features": {
+          "restApi": "API REST complète",
+          "sdk": "SDK iOS/Android",
+          "documentation": "Documentation technique",
+          "support": "Support développeur",
+          "webhooks": "Webhooks en temps réel"
+        },
+        "cta": "Documentation"
+      },
+      "whiteLabel": {
+        "title": "Solution en marque blanche",
+        "description": "Webstore et/ou app iOS/Android fournis par SimWeGo, à vos couleurs, intégrables à votre site",
+        "features": {
+          "webstore": "Webstore complet à vos couleurs",
+          "apps": "Applications iOS/Android personnalisées",
+          "integration": "Intégration sur votre site existant",
+          "support": "Support technique inclus",
+          "updates": "Mise à jour automatique"
+        },
+        "cta": "Découvrir",
+        "popular": "Populaire"
+      },
+      "affiliate": {
+        "title": "Affiliation",
+        "description": "Gagnez des commissions en recommandant SimWeGo à vos clients via notre programme partenaire",
+        "features": {
+          "commissions": "Commissions attractives",
+          "links": "Liens de parrainage personnalisés",
+          "dashboard": "Dashboard de suivi",
+          "marketing": "Support marketing",
+          "payments": "Paiement mensuel"
+        },
+        "cta": "Rejoindre"
+      },
+      "conclusion": "Choisissez la solution qui correspond le mieux à vos besoins et commencez à offrir à vos clients une expérience de connectivité inégalée."
+    },
+    "benefits": {
+      "title": "Une solution pensée pour vous... et pour vos clients",
+      "experience": {
+        "title": "Améliorez l'expérience de vos clients",
+        "description": "Améliorez l'expérience de vos clients, dès leur arrivée à destination."
+      },
+      "integration": {
+        "title": "Une intégration simple et rapide",
+        "description": "Une intégration simple et rapide, sans contrainte technique."
+      },
+      "positioning": {
+        "title": "Renforcez votre positionnement",
+        "description": "Renforcez votre positionnement avec un service digital innovant."
+      },
+      "revenue": {
+        "title": "Un nouveau levier de revenus",
+        "description": "Un nouveau levier de revenus, sans gestion opérationnelle."
+      }
+    }
   }
 }
