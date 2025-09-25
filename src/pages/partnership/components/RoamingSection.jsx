@@ -6,10 +6,10 @@ import { MapPin, Zap } from "lucide-react";
 
 const RoamingSection = () => {
   return (
-    <div className="w-full bg-white py-20 rounded-3xl shadow-lg">
+    <div className="w-full bg-white py-12 md:py-16 rounded-3xl shadow-lg">
       <Container>
-        <div className="flex flex-col lg:flex-row items-center gap-12">
-          <div className="flex-shrink-0 lg:w-1/2 flex justify-center">
+        <div className="flex flex-col lg:flex-row items-center gap-8 md:gap-12">
+          <div className="hidden lg:flex flex-shrink-0 lg:w-1/2 justify-center">
             <BackgroundGradient className="rounded-[22px] max-w-md">
               <img 
                 src={RoamingImage}
@@ -19,23 +19,22 @@ const RoamingSection = () => {
             </BackgroundGradient>
           </div>
           
-          <div className="flex-1 space-y-5">
+          <div className="flex-1 space-y-4 md:space-y-5 text-center lg:text-left">
             <div>
-              <Typography variant="h4" component="h2" className="font-bold text-title leading-tight mb-2">
+              <Typography variant="h4" component="h2" className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-title leading-tight mb-2">
                 Roaming hors de prix,<br/>
                 expériences utilisateurs frustrantes...<br/>
                 <span className="text-primary">Vos clients méritent mieux !</span>
               </Typography>
-
             </div>
             
-            <Typography variant="h6" className="text-gray-600 leading-relaxed">
+            <Typography variant="h6" className="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed px-4 lg:px-0">
               Offrez à vos clients la possibilité d'acheter et d'activer des forfaits data directement via votre application ou site internet.
               <br/>
               Nous vous fournissons la technologie, le webstore, la connectivité et le support.
             </Typography>
 
-            <div className="space-y-6">
+            <div className="space-y-4 md:space-y-6">
               <Button
                 variant="contained"
                 size="large"
@@ -44,9 +43,9 @@ const RoamingSection = () => {
                 sx={{
                   textTransform: 'none',
                   fontWeight: 600,
-                  px: 4,
-                  py: 2,
-                  fontSize: '1.1rem',
+                  px: { xs: 3, md: 4 },
+                  py: { xs: 1.5, md: 2 },
+                  fontSize: { xs: '0.9rem', sm: '1rem', md: '1.1rem' },
                   borderRadius: 3,
                   '&:hover': {
                     transform: 'translateY(-2px)',
@@ -59,20 +58,20 @@ const RoamingSection = () => {
                 Découvrir nos solutions
               </Button>
               
-              <div className="flex gap-8 justify-start">
-                <div className="text-left">
-                  <div className="flex items-center gap-2 mb-1">
-                    <MapPin className="w-6 h-6 text-primary" />
-                    <Typography variant="h5" className="font-bold text-primary">+220 destinations</Typography>
+              <div className="flex flex-col sm:flex-row gap-4 md:gap-8 justify-center lg:justify-start">
+                <div className="text-center lg:text-left">
+                  <div className="flex items-center justify-center lg:justify-start gap-2 mb-1">
+                    <MapPin className="w-5 h-5 md:w-6 md:h-6 text-primary" />
+                    <Typography variant="h5" className="text-lg md:text-xl font-bold text-primary">+220 destinations</Typography>
                   </div>
-                  <Typography variant="body2" className="text-gray-600">Connectivité mondiale</Typography>
+                  <Typography variant="body2" className="text-sm md:text-base text-gray-600">Connectivité mondiale</Typography>
                 </div>
-                <div className="text-left">
-                  <div className="flex items-center gap-2 mb-1">
-                    <Zap className="w-6 h-6 text-secondary" />
-                    <Typography variant="h5" className="font-bold text-secondary">10 secondes</Typography>
+                <div className="text-center lg:text-left">
+                  <div className="flex items-center justify-center lg:justify-start gap-2 mb-1">
+                    <Zap className="w-5 h-5 md:w-6 md:h-6 text-secondary" />
+                    <Typography variant="h5" className="text-lg md:text-xl font-bold text-secondary">10 secondes</Typography>
                   </div>
-                  <Typography variant="body2" className="text-gray-600">Activation eSIM</Typography>
+                  <Typography variant="body2" className="text-sm md:text-base text-gray-600">Activation eSIM</Typography>
                 </div>
               </div>
             </div>

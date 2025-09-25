@@ -45,17 +45,18 @@ const BenefitsSection = () => {
       <FloatingIcons />
       
       <Container>
-        <div className="py-12 md:py-16">
-          <div className="text-center mb-10">
+        <div className="py-10 md:py-12 lg:py-16">
+          <div className="text-center mb-8 md:mb-10 px-4">
             <TextGenerateEffect
               words="Une solution pensée pour vous... et pour vos clients"
-              className="text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-tight mb-6"
+              className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-tight mb-4 md:mb-6"
               duration={0.5}
               filter={false}
+              triggerOnScroll={true}
             />
           </div>
 
-          <HoverEffect items={benefits} className="grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" />
+          <HoverEffect items={benefits} className="grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6" />
         </div>
       </Container>
     </div>

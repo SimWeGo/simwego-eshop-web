@@ -1,6 +1,6 @@
 "use client";
 import { useEffect } from "react";
-import { motion, stagger, useAnimate } from "framer-motion";
+import { motion, stagger, useAnimate, useInView } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 export const TextGenerateEffect = ({
@@ -8,22 +8,26 @@ export const TextGenerateEffect = ({
   className,
   filter = true,
   duration = 1,
+  triggerOnScroll = false,
 }) => {
   const [scope, animate] = useAnimate();
+  const isInView = useInView(scope, { once: true });
   let wordsArray = words.split(" ");
   useEffect(() => {
-    animate(
-      "span",
-      {
-        opacity: 1,
-        filter: filter ? "blur(0px)" : "none",
-      },
-      {
-        duration: duration ? duration : 1,
-        delay: stagger(0.2),
-      }
-    );
-  }, [scope.current]);
+    if (!triggerOnScroll || isInView) {
+      animate(
+        "span",
+        {
+          opacity: 1,
+          filter: filter ? "blur(0px)" : "none",
+        },
+        {
+          duration: duration ? duration : 1,
+          delay: stagger(0.2),
+        }
+      );
+    }
+  }, [triggerOnScroll ? isInView : true, scope.current]);
 
   const renderWords = () => {
     return (

@@ -8,7 +8,7 @@ import BenefitsSection from "./components/BenefitsSection";
 const Partnership = () => {
   return (
     <div className="min-h-screen overflow-x-hidden">
-      <div className="py-24 px-4 space-y-8">
+      <div className="pt-8 pb-8 px-4 space-y-8">
         <HeroSection />
         <ProblemsSection />
         <RoamingSection />

@@ -1,4 +1,3 @@
-import { Typography } from "@mui/material";
 import Container from "../../../components/Container";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 import { Shield, DollarSign, AlertCircle } from "lucide-react";
@@ -27,25 +26,21 @@ const ProblemsSection = () => {
   ];
 
   return (
-    <div className="w-full py-16">
+    <div className="w-full py-8 md:py-10">
       {/* Section titre pleine largeur */}
-      <div className="w-full text-center mb-12 px-4">
-        <Typography 
-          variant="h2" 
-          component="h2" 
-          className="text-3xl md:text-4xl lg:text-5xl font-bold text-title mb-6 animate-fadeInUp max-w-none mx-auto"
-        >
+      <div className="w-full text-center mb-6 md:mb-8 px-4">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-title mb-4 md:mb-6 max-w-none mx-auto leading-tight">
           Aujourd'hui, les voyageurs veulent être{" "}
-          <span className="text-primary font-bold">connectés</span>
+          <span className="text-primary font-extrabold">connectés</span>
           <br />
           dès leur arrivée — mais les{" "}
-          <span className="text-primary font-bold">solutions déçoivent.</span>
-        </Typography>
+          <span className="text-primary font-extrabold">solutions déçoivent.</span>
+        </h2>
       </div>
 
       {/* Section cartes avec Container */}
       <Container>
-        <HoverEffect items={problems} className="grid-cols-1 md:grid-cols-3 gap-6" />
+        <HoverEffect items={problems} className="grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6" />
       </Container>
     </div>
   );
