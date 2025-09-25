@@ -50,13 +50,14 @@ const RoamingSection = () => {
                 sx={{
                   textTransform: 'none',
                   fontWeight: 600,
-                  px: 4,
-                  py: 2,
-                  fontSize: '1.1rem',
-                  borderRadius: 3
+                  px: 6,
+                  py: 2.5,
+                  fontSize: '1.2rem',
+                  borderRadius: 3,
+                  boxShadow: '0 4px 20px rgba(46, 55, 134, 0.3)'
                 }}
               >
-                Découvrez SimWeGo Pro
+                Démarrer maintenant
               </Button>
               
 

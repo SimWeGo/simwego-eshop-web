@@ -41,6 +41,11 @@ export const HoverEffect = ({
           </AnimatePresence>
           <Card>
             {item.icon && <div className="flex justify-center">{item.icon}</div>}
+            {item.image && (
+              <div className="flex justify-center mb-4">
+                <img src={item.image} alt={item.title} className="w-16 h-16 object-contain" />
+              </div>
+            )}
             <CardTitle>{item.title}</CardTitle>
             <CardDescription>{item.description}</CardDescription>
           </Card>
