@@ -5,13 +5,27 @@ import {
   Code, 
   Users, 
   Palette, 
-  Zap,
-  ExternalLink
+  Zap
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { useState } from "react";
+import ImageModal from "../../../components/modals/ImageModal";
+import affiliationImage from "../../../assets/images/partnership/partnership/affiliation.png";
 
 const SolutionsSection = () => {
   const { t } = useTranslation();
+  const [openModal, setOpenModal] = useState(false);
+  const [selectedSolution, setSelectedSolution] = useState(null);
+
+  const handleOpenModal = (solution) => {
+    setSelectedSolution(solution);
+    setOpenModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setOpenModal(false);
+    setSelectedSolution(null);
+  };
 
   const solutions = [
     {
@@ -26,7 +40,7 @@ const SolutionsSection = () => {
         t("partnership.solutions.api.features.support"),
         t("partnership.solutions.api.features.webhooks")
       ],
-      buttonText: t("partnership.solutions.api.cta"),
+      buttonText: "En savoir plus",
       highlight: null
     },
     {
@@ -41,7 +55,7 @@ const SolutionsSection = () => {
         t("partnership.solutions.whiteLabel.features.support"),
         t("partnership.solutions.whiteLabel.features.updates")
       ],
-      buttonText: t("partnership.solutions.whiteLabel.cta"),
+      buttonText: "En savoir plus",
       highlight: t("partnership.solutions.whiteLabel.popular")
     },
     {
@@ -56,7 +70,7 @@ const SolutionsSection = () => {
         t("partnership.solutions.affiliate.features.marketing"),
         t("partnership.solutions.affiliate.features.payments")
       ],
-      buttonText: t("partnership.solutions.affiliate.cta"),
+      buttonText: "En savoir plus",
       highlight: null
     }
   ];
@@ -124,7 +138,7 @@ const SolutionsSection = () => {
                   py: 1.5,
                   borderRadius: 3
                 }}
-                endIcon={<ExternalLink className="w-4 h-4" />}
+                onClick={() => handleOpenModal(solution)}
               >
                 {solution.buttonText}
               </Button>
@@ -139,6 +153,13 @@ const SolutionsSection = () => {
           </Typography>
         </div>
       </Container>
+      
+      <ImageModal
+        open={openModal}
+        onClose={handleCloseModal}
+        imageSrc={affiliationImage}
+        title={selectedSolution?.title || ""}
+      />
     </div>
   );
 };

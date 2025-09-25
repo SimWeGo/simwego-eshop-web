@@ -56,16 +56,8 @@ const HeroSection = () => {
                   onClick={() => document.getElementById('solutions')?.scrollIntoView({ behavior: 'smooth' })}
                   sx={{ 
                     fontSize: { xs: "0.9rem", sm: "1rem", md: "1.1rem" },
-                    textTransform: "none",
                     px: { xs: 3, md: 4 },
-                    py: { xs: 1.5, md: 2 },
-                    borderRadius: 3,
-                    '&:hover': {
-                      transform: 'translateY(-2px)',
-                      boxShadow: '0 6px 20px rgba(46, 55, 134, 0.4)',
-                      transition: 'all 0.3s ease'
-                    },
-                    transition: 'all 0.3s ease'
+                    py: { xs: 1.5, md: 2 }
                   }}
                 >
                   {t("partnership.hero.cta")}
