@@ -2,7 +2,7 @@ import React, { useMemo } from "react";
 import { useSelector } from "react-redux";
 import Home from "../../pages/home/Home";
 import HowItWorks from "../../pages/HowItWorks";
-import AboutUs from "../../pages/AboutUs";
+import AboutUs from "../../pages/about-us/AboutUs";
 import ContactUs from "../../pages/ContactUs";
 import SignIn from "../../pages/SignIn";
 import Terms from "../../pages/Terms";

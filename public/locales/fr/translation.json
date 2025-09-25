@@ -115,5 +115,32 @@
         "description": "Un nouveau levier de revenus, sans gestion opérationnelle."
       }
     }
+  },
+  "aboutUs": {
+    "hero": {
+      "title": "Nous connectons les voyageurs... partout dans le monde",
+      "subtitle": "Chez SimWeGo, chaque voyageur peut activer son eSIM en un clic, et chaque entreprise peut proposer cette expérience fluide à ses clients.",
+      "cta": "Découvrir notre histoire"
+    },
+    "founders": {
+      "title": "Deux fondateurs, une vision née du voyage",
+      "description": "Derrière SimWeGo, il y a deux anciens sportifs de haut niveau qui ont passé une grande partie de leur vie à voyager aux quatre coins du monde. Compétitions internationales, entraînements à l'étranger, séjours aux quatre coins du globe.",
+      "quote": "Nos parcours nous ont appris à vivre en permanence entre deux avions, deux cultures et deux réseaux."
+    },
+    "adn": {
+      "title": "L'ADN SimWeGo",
+      "performance": {
+        "title": "Performance",
+        "description": "Héritée du sport, où chaque détail compte."
+      },
+      "simplicity": {
+        "title": "Simplicité",
+        "description": "Une expérience fluide, sans jargon ni frais cachés."
+      },
+      "teamSpirit": {
+        "title": "Esprit d'équipe",
+        "description": "Comme dans le sport, nous avançons ensemble et créons de la valeur partagée avec nos partenaires."
+      }
+    }
   }
 }

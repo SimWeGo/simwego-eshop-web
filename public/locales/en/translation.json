@@ -273,7 +273,32 @@
     "stayConnected": "Stay Connected",
     "failedToLoadAboutUsData": "Failed to load About us Data",
     "noContentAvailable": "No content available at this moment",
-    "About us": "About Us"
+    "About us": "About Us",
+    "hero": {
+      "title": "We connect travelers... everywhere in the world",
+      "subtitle": "At SimWeGo, every traveler can activate their eSIM with one click, and every business can offer this seamless experience to their customers.",
+      "cta": "Learn Our Story"
+    },
+    "founders": {
+      "title": "Two founders, one vision born from travel",
+      "description": "Behind SimWeGo, there are two former high-level athletes who have spent a large part of their lives traveling to the four corners of the world. International competitions, training abroad, stays around the globe.",
+      "quote": "Our journeys taught us to live permanently between two planes, two cultures and two networks."
+    },
+    "adn": {
+      "title": "SimWeGo DNA",
+      "performance": {
+        "title": "Performance",
+        "description": "Inherited from sport, where every detail matters."
+      },
+      "simplicity": {
+        "title": "Simplicity",
+        "description": "A smooth experience, without jargon or hidden fees."
+      },
+      "teamSpirit": {
+        "title": "Team Spirit",
+        "description": "Like in sport, we move forward together and create shared value with our partners."
+      }
+    }
   },
   "contactUs": {
     "messageRequired": "Message is a required field",
