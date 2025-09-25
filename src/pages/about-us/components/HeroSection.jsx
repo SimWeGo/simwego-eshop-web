@@ -23,7 +23,7 @@ const HeroSection = () => {
       >
       
       <Container>
-        <div className="py-8 md:py-10 lg:py-12">
+        <div className="py-8 md:py-12 lg:py-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div className="space-y-4 md:space-y-6 text-center lg:text-left">
               <div className="relative">

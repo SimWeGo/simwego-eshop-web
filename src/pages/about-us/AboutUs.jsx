@@ -2,19 +2,16 @@ import React from "react";
 import HeroSection from "./components/HeroSection";
 import FoundersSection from "./components/FoundersSection";
 import ADNSection from "./components/ADNSection";
-import Container from "../../components/Container";
 
 const AboutUs = () => {
   return (
-    <div className="pt-8 pb-8 px-4 space-y-8">
-      <Container>
+    <div className="min-h-screen overflow-x-hidden">
+      <div className="pt-8 pb-8 px-4 space-y-8">
         <HeroSection />
         <FoundersSection />
-      </Container>
-      <ADNSection />
-      <Container>
+        <ADNSection />
         {/* Additional sections will be added here */}
-      </Container>
+      </div>
     </div>
   );
 };

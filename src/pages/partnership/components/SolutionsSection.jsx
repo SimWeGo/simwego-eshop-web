@@ -10,12 +10,54 @@ import {
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import ImageModal from "../../../components/modals/ImageModal";
-import affiliationImage from "../../../assets/images/partnership/partnership/affiliation.png";
+// Import images for different solutions and languages
+import affiliationImageAr from "../../../assets/images/partnership/partnership/affiliation/affiliation-ar.png";
+import affiliationImageEn from "../../../assets/images/partnership/partnership/affiliation/affiliation-en.png";
+import affiliationImageEs from "../../../assets/images/partnership/partnership/affiliation/affiliation-es.png";
+import affiliationImageFr from "../../../assets/images/partnership/partnership/affiliation/affiliation-fr.png";
+
+import apiImageAr from "../../../assets/images/partnership/partnership/api/api-ar.png";
+import apiImageEn from "../../../assets/images/partnership/partnership/api/api-en.png";
+import apiImageEs from "../../../assets/images/partnership/partnership/api/api-es.png";
+import apiImageFr from "../../../assets/images/partnership/partnership/api/api-fr.png";
+
+import whitelabelImageAr from "../../../assets/images/partnership/partnership/whitelabel/whitelabel-ar.png";
+import whitelabelImageEn from "../../../assets/images/partnership/partnership/whitelabel/whitelabel-en.png";
+import whitelabelImageEs from "../../../assets/images/partnership/partnership/whitelabel/whitelabel-es.png";
+import whitelabelImageFr from "../../../assets/images/partnership/partnership/whitelabel/whitelabel-fr.png";
 
 const SolutionsSection = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [openModal, setOpenModal] = useState(false);
   const [selectedSolution, setSelectedSolution] = useState(null);
+
+  // Function to get the correct image based on solution type and language
+  const getImageForSolution = (solutionType) => {
+    const currentLang = i18n.language;
+    
+    const imageMap = {
+      'api': {
+        'ar': apiImageAr,
+        'en': apiImageEn,
+        'es': apiImageEs,
+        'fr': apiImageFr
+      },
+      'whitelabel': {
+        'ar': whitelabelImageAr,
+        'en': whitelabelImageEn,
+        'es': whitelabelImageEs,
+        'fr': whitelabelImageFr
+      },
+      'affiliate': {
+        'ar': affiliationImageAr,
+        'en': affiliationImageEn,
+        'es': affiliationImageEs,
+        'fr': affiliationImageFr
+      }
+    };
+    
+    return imageMap[solutionType][currentLang] || imageMap[solutionType]['en'];
+  };
 
   const handleOpenModal = (solution) => {
     setSelectedSolution(solution);
@@ -41,7 +83,8 @@ const SolutionsSection = () => {
         t("partnership.solutions.api.features.webhooks")
       ],
       buttonText: "En savoir plus",
-      highlight: null
+      highlight: null,
+      type: 'api'
     },
     {
       title: t("partnership.solutions.whiteLabel.title"),
@@ -56,7 +99,8 @@ const SolutionsSection = () => {
         t("partnership.solutions.whiteLabel.features.updates")
       ],
       buttonText: "En savoir plus",
-      highlight: t("partnership.solutions.whiteLabel.popular")
+      highlight: t("partnership.solutions.whiteLabel.popular"),
+      type: 'whitelabel'
     },
     {
       title: t("partnership.solutions.affiliate.title"),
@@ -71,7 +115,8 @@ const SolutionsSection = () => {
         t("partnership.solutions.affiliate.features.payments")
       ],
       buttonText: "En savoir plus",
-      highlight: null
+      highlight: null,
+      type: 'affiliate'
     }
   ];
 
@@ -157,7 +202,7 @@ const SolutionsSection = () => {
       <ImageModal
         open={openModal}
         onClose={handleCloseModal}
-        imageSrc={affiliationImage}
+        imageSrc={selectedSolution ? getImageForSolution(selectedSolution.type) : ''}
         title={selectedSolution?.title || ""}
       />
     </div>
