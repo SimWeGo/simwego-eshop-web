@@ -1,6 +1,5 @@
 import { Button, Typography } from "@mui/material";
 import Container from "../../../components/Container";
-import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import { BackgroundGradient } from "@/components/ui/background-gradient";
 import RoamingImage from "../../../assets/images/partnership/roaming/simwe.png";
 import { MapPin, Zap } from "lucide-react";
@@ -20,47 +19,62 @@ const RoamingSection = () => {
             </BackgroundGradient>
           </div>
           
-          <div className="flex-1 space-y-6">
-            <div className="text-center space-y-6">
-              <Typography variant="h4" component="h2" className="font-bold text-title leading-tight mb-4">
+          <div className="flex-1 space-y-5">
+            <div>
+              <Typography variant="h4" component="h2" className="font-bold text-title leading-tight mb-2">
                 Roaming hors de prix,<br/>
                 expériences utilisateurs frustrantes...<br/>
                 <span className="text-primary">Vos clients méritent mieux !</span>
               </Typography>
-              
-              <TextGenerateEffect
-                words="Avec SimWeGo, lancez votre propre offre eSIM"
-                className="text-2xl md:text-3xl font-bold text-secondary leading-tight mb-6"
-                duration={0.5}
-                filter={false}
-              />
-              
-              <Typography variant="h6" className="text-gray-600 leading-relaxed text-lg max-w-2xl mx-auto">
-                Offrez à vos clients la possibilité d'acheter et d'activer des forfaits data directement via votre application ou site internet.
-                <br/><br/>
-                Nous vous fournissons la technologie, le webstore, la connectivité et le support.
-              </Typography>
-            </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 items-start">
+            </div>
+            
+            <Typography variant="h6" className="text-gray-600 leading-relaxed">
+              Offrez à vos clients la possibilité d'acheter et d'activer des forfaits data directement via votre application ou site internet.
+              <br/>
+              Nous vous fournissons la technologie, le webstore, la connectivité et le support.
+            </Typography>
+
+            <div className="space-y-6">
               <Button
                 variant="contained"
                 size="large"
                 className="action-button"
+                onClick={() => document.getElementById('solutions')?.scrollIntoView({ behavior: 'smooth' })}
                 sx={{
                   textTransform: 'none',
                   fontWeight: 600,
-                  px: 6,
-                  py: 2.5,
-                  fontSize: '1.2rem',
+                  px: 4,
+                  py: 2,
+                  fontSize: '1.1rem',
                   borderRadius: 3,
-                  boxShadow: '0 4px 20px rgba(46, 55, 134, 0.3)'
+                  '&:hover': {
+                    transform: 'translateY(-2px)',
+                    boxShadow: '0 6px 20px rgba(46, 55, 134, 0.4)',
+                    transition: 'all 0.3s ease'
+                  },
+                  transition: 'all 0.3s ease'
                 }}
               >
-                Démarrer maintenant
+                Découvrir nos solutions
               </Button>
               
-
+              <div className="flex gap-8 justify-start">
+                <div className="text-left">
+                  <div className="flex items-center gap-2 mb-1">
+                    <MapPin className="w-6 h-6 text-primary" />
+                    <Typography variant="h5" className="font-bold text-primary">+220 destinations</Typography>
+                  </div>
+                  <Typography variant="body2" className="text-gray-600">Connectivité mondiale</Typography>
+                </div>
+                <div className="text-left">
+                  <div className="flex items-center gap-2 mb-1">
+                    <Zap className="w-6 h-6 text-secondary" />
+                    <Typography variant="h5" className="font-bold text-secondary">10 secondes</Typography>
+                  </div>
+                  <Typography variant="body2" className="text-gray-600">Activation eSIM</Typography>
+                </div>
+              </div>
             </div>
           </div>
         </div>

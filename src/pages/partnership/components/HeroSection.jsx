@@ -21,15 +21,15 @@ const HeroSection = () => {
               <div className="relative">
                 <TextGenerateEffect
                   words="Boostez l'expérience de vos clients avec l'eSIM"
-                  className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4"
+                  className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4"
                   duration={1}
                 />
               </div>
               
               <Typography 
-                variant="h6" 
+                variant="h5" 
                 component="p" 
-                className="text-white/90 text-lg leading-relaxed"
+                className="text-white/90 text-xl leading-relaxed"
               >
                 Proposez à vos voyageurs une connexion mobile{" "}
                 <span className="font-semibold text-white">immédiate</span> et{" "}
@@ -42,9 +42,19 @@ const HeroSection = () => {
                   variant="contained"
                   size="large"
                   className="action-button"
+                  onClick={() => document.getElementById('solutions')?.scrollIntoView({ behavior: 'smooth' })}
                   sx={{ 
                     fontSize: "1.1rem",
-                    textTransform: "none"
+                    textTransform: "none",
+                    px: 4,
+                    py: 2,
+                    borderRadius: 3,
+                    '&:hover': {
+                      transform: 'translateY(-2px)',
+                      boxShadow: '0 6px 20px rgba(46, 55, 134, 0.4)',
+                      transition: 'all 0.3s ease'
+                    },
+                    transition: 'all 0.3s ease'
                   }}
                 >
                   Découvrir nos solutions

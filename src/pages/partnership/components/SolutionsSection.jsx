@@ -60,13 +60,13 @@ const solutions = [
 
 const SolutionsSection = () => {
   return (
-    <div className="w-full py-20">
+    <div id="solutions" className="w-full py-20">
       <Container>
         <div className="text-center mb-16">
           <Typography 
             variant="h2" 
             component="h2" 
-            className="font-bold text-title mb-6"
+            className="text-3xl md:text-4xl lg:text-5xl font-bold text-title mb-6"
           >
             Nos solutions <span className="text-primary">partenaires</span>
           </Typography>
@@ -107,7 +107,7 @@ const SolutionsSection = () => {
                 {solution.features.map((feature, featureIndex) => (
                   <div key={featureIndex} className="flex items-center gap-3">
                     <div className="flex-shrink-0">
-                      <Check className="w-5 h-5 text-green-500" />
+                      <Check className="w-5 h-5 text-secondary" />
                     </div>
                     <Typography variant="body2" className="text-gray-700">
                       {feature}
@@ -136,7 +136,7 @@ const SolutionsSection = () => {
 
 
         <div className="text-center mt-16">
-          <Typography variant="h6" className="text-gray-600 mb-2">
+          <Typography variant="h6" className="text-gray-600 mb-2 text-lg">
             Choisissez la solution qui correspond le mieux à vos besoins et commencez à offrir à vos clients une expérience de connectivité inégalée.
           </Typography>
 

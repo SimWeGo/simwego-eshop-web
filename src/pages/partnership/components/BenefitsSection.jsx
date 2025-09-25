@@ -49,7 +49,7 @@ const BenefitsSection = () => {
           <div className="text-center mb-10">
             <TextGenerateEffect
               words="Une solution pensée pour vous... et pour vos clients"
-              className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6"
+              className="text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-tight mb-6"
               duration={0.5}
               filter={false}
             />
