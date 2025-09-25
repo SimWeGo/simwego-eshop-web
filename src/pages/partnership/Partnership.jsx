@@ -6,7 +6,7 @@ import RoamingSection from "./components/RoamingSection";
 const Partnership = () => {
   return (
     <div className="min-h-screen overflow-x-hidden">
-      <div className="py-24 flex flex-col gap-12">
+      <div className="py-24 px-4 space-y-8">
         <HeroSection />
         <ProblemsSection />
         <RoamingSection />
