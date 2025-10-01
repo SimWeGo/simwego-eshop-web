@@ -23,7 +23,7 @@ const RoamingSection = () => {
           
           <div className="flex-1 space-y-4 md:space-y-5 text-center lg:text-left">
             <div>
-              <Typography variant="h4" component="h2" className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-title leading-tight mb-2">
+              <Typography variant="h4" component="h2" className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-title leading-tight mb-2" sx={{ fontWeight: 900 }}>
                 {t("partnership.roaming.title")}
               </Typography>
             </div>

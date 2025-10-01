@@ -2,14 +2,14 @@ import { Button, Typography } from "@mui/material";
 import Container from "../../../components/Container";
 import { 
   Check, 
-  Code, 
-  Users, 
-  Palette, 
   Zap
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import ImageModal from "../../../components/modals/ImageModal";
+import apiIcon from "../../../assets/images/partnership/partnership/icons/api.png";
+import affiliationIcon from "../../../assets/images/partnership/partnership/icons/affiliation.png";
+import whitelabelIcon from "../../../assets/images/partnership/partnership/icons/whitelabel.png";
 // Import images for different solutions and languages
 import affiliationImageAr from "../../../assets/images/partnership/partnership/affiliation/affiliation-ar.png";
 import affiliationImageEn from "../../../assets/images/partnership/partnership/affiliation/affiliation-en.png";
@@ -73,14 +73,14 @@ const SolutionsSection = () => {
     {
       title: t("partnership.solutions.api.title"),
       description: t("partnership.solutions.api.description"),
-      icon: <Code className="w-8 h-8 text-primary" />,
+      icon: <img src={apiIcon} alt="API" className="w-16 h-16 object-contain" />,
       popular: false,
       features: [
         t("partnership.solutions.api.features.restApi"),
         t("partnership.solutions.api.features.sdk"),
         t("partnership.solutions.api.features.documentation"),
         t("partnership.solutions.api.features.support"),
-        t("partnership.solutions.api.features.webhooks")
+        t("partnership.solutions.api.features.analytics")
       ],
       buttonText: "En savoir plus",
       highlight: null,
@@ -89,14 +89,14 @@ const SolutionsSection = () => {
     {
       title: t("partnership.solutions.whiteLabel.title"),
       description: t("partnership.solutions.whiteLabel.description"),
-      icon: <Palette className="w-8 h-8 text-primary" />,
+      icon: <img src={whitelabelIcon} alt="White Label" className="w-16 h-16 object-contain" />,
       popular: true,
       features: [
         t("partnership.solutions.whiteLabel.features.webstore"),
         t("partnership.solutions.whiteLabel.features.apps"),
-        t("partnership.solutions.whiteLabel.features.integration"),
         t("partnership.solutions.whiteLabel.features.support"),
-        t("partnership.solutions.whiteLabel.features.updates")
+        t("partnership.solutions.whiteLabel.features.customization"),
+        t("partnership.solutions.whiteLabel.features.multiLanguage")
       ],
       buttonText: "En savoir plus",
       highlight: t("partnership.solutions.whiteLabel.popular"),
@@ -105,14 +105,14 @@ const SolutionsSection = () => {
     {
       title: t("partnership.solutions.affiliate.title"),
       description: t("partnership.solutions.affiliate.description"),
-      icon: <Users className="w-8 h-8 text-primary" />,
+      icon: <img src={affiliationIcon} alt="Affiliation" className="w-16 h-16 object-contain" />,
       popular: false,
       features: [
         t("partnership.solutions.affiliate.features.commissions"),
         t("partnership.solutions.affiliate.features.links"),
         t("partnership.solutions.affiliate.features.dashboard"),
-        t("partnership.solutions.affiliate.features.marketing"),
-        t("partnership.solutions.affiliate.features.payments")
+        t("partnership.solutions.affiliate.features.payments"),
+        t("partnership.solutions.affiliate.features.tracking")
       ],
       buttonText: "En savoir plus",
       highlight: null,
@@ -148,7 +148,7 @@ const SolutionsSection = () => {
 
               <div className="text-center mb-6">
                 <div className="flex justify-center mb-4">
-                  <div className="p-4 bg-gray-50 rounded-2xl">
+                  <div className="p-4">
                     {solution.icon}
                   </div>
                 </div>

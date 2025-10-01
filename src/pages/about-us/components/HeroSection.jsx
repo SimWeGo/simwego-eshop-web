@@ -31,7 +31,7 @@ const HeroSection = () => {
                   <Typography 
                     variant="h1" 
                     component="h1" 
-                    className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight mb-4"
+                    className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight mb-4"
                     sx={{ direction: 'rtl' }}
                   >
                     {t("aboutUs.hero.title")}
@@ -39,7 +39,7 @@ const HeroSection = () => {
                 ) : (
                   <TextGenerateEffect
                     words={t("aboutUs.hero.title")}
-                    className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight mb-4"
+                    className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight mb-4"
                     duration={1}
                   />
                 )}
@@ -48,7 +48,7 @@ const HeroSection = () => {
               <Typography 
                 variant="h5" 
                 component="p" 
-                className="text-white/90 text-base sm:text-lg md:text-xl leading-relaxed px-4 lg:px-0"
+                className="text-white/90 text-xl sm:text-2xl md:text-3xl leading-relaxed px-4 lg:px-0"
               >
                 {t("aboutUs.hero.subtitle")}
               </Typography>

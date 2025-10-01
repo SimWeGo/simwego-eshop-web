@@ -1,7 +1,9 @@
 import Container from "../../../components/Container";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
-import { Shield, DollarSign, AlertCircle } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import shieldIcon from "../../../assets/images/partnership/problems/shield.png";
+import dollarIcon from "../../../assets/images/partnership/problems/dollar.png";
+import exclamationIcon from "../../../assets/images/partnership/problems/exlamation.png";
 
 const ProblemsSection = () => {
   const { t } = useTranslation();
@@ -10,19 +12,19 @@ const ProblemsSection = () => {
     {
       title: t("partnership.problems.unreliable.title"),
       description: t("partnership.problems.unreliable.description"),
-      icon: <Shield className="w-12 h-12 text-[#F17901] mb-4" />,
+      image: shieldIcon,
       link: "#"
     },
     {
       title: t("partnership.problems.expensive.title"),
       description: t("partnership.problems.expensive.description"),
-      icon: <DollarSign className="w-12 h-12 text-[#F17901] mb-4" />,
+      image: dollarIcon,
       link: "#"
     },
     {
       title: t("partnership.problems.complex.title"),
       description: t("partnership.problems.complex.description"),
-      icon: <AlertCircle className="w-12 h-12 text-[#F17901] mb-4" />,
+      image: exclamationIcon,
       link: "#"
     }
   ];

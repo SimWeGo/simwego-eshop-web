@@ -43,7 +43,7 @@ export const HoverEffect = ({
             {item.icon && <div className="flex justify-center">{item.icon}</div>}
             {item.image && (
               <div className="flex justify-center mb-4">
-                <img src={item.image} alt={item.title} className="w-16 h-16 object-contain" />
+                <img src={item.image} alt={item.title} className="w-24 h-24 object-contain" />
               </div>
             )}
             <CardTitle>{item.title}</CardTitle>
@@ -62,12 +62,12 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "rounded-2xl h-full w-full p-6 overflow-hidden bg-gradient-to-br from-white to-gray-50 border border-gray-200 group-hover:border-primary/30 relative z-20 shadow-lg",
+        "rounded-2xl h-full w-full p-4 overflow-hidden bg-gradient-to-br from-white to-gray-50 border border-gray-200 group-hover:border-primary/30 relative z-20 shadow-lg",
         className
       )}
     >
       <div className="relative z-50">
-        <div className="p-4">{children}</div>
+        <div className="p-2">{children}</div>
       </div>
     </div>
   );
@@ -78,7 +78,7 @@ export const CardTitle = ({
   children,
 }) => {
   return (
-    <h4 className={cn("text-title font-bold tracking-wide mt-4 text-xl text-center", className)}>
+    <h4 className={cn("text-title font-bold tracking-wide mt-4 text-3xl text-center", className)}>
       {children}
     </h4>
   );
@@ -91,7 +91,7 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        "mt-4 text-gray-600 tracking-wide leading-relaxed text-base text-center",
+        "mt-4 text-gray-600 tracking-wide leading-relaxed text-xl text-center",
         className
       )}
     >

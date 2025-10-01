@@ -3,7 +3,7 @@
     "home": "Accueil",
     "plans": "Forfaits",
     "howItWorks": "Comment ça marche",
-    "partnership": "Partenariat",
+    "partnership": "Simwego Pro",
     "aboutUs": "À propos",
     "contactUs": "Contact",
     "signIn": "Connexion"
@@ -45,7 +45,7 @@
       }
     },
     "roaming": {
-      "title": "Roaming hors de prix, expériences utilisateurs frustrantes... Vos clients méritent mieux !",
+      "title": "Roaming hors de prix, expériences frustrantes... Vos clients méritent mieux !",
       "description": "Offrez à vos clients la possibilité d'acheter et d'activer des forfaits data directement via votre application ou site internet. Nous vous fournissons la technologie, le webstore, la connectivité et le support.",
       "cta": "Découvrir nos solutions",
       "stats": {
@@ -65,7 +65,7 @@
           "sdk": "SDK iOS/Android",
           "documentation": "Documentation technique",
           "support": "Support développeur",
-          "webhooks": "Webhooks en temps réel"
+          "analytics": "Analytics détaillées"
         },
         "cta": "Documentation"
       },
@@ -75,9 +75,9 @@
         "features": {
           "webstore": "Webstore complet à vos couleurs",
           "apps": "Applications iOS/Android personnalisées",
-          "integration": "Intégration sur votre site existant",
           "support": "Support technique inclus",
-          "updates": "Mise à jour automatique"
+          "customization": "Personnalisation complète",
+          "multiLanguage": "Multi-langues inclus"
         },
         "cta": "Découvrir",
         "popular": "Populaire"
@@ -89,8 +89,8 @@
           "commissions": "Commissions attractives",
           "links": "Liens de parrainage personnalisés",
           "dashboard": "Dashboard de suivi",
-          "marketing": "Support marketing",
-          "payments": "Paiement mensuel"
+          "payments": "Paiement mensuel",
+          "tracking": "Tracking avancé"
         },
         "cta": "Rejoindre"
       },
@@ -141,6 +141,10 @@
         "title": "Esprit d'équipe",
         "description": "Comme dans le sport, nous avançons ensemble et créons de la valeur partagée avec nos partenaires."
       }
+    },
+    "mission": {
+      "title": "Une connectivité simple aujourd'hui. Universelle demain.",
+      "description": "Notre mission est claire : rendre la connectivité en voyage fluide et équitable, partout dans le monde."
     }
   }
 }

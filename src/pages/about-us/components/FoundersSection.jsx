@@ -12,25 +12,17 @@ const FoundersSection = () => {
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div className="space-y-6 text-center lg:text-left">
-            <Typography 
-              variant="h2" 
-              component="h2" 
-              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-title leading-tight"
-            >
-              {t("aboutUs.founders.title")}
-            </Typography>
+            <div>
+              <Typography variant="h4" component="h2" className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-title leading-tight mb-2" sx={{ fontWeight: 900 }}>
+                {t("aboutUs.founders.title")}
+              </Typography>
+            </div>
             
-            <Typography 
-              variant="body1" 
-              className="text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed"
-            >
+            <Typography variant="h6" className="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed px-4 lg:px-0">
               {t("aboutUs.founders.description")}
             </Typography>
             
-            <Typography 
-              variant="body2" 
-              className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed italic border-l-4 border-secondary pl-4"
-            >
+            <Typography variant="h6" className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed italic border-l-4 border-secondary pl-4">
               {t("aboutUs.founders.quote")}
             </Typography>
           </div>

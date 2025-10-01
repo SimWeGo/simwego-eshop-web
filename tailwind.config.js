@@ -121,6 +121,14 @@ export default {
           fontFamily: theme("fontFamily.inter"),
           fontWeight: "700",
         },
+        ".font-extrabold": {
+          fontFamily: theme("fontFamily.inter"),
+          fontWeight: "800",
+        },
+        ".font-black": {
+          fontFamily: theme("fontFamily.inter"),
+          fontWeight: "900",
+        },
         ".font-medium": {
           fontFamily: theme("fontFamily.inter"),
           fontWeight: "500",

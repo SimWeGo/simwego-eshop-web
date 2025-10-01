@@ -2,6 +2,7 @@ import React from "react";
 import HeroSection from "./components/HeroSection";
 import FoundersSection from "./components/FoundersSection";
 import ADNSection from "./components/ADNSection";
+import MissionSection from "./components/MissionSection";
 
 const AboutUs = () => {
   return (
@@ -10,6 +11,7 @@ const AboutUs = () => {
         <HeroSection />
         <FoundersSection />
         <ADNSection />
+        <MissionSection />
         {/* Additional sections will be added here */}
       </div>
     </div>
