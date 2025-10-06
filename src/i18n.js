@@ -26,7 +26,7 @@ i18n
       caches: ["localStorage"], // cache detected language in localStorage automatically
       lookupLocalStorage: "i18nextLng",
     },
-    supportedLngs: ["en", "ar", "fr"],
+    supportedLngs: ["en", "ar", "fr", "es"],
     backend: {
       loadPath: "/locales/{{lng}}/translation.json",
     },

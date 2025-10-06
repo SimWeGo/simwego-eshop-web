@@ -442,7 +442,8 @@
           "support": "Developer support",
           "analytics": "Detailed analytics"
         },
-        "cta": "Documentation"
+        "cta": "Documentation",
+        "learnMore": "Learn More"
       },
       "whiteLabel": {
         "title": "White Label Solution",
@@ -455,6 +456,7 @@
           "multiLanguage": "Multi-language support"
         },
         "cta": "Discover",
+        "learnMore": "Learn More",
         "popular": "Popular"
       },
       "affiliate": {
@@ -467,27 +469,28 @@
           "payments": "Monthly payments",
           "tracking": "Advanced tracking"
         },
-        "cta": "Join"
+        "cta": "Join",
+        "learnMore": "Learn More"
       },
       "conclusion": "Choose the solution that best fits your needs and start offering your customers an unparalleled connectivity experience."
     },
     "benefits": {
       "title": "A solution designed for you... and your customers",
       "experience": {
-        "title": "Enhance Your Customers' Experience",
-        "description": "Improve your customers' experience from the moment they arrive at their destination."
+        "title": "Experience",
+        "description": "Enhance your customers' experience, from their arrival at destination."
       },
       "integration": {
-        "title": "Simple and Quick Integration",
-        "description": "Simple and quick integration with no technical constraints."
+        "title": "Integration",
+        "description": "Simple and fast integration, without technical constraints."
       },
       "positioning": {
-        "title": "Strengthen Your Positioning",
+        "title": "Positioning",
         "description": "Strengthen your positioning with an innovative digital service."
       },
       "revenue": {
-        "title": "A New Revenue Stream",
-        "description": "A new revenue stream with no operational management required."
+        "title": "Revenue",
+        "description": "A new revenue stream, without operational management."
       }
     }
   }

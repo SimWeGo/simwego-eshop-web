@@ -42,7 +42,7 @@ export const HoverEffect = ({
           <Card>
             {item.icon && <div className="flex justify-center">{item.icon}</div>}
             {item.image && (
-              <div className="flex justify-center mb-4">
+              <div className="flex justify-center mb-1">
                 <img src={item.image} alt={item.title} className="w-24 h-24 object-contain" />
               </div>
             )}
@@ -78,7 +78,7 @@ export const CardTitle = ({
   children,
 }) => {
   return (
-    <h4 className={cn("text-title font-bold tracking-wide mt-4 text-3xl text-center", className)}>
+    <h4 className={cn("text-title font-bold tracking-wide mt-1 text-lg md:text-xl text-center", className)}>
       {children}
     </h4>
   );
@@ -91,7 +91,7 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        "mt-4 text-gray-600 tracking-wide leading-relaxed text-xl text-center",
+        "mt-2 text-gray-600 tracking-wide leading-relaxed text-sm md:text-base text-center",
         className
       )}
     >

@@ -1,4 +1,130 @@
 {
+  "common": {
+    "hooray": "Hourra !",
+    "notAvailable": "N/A",
+    "pageNotFound": "Page introuvable",
+    "pageNotExistMessage": "Désolé, la page que vous recherchez n'existe pas."
+  },
+  "account": {
+    "delete_account": "Supprimer le compte",
+    "delete_account_paragraph": "Ceci supprimera votre compte de l'application monty esim. Vous pourrez toujours accéder à votre eSIM achetée et au profil activé via votre téléphone",
+    "delete_account_confirmation": "Veuillez saisir votre adresse e-mail pour confirmer la suppression de votre compte"
+  },
+  "notifications": {
+    "title": "Notifications",
+    "failedToLoadNotifications": "Échec du chargement des notifications",
+    "noNotificationsYet": "Aucune notification pour le moment",
+    "failedToMarkAsUnread": "Échec du marquage comme non lu",
+    "noNotificationsFound": "Aucune notification trouvée"
+  },
+  "noDataFound": {
+    "no_valid_iccid": "Aucun ICCID fourni. Veuillez fournir un ICCID valide.",
+    "no_data_matching_iccid": "Aucune donnée disponible pour l'ICCID fourni",
+    "no_active_plans": "Aucun forfait actif",
+    "no_expired_plans": "Aucun forfait expiré"
+  },
+  "label": {
+    "purchase_date": "Date d'achat",
+    "iccid number": "Numéro ICCID",
+    "order_id": "ID de commande",
+    "bundle_name": "Nom du forfait",
+    "link": "Lien",
+    "enterName": "Saisir le nom",
+    "eSIM_validity": "Validité eSIM"
+  },
+  "bundle": {
+    "bundle_existence_title": "Vous avez déjà acheté une eSIM !",
+    "bundle_existence_text": "Si vous avez encore la SIM sur votre appareil et que vous allez l'utiliser à partir d'ici, il est plus rapide de la recharger !"
+  },
+  "btn": {
+    "buy_new_esim": "Acheter une nouvelle eSIM",
+    "top_up_existing_esim": "Recharger ma SIM existante",
+    "save": "Enregistrer",
+    "copy_link": "Copier le lien",
+    "user_guide": "Guide utilisateur",
+    "signin_signup": "Connexion / Inscription",
+    "resend_now": "Renvoyer maintenant",
+    "view_receipt": "Voir le reçu",
+    "download": "Télécharger",
+    "view_more": "Voir plus",
+    "delete": "Supprimer",
+    "add_top_up": "Ajouter une recharge",
+    "consumption": "Consommation",
+    "view_qr_code": "Voir le code QR",
+    "shop_now": "Acheter maintenant",
+    "learn_more": "En savoir plus",
+    "view_all_plans": "Voir tous les forfaits",
+    "buyNow": "Acheter maintenant",
+    "checkingBundle": "Vérification du forfait...",
+    "countries": "Pays",
+    "regions": "Régions",
+    "global": "Mondial",
+    "viewLess": "Voir moins",
+    "viewAllCountries": "Voir tous les pays",
+    "copiedSuccessfully": "Copié avec succès",
+    "confirm": "Confirmer",
+    "sending": "Envoi en cours...",
+    "sendMessage": "Envoyer le message",
+    "payNow": "Payer maintenant",
+    "cancel": "Annuler",
+    "savingChanges": "Enregistrement des modifications...",
+    "saveChanges": "Enregistrer les modifications"
+  },
+  "orders": {
+    "plan_history": "Historique des forfaits",
+    "edit_name": "Modifier le nom",
+    "top_up_plan": "Recharger le forfait",
+    "top_up_plan_text": "Rechargez votre forfait maintenant et bénéficiez de ses données et de sa couverture",
+    "consumption_details": "Détails de consommation",
+    "consumption_details_text": "Voici votre taux de consommation jusqu'à présent",
+    "share_your_bundle_text": "Partagez votre forfait avec vos amis, votre famille ou toute personne qui pourrait en bénéficier",
+    "share_your_bundle": "Partagez votre forfait",
+    "qrcode_detail": "Détails du code QR",
+    "payment_successfull": "Votre paiement a été effectué avec succès !",
+    "please_wait_to_fetch_order": "Veuillez patienter pendant que nous récupérons les détails de votre commande",
+    "qrcode_sent_text": "Le code QR a été envoyé à votre adresse e-mail. Vous pouvez le scanner ici et le partager avec vos amis.",
+    "orders_history": "Historique des commandes",
+    "order_id": "ID de commande",
+    "order_status": "Statut de la commande",
+    "payment_details": "Détails du paiement",
+    "smdpAddress": "Adresse",
+    "activateCode": "Code d'activation",
+    "failedToLoad": "Échec du chargement des données de commande.",
+    "pleaseSignIn": "Veuillez vous connecter pour voir plus de détails",
+    "ordered": "Commandé",
+    "Amount": "Montant",
+    "Type": "Type",
+    "Validity": "Validité",
+    "Data": "Données",
+    "Order ID": "ID de commande",
+    "Purchase Date": "Date d'achat",
+    "dataUsage": "consommé",
+    "failedToLoadEsimConsumption": "Échec du chargement de la consommation eSIM",
+    "qty": "Qté",
+    "product": "Produit",
+    "unitPrice": "Prix unitaire",
+    "amount": "Montant",
+    "totalPrice": "Prix total :",
+    "finalPrice": "Prix final :",
+    "failedToLoadOrderReceiptDetails": "Échec du chargement des détails du reçu de commande",
+    "failedToLoadOrders": "Échec du chargement des commandes",
+    "noOrdersYet": "Aucune commande pour le moment",
+    "companyName": "Nom de l'entreprise",
+    "address": "Adresse",
+    "email": "E-mail",
+    "orderId": "ID de commande",
+    "orderType": "Type de commande",
+    "Primary Bundle": "Forfait principal",
+    "TopUp Bundle": "Forfait de recharge",
+    "labelRequired": "Le libellé est un champ obligatoire",
+    "qrcode_loading": "Récupération des données du code QR. Un instant..."
+  },
+  "esim": {
+    "title": "Mon eSIM",
+    "current_plans": "Forfaits actuels",
+    "expired_plans": "Forfaits expirés",
+    "esim_detail": "Détails eSIM"
+  },
   "nav": {
     "home": "Accueil",
     "plans": "Forfaits",
@@ -6,22 +132,271 @@
     "partnership": "Simwego Pro",
     "aboutUs": "À propos",
     "contactUs": "Contact",
-    "signIn": "Connexion"
+    "signIn": "Connexion",
+    "myWallet": "Mon portefeuille",
+    "myEsim": "Mon eSIM",
+    "ordersHistory": "Historique des commandes",
+    "accountInfo": "Informations du compte",
+    "deleteAccount": "Supprimer le compte",
+    "logout": "Déconnexion"
+  },
+  "userGuide": {
+    "goto_settings": "Aller dans Réglages",
+    "select_mobile_settings": "Sélectionner Services mobiles",
+    "select_add_esim": "Sélectionner Ajouter eSIM",
+    "select_use_qr_code": "Sélectionner Utiliser un code QR",
+    "place_qr_code": "Placez le code QR que vous avez reçu dans le cadre de l'appareil photo du téléphone pour scanner le code",
+    "go_mobile_data": "Retournez dans Services mobiles et sélectionnez Options de données mobiles",
+    "toggle_data_roaming": "Sélectionnez le bouton à côté de Itinérance des données pour activer ou désactiver la fonction",
+    "good_to_go": "C'est parti !",
+    "slide_two_fingers": "Faites glisser deux doigts vers le bas en partant du haut de l'écran",
+    "select_settings_icon": "Sélectionnez l'icône Paramètres",
+    "select_connections": "Sélectionnez Connexions",
+    "select_sim_manager": "Sélectionnez Gestionnaire SIM",
+    "go_back_connections": "Retournez dans Connexions et sélectionnez Réseaux mobiles",
+    "select_qr_code": "Sélectionnez Code QR",
+    "toggle_roaming": "Basculer l'itinérance"
   },
   "auth": {
-    "signInTitle": "Connectez-vous à votre compte",
-    "newUser": "Nouveau utilisateur ?",
+    "phone": "téléphone",
+    "signInTitle": "Connexion / Inscription",
+    "newUser": "Nouvel utilisateur ?",
     "createAccount": "Créer un compte",
-    "email": "Adresse e-mail",
+    "email": "E-mail",
     "password": "Mot de passe",
     "acceptTerms": "J'accepte les",
     "termsAndConditions": "Conditions générales",
     "signIn": "Se connecter",
     "signingIn": "Connexion en cours...",
     "loginSuccess": "Connexion réussie !",
-    "orContinueWith": "Ou continuer avec",
+    "orContinueWith": "Ou",
     "signInWithGoogle": "Se connecter avec Google",
-    "signInWithFacebook": "Se connecter avec Facebook"
+    "signInWithFacebook": "Se connecter avec Facebook",
+    "verifyEmail": "Veuillez vérifier votre {{verifyBy}} !",
+    "sms": "SMS",
+    "whatsapp": "Whatsapp",
+    "dcbMessage": "Vous êtes sur le point de payer en utilisant votre numéro de téléphone. Un code de vérification a été envoyé par {{verifyBy}}",
+    "syrialtelDcbMessage": "Vous êtes sur le point de payer en utilisant SyriaCash. Un code de vérification a été envoyé par {{verifyBy}}",
+    "mtnDcbMessage": "Vous êtes sur le point de payer en utilisant votre solde MTN. Un code de vérification a été envoyé par {{verifyBy}}",
+    "verificationCodeSent": "Vous y êtes presque ! Un code de vérification a été envoyé par {{verifyBy}}",
+    "verify": "Vérifier",
+    "verifying": "Vérification en cours...",
+    "didntReceiveCode": "Vous n'avez pas reçu de code ?",
+    "resendNow": "Renvoyer maintenant",
+    "didnt_receive_email": "Vous n'avez pas reçu d'e-mail ?",
+    "welcomeBackEnterEmail": "Bon retour ! Veuillez saisir votre {{loginType}}.",
+    "confirmationRequired": "Confirmation requise",
+    "failedToVerifyOtp": "Échec de la vérification OTP",
+    "resendCode": "Renvoyer le code",
+    "signInSent": "{{method}} envoyé",
+    "signInEmailWithInstructionsSent": "Un {{method}} de connexion avec des instructions supplémentaires a été envoyé",
+    "checkEmailToCompleteSignIn": "Vérifiez votre e-mail pour terminer la connexion",
+    "phoneRequired": "Le téléphone est requis",
+    "invalidPhone": "Numéro de téléphone invalide",
+    "selectVerificationMethod": "Veuillez sélectionner une méthode de vérification",
+    "otpMustBeNumber": "L'OTP doit être un nombre",
+    "otpRequired": "L'OTP est requis",
+    "otpDigitLength": "Chaque chiffre OTP doit faire exactement un caractère",
+    "otpSixDigits": "L'OTP doit avoir exactement 6 chiffres",
+    "signInInstructionsSent": "Un <ltr>{{verifyBy}}</ltr> de connexion a été envoyé à <ltr>{{contact}}</ltr>. Vérifiez votre <ltr>{{verifyBy}}</ltr> et saisissez l'OTP sur l'écran suivant pour terminer la connexion.",
+    "phoneNumberRequired": "Le champ Numéro de téléphone est requis",
+    "verifyByChannel": "Vérifier par {{channel}}",
+    "invalidPhoneNumber": "Numéro de téléphone invalide",
+    "confirmValidAndNoTypos": "Je confirme que le {{login_type}} ci-dessus est valide et ne contient aucune faute de frappe.",
+    "andIAcceptThe": "Et j'accepte les",
+    "andIUnderstandProductWorksWithESIM": "et je comprends que le produit ne fonctionne qu'avec des appareils compatibles eSIM et déverrouillés.",
+    "emailMustBeValid": "L'e-mail doit être un e-mail valide",
+    "phoneNumber": "Numéro de téléphone"
+  },
+  "plans": {
+    "restrictedCountriesSelection": "Vous ne pouvez sélectionner que 3 pays maximum",
+    "chooseYourPlan": "Choisissez votre forfait",
+    "please": "Veuillez",
+    "dial": "composer",
+    "checkCompatibility": "pour vérifier la compatibilité de l'appareil, si EID existe alors",
+    "compatibleDevice": "votre appareil est compatible",
+    "noPlansAvailable": "Aucun forfait disponible pour le moment. Veuillez revenir plus tard",
+    "atSea": "En mer",
+    "onLand": "Sur terre",
+    "searchByCountry": "Rechercher par pays",
+    "Plan Started": "Forfait commencé",
+    "Plan Not Started": "Forfait non commencé",
+    "Expired": "Expiré"
+  },
+  "bundles": {
+    "validity": "Validité",
+    "noBundlesAvailable": "Actuellement, aucun forfait disponible",
+    "noTopupsAvailable": "Actuellement, aucune recharge disponible",
+    "availableIn": "Disponible dans",
+    "supportedCountries": "Pays pris en charge",
+    "bundleIsntSupportedCountry": "Ce forfait n'est pris en charge dans aucun pays.",
+    "additionalInfo": "Informations supplémentaires",
+    "planType": "Type de forfait",
+    "activationPolicy": "Politique d'activation",
+    "compatibility": "Compatibilité",
+    "findOut": "Découvrez si votre appareil prend en charge l'eSIM en composant <0>{{code}}</0> et en cherchant <1>{{term}}</1>.",
+    "failedToLoadBundles": "Échec du chargement des forfaits",
+    "duration": "{{count}} {{unit}}",
+    "unit": {
+      "day": "jour",
+      "day_plural": "jours",
+      "month": "mois",
+      "month_plural": "mois",
+      "year": "année",
+      "year_plural": "années"
+    }
+  },
+  "checkout": {
+    "aliasEmailNotAllowed": "Les e-mails avec alias (avec '+') ne sont pas autorisés",
+    "confirmationRequired": "Confirmation requise",
+    "emailRequired": "L'e-mail est un champ obligatoire !",
+    "failedToSendMessage": "Échec de l'envoi du message",
+    "goBack": "Retour",
+    "email": "E-mail",
+    "enterEmail": "Saisir l'e-mail",
+    "emailConfirmationMessage": "Je confirme que l'e-mail ci-dessus est valide et ne contient aucune faute de frappe.",
+    "terms": "Conditions générales",
+    "esimCompatibilityNote": "et je comprends que le produit ne fonctionne qu'avec des appareils compatibles eSIM et déverrouillés.",
+    "summary": "Résumé",
+    "bundleName": "Nom du forfait",
+    "subtotal": "Sous-total",
+    "estimatedTax": "Taxe estimée",
+    "total": "Total"
+  },
+  "howItWorks": {
+    "easyAndFast": "Facile et rapide",
+    "howToSetUpMontyEsim": "Comment configurer votre eSIM",
+    "step": "Étape",
+    "of": "sur"
+  },
+  "aboutUs": {
+    "stayConnected": "Restez connecté",
+    "failedToLoadAboutUsData": "Échec du chargement des données À propos",
+    "noContentAvailable": "Aucun contenu disponible pour le moment",
+    "About us": "À propos",
+    "hero": {
+      "title": "Nous connectons les voyageurs... partout dans le monde",
+      "subtitle": "Chez SimWeGo, chaque voyageur peut activer son eSIM en un clic, et chaque entreprise peut proposer cette expérience fluide à ses clients.",
+      "cta": "Découvrir notre histoire"
+    },
+    "founders": {
+      "title": "Deux fondateurs, une vision née du voyage",
+      "description": "Derrière SimWeGo, il y a deux anciens sportifs de haut niveau qui ont passé une grande partie de leur vie à voyager aux quatre coins du monde. Compétitions internationales, entraînements à l'étranger, séjours aux quatre coins du globe.",
+      "quote": "Nos parcours nous ont appris à vivre en permanence entre deux avions, deux cultures et deux réseaux."
+    },
+    "adn": {
+      "title": "L'ADN SimWeGo",
+      "performance": {
+        "title": "Performance",
+        "description": "Héritée du sport, où chaque détail compte."
+      },
+      "simplicity": {
+        "title": "Simplicité",
+        "description": "Une expérience fluide, sans jargon ni frais cachés."
+      },
+      "teamSpirit": {
+        "title": "Esprit d'équipe",
+        "description": "Comme dans le sport, nous avançons ensemble et créons de la valeur partagée avec nos partenaires."
+      }
+    },
+    "mission": {
+      "title": "Une connectivité simple aujourd'hui. Universelle demain.",
+      "description": "Notre mission est claire : rendre la connectivité en voyage fluide et équitable, partout dans le monde."
+    }
+  },
+  "contactUs": {
+    "messageRequired": "Le message est un champ obligatoire",
+    "melIsTesting": "mel teste",
+    "messageSentSuccessfully": "Votre message a été envoyé avec succès !",
+    "failedToSendMessage": "Échec de l'envoi du message",
+    "contactUs": "Nous contacter",
+    "needSomeHelp": "Besoin d'aide",
+    "contactInfo": "Pour toute demande, veuillez nous envoyer un e-mail en utilisant le formulaire ci-dessous. Notre équipe est là pour vous 24h/24 et 7j/7 !",
+    "message": "Message",
+    "typeYourMessage": "Tapez votre message",
+    "frequentlyAskedQuestions": "Questions fréquemment posées",
+    "subscribeDescription": "Abonnez-vous pour découvrir les nouvelles fonctionnalités du produit, les dernières technologies, les solutions et les mises à jour.",
+    "noFaqsMessage": "Nous n'avons trouvé aucune FAQ pour le moment. Si vous avez des questions, n'hésitez pas à nous contacter !"
+  },
+  "footer": {
+    "contactUs": "Nous contacter",
+    "termsAndConditions": "Conditions générales",
+    "privacyPolicy": "Politique de confidentialité",
+    "office": "Bureau",
+    "email": "E-mail",
+    "phone": "Téléphone"
+  },
+  "stripe": {
+    "failedToLoadPaymentInput": "Échec du chargement de la saisie de paiement",
+    "paymentProcessingError": "Le paiement ne peut pas être traité. Veuillez contacter le support informatique.",
+    "paymentConfirmationFailed": "Échec de la confirmation du paiement",
+    "paymentMethod": "Méthode de paiement",
+    "failedToLoadPaymentInputs": "Échec du chargement des saisies de paiement. Veuillez réessayer plus tard"
+  },
+  "planType": {
+    "Data only": "Données uniquement"
+  },
+  "validity": {
+    "Day": "Jour",
+    "day": "jour",
+    "Week": "Semaine",
+    "week": "semaine",
+    "month": "mois",
+    "Month": "Mois",
+    "Year": "Année",
+    "year": "année"
+  },
+  "activity_policy": "La période de validité commence lorsque l'eSIM se connecte à l'un des réseaux pris en charge.",
+  "terms": {
+    "failedToLoadTermsData": "Échec du chargement des données des conditions",
+    "termsAndConditions": "Conditions générales"
+  },
+  "errors": {
+    "maxCharacter": "{{field}} ne doit pas contenir plus de {{character}} caractères",
+    "customer_not_enougn_balance": "Le MSISDN du client n'a pas suffisamment de solde",
+    "invalid_otp": "OTP invalide",
+    "technical_error": "Erreur technique",
+    "expired_otp": "OTP expiré"
+  },
+  "profile": {
+    "infoUpdatedSuccessfully": "Informations mises à jour avec succès",
+    "failedToUpdateUserInfo": "Échec de la mise à jour des informations utilisateur",
+    "accountInformation": "Informations du compte",
+    "firstName": "Prénom",
+    "enterFirstName": "Saisir le prénom",
+    "lastName": "Nom",
+    "enterLastName": "Saisir le nom",
+    "phoneNumber": "Numéro de téléphone",
+    "defaultCurrency": "Devise par défaut",
+    "defaultCurrencyFallback": "Si aucune devise par défaut n'est spécifiée, le système utilisera {{system_currency}} comme devise par défaut.",
+    "selectDefaultCurrency": "Sélectionner la devise par défaut",
+    "receiveUpdatesByEmail": "Recevoir des mises à jour sur nos services, actualités et offres par e-mail",
+    "errors": {
+      "onlyLettersAllowed": "Seules les lettres sont autorisées",
+      "firstNameRequired": "Le prénom est requis",
+      "lastNameRequired": "Le nom est requis",
+      "invalidPhone": "Numéro de téléphone invalide",
+      "phoneRequired": "Le téléphone est requis",
+      "emailRequired": "L'e-mail est requis",
+      "emailInvalid": "L'e-mail doit être un e-mail valide",
+      "maxCharacter": "{{field}} doit comporter au maximum {{character}} caractères"
+    }
+  },
+  "status": {
+    "success": "Succès",
+    "pending": "En attente",
+    "failed": "Échec",
+    "failure": "Échec"
+  },
+  "payment": {
+    "paymentTypeNotAvailable": "Ce type de paiement n'est pas disponible actuellement",
+    "failedToLoadPaymentInput": "Échec du chargement de la saisie de paiement",
+    "paymentMethod": "Méthode de paiement"
+  },
+  "privacy": {
+    "failedToLoadPrivacyPolicyData": "Échec du chargement des données de la politique de confidentialité",
+    "noContentAvailable": "Aucun contenu disponible pour le moment",
+    "Privacy Policy": "Politique de confidentialité"
   },
   "partnership": {
     "hero": {
@@ -33,11 +408,11 @@
       "title": "Aujourd'hui, les voyageurs veulent être connectés dès leur arrivée — mais les solutions déçoivent.",
       "unreliable": {
         "title": "Peu fiable",
-        "description": "Wi-Fi public : pratique pour toi, parfait pour les hackers."
+        "description": "Wi-Fi public : pratique pour vous, parfait pour les hackers."
       },
       "expensive": {
         "title": "Trop coûteuses",
-        "description": "Poster un selfie à 60 € ? C'est le prix de l'oubli de sa eSIM."
+        "description": "Poster un selfie à 60 € ? C'est le prix de l'oubli de son eSIM."
       },
       "complex": {
         "title": "Trop complexe",
@@ -67,7 +442,8 @@
           "support": "Support développeur",
           "analytics": "Analytics détaillées"
         },
-        "cta": "Documentation"
+        "cta": "Documentation",
+        "learnMore": "En savoir plus"
       },
       "whiteLabel": {
         "title": "Solution en marque blanche",
@@ -80,6 +456,7 @@
           "multiLanguage": "Multi-langues inclus"
         },
         "cta": "Découvrir",
+        "learnMore": "En savoir plus",
         "popular": "Populaire"
       },
       "affiliate": {
@@ -92,59 +469,29 @@
           "payments": "Paiement mensuel",
           "tracking": "Tracking avancé"
         },
-        "cta": "Rejoindre"
+        "cta": "Rejoindre",
+        "learnMore": "En savoir plus"
       },
       "conclusion": "Choisissez la solution qui correspond le mieux à vos besoins et commencez à offrir à vos clients une expérience de connectivité inégalée."
     },
     "benefits": {
       "title": "Une solution pensée pour vous... et pour vos clients",
       "experience": {
-        "title": "Améliorez l'expérience de vos clients",
+        "title": "Expérience",
         "description": "Améliorez l'expérience de vos clients, dès leur arrivée à destination."
       },
       "integration": {
-        "title": "Une intégration simple et rapide",
+        "title": "Intégration",
         "description": "Une intégration simple et rapide, sans contrainte technique."
       },
       "positioning": {
-        "title": "Renforcez votre positionnement",
+        "title": "Positionnement",
         "description": "Renforcez votre positionnement avec un service digital innovant."
       },
       "revenue": {
-        "title": "Un nouveau levier de revenus",
+        "title": "Revenus",
         "description": "Un nouveau levier de revenus, sans gestion opérationnelle."
       }
-    }
-  },
-  "aboutUs": {
-    "hero": {
-      "title": "Nous connectons les voyageurs... partout dans le monde",
-      "subtitle": "Chez SimWeGo, chaque voyageur peut activer son eSIM en un clic, et chaque entreprise peut proposer cette expérience fluide à ses clients.",
-      "cta": "Découvrir notre histoire"
-    },
-    "founders": {
-      "title": "Deux fondateurs, une vision née du voyage",
-      "description": "Derrière SimWeGo, il y a deux anciens sportifs de haut niveau qui ont passé une grande partie de leur vie à voyager aux quatre coins du monde. Compétitions internationales, entraînements à l'étranger, séjours aux quatre coins du globe.",
-      "quote": "Nos parcours nous ont appris à vivre en permanence entre deux avions, deux cultures et deux réseaux."
-    },
-    "adn": {
-      "title": "L'ADN SimWeGo",
-      "performance": {
-        "title": "Performance",
-        "description": "Héritée du sport, où chaque détail compte."
-      },
-      "simplicity": {
-        "title": "Simplicité",
-        "description": "Une expérience fluide, sans jargon ni frais cachés."
-      },
-      "teamSpirit": {
-        "title": "Esprit d'équipe",
-        "description": "Comme dans le sport, nous avançons ensemble et créons de la valeur partagée avec nos partenaires."
-      }
-    },
-    "mission": {
-      "title": "Une connectivité simple aujourd'hui. Universelle demain.",
-      "description": "Notre mission est claire : rendre la connectivité en voyage fluide et équitable, partout dans le monde."
     }
   }
 }

@@ -12,7 +12,6 @@ const AboutUs = () => {
         <FoundersSection />
         <ADNSection />
         <MissionSection />
-        {/* Additional sections will be added here */}
       </div>
     </div>
   );

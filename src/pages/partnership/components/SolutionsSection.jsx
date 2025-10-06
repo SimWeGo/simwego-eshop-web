@@ -82,7 +82,7 @@ const SolutionsSection = () => {
         t("partnership.solutions.api.features.support"),
         t("partnership.solutions.api.features.analytics")
       ],
-      buttonText: "En savoir plus",
+      buttonText: t("partnership.solutions.api.learnMore"),
       highlight: null,
       type: 'api'
     },
@@ -98,7 +98,7 @@ const SolutionsSection = () => {
         t("partnership.solutions.whiteLabel.features.customization"),
         t("partnership.solutions.whiteLabel.features.multiLanguage")
       ],
-      buttonText: "En savoir plus",
+      buttonText: t("partnership.solutions.whiteLabel.learnMore"),
       highlight: t("partnership.solutions.whiteLabel.popular"),
       type: 'whitelabel'
     },
@@ -114,7 +114,7 @@ const SolutionsSection = () => {
         t("partnership.solutions.affiliate.features.payments"),
         t("partnership.solutions.affiliate.features.tracking")
       ],
-      buttonText: "En savoir plus",
+      buttonText: t("partnership.solutions.affiliate.learnMore"),
       highlight: null,
       type: 'affiliate'
     }

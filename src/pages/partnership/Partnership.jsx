@@ -13,6 +13,7 @@ const Partnership = () => {
         <ProblemsSection />
         <RoamingSection />
         <SolutionsSection />
+        <BenefitsSection />
       </div>
     </div>
   );
