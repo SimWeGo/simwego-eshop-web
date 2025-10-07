@@ -4,6 +4,7 @@ import ProblemsSection from "./components/ProblemsSection";
 import RoamingSection from "./components/RoamingSection";
 import SolutionsSection from "./components/SolutionsSection";
 import BenefitsSection from "./components/BenefitsSection";
+import TrustedPartnersBanner from "./components/TrustedPartnersBanner";
 
 const Partnership = () => {
   return (
@@ -13,6 +14,7 @@ const Partnership = () => {
         <ProblemsSection />
         <RoamingSection />
         <SolutionsSection />
+        <TrustedPartnersBanner />
         <BenefitsSection />
       </div>
     </div>
