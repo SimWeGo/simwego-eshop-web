@@ -20,7 +20,7 @@ export default {
           200: "#B3BAE1",
           100: "#D9DCF0",
           50: "#F0F2FA",
-        },        
+        },
         secondary: {
           DEFAULT: "#FF6912",
           900: "#4A1B00",
@@ -32,8 +32,8 @@ export default {
           300: "#FFA066",
           200: "#FFBB8C",
           100: "#FFD6B3",
-          50:  "#FFF0E6",
-        },        
+          50: "#FFF0E6",
+        },
         title: {
           DEFAULT: "#2E3786",
         },
@@ -78,11 +78,11 @@ export default {
         },
       },
       fontFamily: {
-        quicksandLight: ["quicksand-light"],
-        quicksandRegular: ["quicksand-regular"],
-        quicksandMedium: ["quicksand-medium"],
-        quicksandSemibold: ["quicksand-semibold"],
-        quicksandBold: ["quicksand-bold"],
+        interLight: ["inter-light"],
+        interRegular: ["inter-regular"],
+        interMedium: ["inter-medium"],
+        interSemibold: ["inter-semibold"],
+        interBold: ["inter-bold"],
         inter: ["Inter"],
       },
 
@@ -119,80 +119,77 @@ export default {
     function ({ addComponents, addBase, theme }) {
       addComponents({
         ".font-bold": {
-          fontFamily: theme("fontFamily.inter"),
+          fontFamily: theme("fontFamily.interBold"),
           fontWeight: "700",
         },
         ".font-medium": {
-          fontFamily: theme("fontFamily.inter"),
+          fontFamily: theme("fontFamily.interMedium"),
           fontWeight: "500",
         },
         ".font-semibold": {
-          fontFamily: theme("fontFamily.inter"),
+          fontFamily: theme("fontFamily.interSemibold"),
           fontWeight: "600",
         },
       }),
-      
-      addBase({
-        ":root": {
-          "--error": theme("colors.error"),
-          "--warning": theme("colors.warning"),
-          "--success": theme("colors.success"),
-        },
-        body: {
-          color: "#122644",
-          fontSize: "1rem",
-          fontFamily: "Inter",
-          fontWeight: "400",
-        },
-        h1: {
-          fontSize: "48px",
-          lineHeight: "60px",
-          color: "#2E3786",
-          fontFamily: "Inter",
-          fontWeight: "600",
-        },
-        h2: {
-          fontSize: "36px",
-          lineHeight: "44px",
-          color: "#2E3786",
-          fontFamily: "Inter",
-          fontWeight: "500",
-        },
-        h3: {
-          fontSize: "24px",
-          lineHeight: "32px",
-          color: "#2E3786",
-          fontFamily: "Inter",
-          fontWeight: "700",
-        },
-        h4: {
-          fontSize: "20px",
-          lineHeight: "28px",
-          color: "#2E3786",
-          fontFamily: "Inter",
-          fontWeight: "400",
-        },
-        h6: {
-          fontSize: "16px",
-          lineHeight: "24px",
-          color: "#2E3786",
-          fontFamily: "Inter",
-          fontWeight: "600",
-        },
-        label: {
-          fontFamily: "Inter",
-          fontWeight: "600",
-          color: "#1560AA",
-        },
-        p: {
-          fontSize: "16px",
-          lineHeight: "24px",
-          fontFamily: "Inter",
-          fontWeight: "400",
-        },
-      });
-      
-      
+        addBase({
+          ":root": {
+            "--error": theme("colors.error"),
+            "--warning": theme("colors.warning"),
+            "--success": theme("colors.success"),
+          },
+          body: {
+            color: "#122644",
+            fontSize: "1rem",
+            fontFamily: "inter-regular",
+            fontWeight: "400",
+          },
+          h1: {
+            fontSize: "48px",
+            lineHeight: "60px",
+            color: "#2E3786",
+            fontFamily: "inter-bold",
+            fontWeight: "600",
+          },
+          h2: {
+            fontSize: "36px",
+            lineHeight: "44px",
+            color: "#2E3786",
+            fontFamily: "inter-medium",
+            fontWeight: "500",
+          },
+          h3: {
+            fontSize: "24px",
+            lineHeight: "32px",
+            color: "#2E3786",
+            fontFamily: "inter-regular",
+            fontWeight: "700",
+          },
+          h4: {
+            fontSize: "20px",
+            lineHeight: "28px",
+            color: "#2E3786",
+            fontFamily: "inter-regular",
+            fontWeight: "400",
+          },
+          h6: {
+            fontSize: "16px",
+            lineHeight: "24px",
+            color: "#2E3786",
+            fontFamily: "inter-regular",
+            fontWeight: "600",
+          },
+          label: {
+            fontFamily: "inter-semibold",
+            fontWeight: "600",
+            color: "#1560AA",
+          },
+          p: {
+            fontSize: "16px",
+            lineHeight: "24px",
+            fontFamily: "inter-regular",
+            fontWeight: "400",
+          },
+        });
     },
     function ({ addComponents, theme }) {
       addComponents({
@@ -202,7 +199,8 @@ export default {
           fontWeight: "600 !important",
           padding: "0.5rem 1rem !important",
           borderRadius: `${theme("borderRadius.md")} !important`,
-          transition: "background-color 0.2s ease, transform 0.2s ease !important",
+          transition:
+            "background-color 0.2s ease, transform 0.2s ease !important",
           display: "inline-flex !important",
           alignItems: "center !important",
           justifyContent: "center !important",
@@ -218,7 +216,6 @@ export default {
           cursor: "not-allowed !important",
         },
       });
-    }
-    
+    },
   ],
 };
