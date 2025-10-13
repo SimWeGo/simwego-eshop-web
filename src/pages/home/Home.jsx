@@ -10,12 +10,13 @@ import { Link } from "react-router-dom";
 import { ConnectSVG } from "../../assets/icons/Home";
 import ContactForm from "../../components/ContactForm";
 import Container from "../../components/Container";
-import ReferralSwiper from "../../components/swiper/ReferralSwiper";
-import { benefits } from "../../core/variables/StaticVariables";
 import Plans from "../plans/Plans";
+import { useBenefits } from "../../core/variables/StaticVariables";
+import ReferrAndEarnSwiper from "../../components/swiper/ReferrAndEarnSwiper";
 
 const Home = () => {
   const { t } = useTranslation();
+  const benefits = useBenefits();
   const sea_option = useSelector((state) => state.currency?.sea_option);
   const featuresRef = useRef(null);
 
@@ -45,10 +46,11 @@ const Home = () => {
         <div className="relative h-full flex items-center">
           <div className="max-w-2xl text-white ml-[5%]">
             <h1 className="text-6xl font-bold mb-6 text-white">
-              Stay Connected
+              {t("home.stayConnected")}
               <br />
-              while Traveling!
+              {t("home.whileTraveling")}
             </h1>
+
             <Button
               component={Link}
               to={"/plans"}
@@ -89,16 +91,17 @@ const Home = () => {
             </div>
 
             <div>
-              <div className="flex flex-row items-end  gap-[0.5rem]">
-                <p className={"font-semibold text-content-600 text-lg"}>
-                  Easy and Fast
+              <div className="flex flex-row items-end gap-[0.5rem]">
+                <p className="font-semibold text-content-600 text-lg">
+                  {t("home.easyAndFast")}
                 </p>
                 <ConnectSVG flip={true} />
               </div>
+
               <h2 className="text-4xl font-bold mb-12">
-                Unlock endless
+                {t("home.unlockEndless")}
                 <br />
-                benefits
+                {t("home.benefits")}
               </h2>
 
               <div className="space-y-8">
@@ -131,10 +134,11 @@ const Home = () => {
       <section className="py-24 bg-background">
         <Container>
           <div className="text-center mb-16 flex flex-col gap-[1rem] items-center justify-center">
-            <h2 className="text-4xl font-bold">How to set up your eSIM?</h2>
-            <p className="text-gray-600">
-              Whether you're an iPhone or an Android user, here's how it works
-            </p>
+            <h2 className="text-4xl font-bold">
+              {t("home.howToSetUpMontyEsim")}?
+            </h2>
+            <p className="text-gray-600">{t("home.worksForAllUsers")}</p>
+
             <Button
               variant="contained"
               className="action-button"
@@ -159,7 +163,7 @@ const Home = () => {
       {/* Contact Form Section */}
       <ContactForm bg={"bg-content-300 rounded-md p-10"} />
 
-      {supportPromo && <ReferralSwiper />}
+      {supportPromo && <ReferrAndEarnSwiper />}
     </div>
   );
 };

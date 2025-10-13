@@ -204,6 +204,7 @@ const Plans = (props) => {
                   <Autocomplete
                     size="small"
                     multiple
+                    noOptionsText={t("common.noOptions")}
                     value={
                       filters?.country_codes?.length !== 0
                         ? (data?.countries || [])?.filter((el) =>

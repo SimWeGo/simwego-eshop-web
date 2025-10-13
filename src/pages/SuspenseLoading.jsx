@@ -9,7 +9,7 @@ const SuspenseLoading = () => {
   return (
     <div
       className={
-        "bg-primary-50 flex flex-col gap-[2rem] items-center justify-center h-screen w-full"
+        "bg-primary flex flex-col gap-[2rem] items-center justify-center h-screen w-full"
       }
     >
       <div>

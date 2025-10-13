@@ -3,6 +3,7 @@ import MonetizationOnOutlinedIcon from "@mui/icons-material/MonetizationOnOutlin
 import PublicOutlinedIcon from "@mui/icons-material/PublicOutlined";
 import CheckCircleOutlineOutlinedIcon from "@mui/icons-material/CheckCircleOutlineOutlined";
 import AirplanemodeActiveOutlinedIcon from "@mui/icons-material/AirplanemodeActiveOutlined";
+import { useTranslation } from "react-i18next";
 
 const isSupportPromo = import.meta.env.VITE_SUPPORT_PROMO == "true";
 
@@ -29,39 +30,40 @@ export const authResponsiveMenuItems = [
 export const languages = [
   { code: "en", name: "English", flag: "EN" },
   { code: "ar", name: "العربية", flag: "ع" },
-  // { code: "fr", name: "Français", flag: "FR" },
+  { code: "fr", name: "Français", flag: "FR" },
 ];
 
-export const benefits = [
-  {
-    icon: <CheckCircleOutlineOutlinedIcon sx={{ color: "white" }} />,
-    bg: "bg-warning",
-    title: "Easy to acquire",
-    description:
-      "Acquiring an eSIM is often easier and faster than getting a traditional SIM card. Plus, the switch to eSIM can be done online, in minutes with only a few taps.",
-  },
-  {
-    icon: <AirplanemodeActiveOutlinedIcon sx={{ color: "white" }} />,
-    bg: "bg-secondary",
-    title: "Travel hassle-free",
-    description:
-      "You no longer have to worry about waiting in lines at airports or visiting a store to get your own sim card. The eSIM is a real time saver!",
-  },
-  {
-    icon: <MonetizationOnOutlinedIcon sx={{ color: "white" }} />,
-    bg: "bg-primary-300",
-    title: "A money saver",
-    description:
-      "In addition to making your trip easier, eSIM will spare you excessive data charges. With Monty eSIM, you get to browse the best bundles at the most affordable prices!",
-  },
-  {
-    icon: <PublicOutlinedIcon sx={{ color: "white" }} />,
-    bg: "bg-primary-900",
-    title: "You get to save the planet",
-    description:
-      "This virtual tool reduces CO2 emissions and plastic waste helping the planet breathe again.",
-  },
-];
+export const useBenefits = () => {
+  const { t } = useTranslation();
+
+  return [
+    {
+      icon: <CheckCircleOutlineOutlinedIcon sx={{ color: "white" }} />,
+      bg: "bg-warning",
+      title: t("home.easyToAcquire"),
+      description: t("home.easyToAcquireDesc"),
+    },
+    {
+      icon: <AirplanemodeActiveOutlinedIcon sx={{ color: "white" }} />,
+      bg: "bg-secondary",
+      title: t("home.travelHassleFree"),
+      description: t("home.travelHassleFreeDesc"),
+    },
+    {
+      icon: <MonetizationOnOutlinedIcon sx={{ color: "white" }} />,
+      bg: "bg-primary-300",
+      title: t("home.aMoneySaver"),
+      description: t("home.aMoneySaverDesc"),
+    },
+    {
+      icon: <PublicOutlinedIcon sx={{ color: "white" }} />,
+      bg: "bg-primary-900",
+      title: t("home.saveThePlanet"),
+      description: t("home.saveThePlanetDesc"),
+    },
+  ];
+};
+
 export const iOSSteps = [
   {
     description: "goto_settings",
