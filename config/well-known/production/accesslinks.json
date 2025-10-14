@@ -3,7 +3,7 @@
     "relation": ["delegate_permission/common.handle_all_urls"],
     "target": {
       "namespace": "android_app",
-      "package_name": "",
+      "package_name": "com.simwego.esim",
       "sha256_cert_fingerprints": [
         "6D:E8:B5:88:63:F5:FE:42:8C:5A:2E:04:F8:AF:A6:5F:FC:44:5D:D0:E4:F2:8F:A9:A5:CA:82:69:A0:98:14:83",
         "53:26:02:CB:FA:97:EA:17:8D:60:F5:98:E9:DA:B5:12:3C:ED:32:6F:A8:87:93:12:BD:D0:0C:A2:FE:94:11:AA"
