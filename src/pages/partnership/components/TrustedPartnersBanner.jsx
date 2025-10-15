@@ -44,13 +44,13 @@ const TrustedPartnersBanner = ({ className = "" }) => {
             {duplicatedPartners.map((partner, index) => (
               <div
                 key={index}
-                className="flex-shrink-0 mx-4 flex items-center justify-center"
-                style={{ minWidth: "200px", height: "100px" }}
+                className="flex-shrink-0 mx-6 flex items-center justify-center"
+                style={{ minWidth: "240px", height: "120px" }}
               >
                 <img
                   src={partner.logo}
                   alt={partner.name}
-                  className="max-h-28 max-w-64 object-contain transition-all duration-300 hover:scale-110 filter hover:brightness-110"
+                  className="max-h-36 max-w-80 object-contain transition-all duration-300 hover:scale-110 filter hover:brightness-110"
                 />
               </div>
             ))}

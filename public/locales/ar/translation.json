@@ -488,6 +488,40 @@
         "title": "روح الفريق",
         "description": "كما في الرياضة، نتقدم معًا وننشئ قيمة مشتركة مع شركائنا."
       }
+    },
+    "contact": {
+      "title": "هل أنت مستعد للشراكة معنا؟",
+      "subtitle": "املأ النموذج أدناه وسيتواصل معك فريق الشراكة لدينا خلال 24 ساعة.",
+      "firstName": "الاسم الأول",
+      "lastName": "اسم العائلة",
+      "phoneNumber": "رقم الهاتف",
+      "company": "الشركة",
+      "jobRole": "المنصب الوظيفي",
+      "partnershipType": "نوع الشراكة",
+      "partnershipTypePlaceholder": "أدخل نوع الشراكة المطلوبة",
+      "selectPartnershipType": "اختر نوع الشراكة",
+      "messagePartnership": "أخبرنا عن أهداف الشراكة الخاصة بك وكيف يمكننا العمل معًا...",
+      "sendInquiry": "إرسال استفسار الشراكة",
+      "sending": "إرسال استفسار الشراكة...",
+      "inquiryLabel": "استفسار الشراكة",
+      "success": "تم إرسال استفسار الشراكة بنجاح!",
+      "failed": "فشل في إرسال استفسار الشراكة",
+      "firstNameRequired": "الاسم الأول مطلوب",
+      "lastNameRequired": "اسم العائلة مطلوب",
+      "phoneRequired": "رقم الهاتف مطلوب",
+      "companyRequired": "الشركة مطلوبة",
+      "jobRoleRequired": "المنصب الوظيفي مطلوب",
+      "partnershipTypeRequired": "نوع الشراكة مطلوب",
+      "enterFirstName": "أدخل اسمك الأول",
+      "enterLastName": "أدخل اسم عائلتك",
+      "enterPhone": "أدخل رقم هاتفك",
+      "enterCompany": "أدخل اسم شركتك",
+      "enterJobRole": "أدخل منصبك الوظيفي",
+      "partnershipTypes": {
+        "api": "شراكة API",
+        "affiliation": "الانتماء",
+        "whitelabel": "العلامة البيضاء"
+      }
     }
   }
 }

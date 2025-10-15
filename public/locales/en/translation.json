@@ -491,6 +491,40 @@
         "title": "Revenue",
         "description": "A new revenue stream, without operational management."
       }
+    },
+    "contact": {
+      "title": "Ready to Partner with Us?",
+      "subtitle": "Fill out the form below and our partnership team will get back to you within 24 hours.",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "phoneNumber": "Phone Number",
+      "company": "Company",
+      "jobRole": "Job Role",
+      "partnershipType": "Partnership Type",
+      "partnershipTypePlaceholder": "Enter desired partnership type",
+      "selectPartnershipType": "Select partnership type",
+      "messagePartnership": "Tell us about your partnership goals and how we can work together...",
+      "sendInquiry": "Send Partnership Inquiry",
+      "sending": "Sending Partnership Inquiry...",
+      "inquiryLabel": "Partnership Inquiry",
+      "success": "Partnership inquiry sent successfully!",
+      "failed": "Failed to send partnership inquiry",
+      "firstNameRequired": "First name is required",
+      "lastNameRequired": "Last name is required",
+      "phoneRequired": "Phone number is required",
+      "companyRequired": "Company is required",
+      "jobRoleRequired": "Job role is required",
+      "partnershipTypeRequired": "Partnership type is required",
+      "enterFirstName": "Enter your first name",
+      "enterLastName": "Enter your last name",
+      "enterPhone": "Enter your phone number",
+      "enterCompany": "Enter your company name",
+      "enterJobRole": "Enter your job role",
+      "partnershipTypes": {
+        "api": "API Partnership",
+        "affiliation": "Affiliation",
+        "whitelabel": "White Label"
+      }
     }
   }
 }

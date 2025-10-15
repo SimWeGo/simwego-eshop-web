@@ -28,13 +28,13 @@ const ADNSection = () => {
   ];
   
   return (
-    <div id="adn" className="w-full py-12 md:py-16 bg-gray-50">
+    <div id="adn" className="w-full py-10 sm:py-12 md:py-16 bg-gray-50">
       <Container>
-        <div className="text-center mb-8 md:mb-12">
+        <div className="text-center mb-6 sm:mb-8 md:mb-12 px-2">
           <Typography 
             variant="h2" 
             component="h2" 
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-title mb-4"
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black text-title mb-4 leading-tight"
             sx={{ fontWeight: 900 }}
           >
             {t("aboutUs.adn.title")}
@@ -42,7 +42,7 @@ const ADNSection = () => {
         </div>
 
         <div className="max-w-6xl mx-auto">
-          <HoverEffect items={adnValues} className="grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 py-6" />
+          <HoverEffect items={adnValues} className="grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 py-4 sm:py-6" />
         </div>
       </Container>
     </div>

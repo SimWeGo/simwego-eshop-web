@@ -491,6 +491,40 @@
         "title": "Ingresos",
         "description": "Una nueva fuente de ingresos, sin gestión operacional."
       }
+    },
+    "contact": {
+      "title": "¿Listo para ser socio?",
+      "subtitle": "Completa el formulario a continuación y nuestro equipo de socios se pondrá en contacto contigo en 24 horas.",
+      "firstName": "Nombre",
+      "lastName": "Apellido",
+      "phoneNumber": "Número de teléfono",
+      "company": "Empresa",
+      "jobRole": "Puesto de trabajo",
+      "partnershipType": "Tipo de asociación",
+      "partnershipTypePlaceholder": "Ingresa el tipo de asociación deseada",
+      "selectPartnershipType": "Selecciona el tipo de asociación",
+      "messagePartnership": "Cuéntanos sobre tus objetivos de asociación y cómo podemos trabajar juntos...",
+      "sendInquiry": "Enviar consulta de asociación",
+      "sending": "Enviando consulta de asociación...",
+      "inquiryLabel": "Consulta de asociación",
+      "success": "¡Consulta de asociación enviada exitosamente!",
+      "failed": "Error al enviar la consulta de asociación",
+      "firstNameRequired": "El nombre es requerido",
+      "lastNameRequired": "El apellido es requerido",
+      "phoneRequired": "El número de teléfono es requerido",
+      "companyRequired": "La empresa es requerida",
+      "jobRoleRequired": "El puesto de trabajo es requerido",
+      "partnershipTypeRequired": "El tipo de asociación es requerido",
+      "enterFirstName": "Ingresa tu nombre",
+      "enterLastName": "Ingresa tu apellido",
+      "enterPhone": "Ingresa tu número de teléfono",
+      "enterCompany": "Ingresa el nombre de tu empresa",
+      "enterJobRole": "Ingresa tu puesto de trabajo",
+      "partnershipTypes": {
+        "api": "Asociación API",
+        "affiliation": "Afiliación",
+        "whitelabel": "Marca blanca"
+      }
     }
   }
 }

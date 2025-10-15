@@ -491,6 +491,40 @@
         "title": "Revenus",
         "description": "Un nouveau levier de revenus, sans gestion opérationnelle."
       }
+    },
+    "contact": {
+      "title": "Prêt à devenir partenaire ?",
+      "subtitle": "Remplissez le formulaire ci-dessous et notre équipe partenaire vous recontactera sous 24h.",
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "phoneNumber": "Numéro de téléphone",
+      "company": "Entreprise",
+      "jobRole": "Poste occupé",
+      "partnershipType": "Type de partenariat",
+      "partnershipTypePlaceholder": "Entrez le type de partenariat souhaité",
+      "selectPartnershipType": "Sélectionnez le type de partenariat",
+      "messagePartnership": "Parlez-nous de vos objectifs de partenariat et comment nous pouvons travailler ensemble...",
+      "sendInquiry": "Envoyer la demande de partenariat",
+      "sending": "Envoi de la demande de partenariat...",
+      "inquiryLabel": "Demande de partenariat",
+      "success": "Demande de partenariat envoyée avec succès !",
+      "failed": "Échec de l'envoi de la demande de partenariat",
+      "firstNameRequired": "Le prénom est requis",
+      "lastNameRequired": "Le nom est requis",
+      "phoneRequired": "Le numéro de téléphone est requis",
+      "companyRequired": "L'entreprise est requise",
+      "jobRoleRequired": "Le poste occupé est requis",
+      "partnershipTypeRequired": "Le type de partenariat est requis",
+      "enterFirstName": "Entrez votre prénom",
+      "enterLastName": "Entrez votre nom",
+      "enterPhone": "Entrez votre numéro de téléphone",
+      "enterCompany": "Entrez le nom de votre entreprise",
+      "enterJobRole": "Entrez votre poste occupé",
+      "partnershipTypes": {
+        "api": "Partenariat API",
+        "affiliation": "Affiliation",
+        "whitelabel": "Marque blanche"
+      }
     }
   }
 }

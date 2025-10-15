@@ -1,121 +1,166 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import PhoneOutlinedIcon from "@mui/icons-material/PhoneOutlined";
-import MailOutlinedIcon from "@mui/icons-material/MailOutlined";
-import RoomOutlinedIcon from "@mui/icons-material/RoomOutlined";
 import Container from "../Container";
-import {
-  footerProjectName,
-  supportAddress,
-  supportEmail,
-  supportMap,
-  supportPhone,
-} from "../../core/variables/ProjectVariables";
-import { useTranslation } from "react-i18next";
-import { useSelector } from "react-redux";
-const Footer = () => {
-  const { t } = useTranslation();
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
-  const whatsapp_number = useSelector(
-    (state) => state.currency?.whatsapp_number || ""
-  );
+const Footer = () => {
   const handleNavigation = () => {
     window.scrollTo(0, 0);
   };
 
-  const googleMapsUrl = supportMap;
+  const navigationLinks = [
+    { name: "Accueil", path: "/" },
+    { name: "À propos", path: "/about-us" },
+    { name: "Partenariat", path: "/partnership" },
+    { name: "Contact", path: "/contact-us" }
+  ];
+
+  const supportLinks = [
+    { name: "Centre d'aide", path: "/contact-us" },
+    { name: "Support technique", path: "/contact-us" },
+    { name: "Guide d'utilisation", path: "/how-it-works" }
+  ];
+
+  const legalLinks = [
+    { name: "Conditions générales", href: "#" },
+    { name: "Politique de confidentialité", href: "#" },
+    { name: "Mentions légales", href: "#" },
+    { name: "Cookies", href: "#" }
+  ];
 
   return (
-    <div className="bg-primary text-white">
-      <Container className="py-8 flex flex-col gap-[1rem]">
-        <div className="flex flex-col sm:flex-row items-center sm:items-baseline justify-around gap-[2rem]">
-          {/* Contact Info */}
-          {whatsapp_number?.trim() !== "" && (
-            <div className="text-center">
-              <div className="flex items-center justify-center mb-4">
-                <div className="w-10 h-10 rounded bg-white flex items-center justify-center">
-                  <PhoneOutlinedIcon className="w-5 h-5 text-primary" />
-                </div>
-              </div>
-              <h3 className="text-lg font-semibold mb-2 text-white">
-                {" "}
-                {t("footer.phone")}
-              </h3>
-              <p dir="ltr">
-                {whatsapp_number?.trim() === "" ? "N/A" : whatsapp_number}
+    <footer className="bg-white border-t border-gray-100">
+      <Container>
+        <div className="py-16">
+          {/* Section principale avec colonnes */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-12">
+            
+            {/* Logo et tagline */}
+            <div className="col-span-1 md:col-span-2 lg:col-span-1">
+              <img
+                src="/logo/logocrop.png"
+                alt="SimWeGo Logo"
+                className="h-24 w-auto object-contain mb-4"
+              />
+              <p className="text-gray-600 font-semibold text-lg mb-6">
+                WeGo Connected
               </p>
-            </div>
-          )}
-
-          {/* Email */}
-          <div className="text-center">
-            <div className="flex items-center justify-center mb-4">
-              <div className="w-10 h-10 rounded bg-white flex items-center justify-center">
-                <MailOutlinedIcon className="w-5 h-5 text-primary" />
+              
+              {/* Réseaux sociaux */}
+              <div className="flex space-x-4">
+                <a
+                  href="https://facebook.com/simwego"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 bg-blue-900 text-white rounded-full flex items-center justify-center hover:bg-blue-800 hover:scale-110 transition-all duration-300"
+                  aria-label="Facebook"
+                >
+                  <FacebookIcon className="w-5 h-5" />
+                </a>
+                <a
+                  href="https://instagram.com/simwego"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 bg-blue-900 text-white rounded-full flex items-center justify-center hover:bg-blue-800 hover:scale-110 transition-all duration-300"
+                  aria-label="Instagram"
+                >
+                  <InstagramIcon className="w-5 h-5" />
+                </a>
+                <a
+                  href="https://linkedin.com/company/simwego"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 bg-blue-900 text-white rounded-full flex items-center justify-center hover:bg-blue-800 hover:scale-110 transition-all duration-300"
+                  aria-label="LinkedIn"
+                >
+                  <LinkedInIcon className="w-5 h-5" />
+                </a>
               </div>
             </div>
-            <h3 className="text-lg font-semibold mb-2 text-white">
-              {" "}
-              {t("footer.email")}
-            </h3>
-            <a href={`mailto:${supportEmail}`}>{supportEmail}</a>
+
+            {/* Colonne Navigation */}
+            <div>
+              <h3 className="text-gray-800 font-semibold text-lg mb-6">Navigation</h3>
+              <nav className="space-y-3">
+                {navigationLinks.map((link, index) => (
+                  <Link
+                    key={index}
+                    to={link.path}
+                    onClick={handleNavigation}
+                    className="block text-gray-600 hover:text-primary transition-colors duration-300 text-sm"
+                  >
+                    {link.name}
+                  </Link>
+                ))}
+              </nav>
+            </div>
+
+            {/* Colonne Support */}
+            <div>
+              <h3 className="text-gray-800 font-semibold text-lg mb-6">Support</h3>
+              <nav className="space-y-3">
+                {supportLinks.map((link, index) => (
+                  <Link
+                    key={index}
+                    to={link.path}
+                    onClick={handleNavigation}
+                    className="block text-gray-600 hover:text-primary transition-colors duration-300 text-sm"
+                  >
+                    {link.name}
+                  </Link>
+                ))}
+              </nav>
+            </div>
+
+            {/* Colonne Mentions légales */}
+            <div>
+              <h3 className="text-gray-800 font-semibold text-lg mb-6">Mentions légales</h3>
+              <nav className="space-y-3">
+                {legalLinks.map((link, index) => (
+                  <a
+                    key={index}
+                    href={link.href}
+                    className="block text-gray-600 hover:text-primary transition-colors duration-300 text-sm"
+                  >
+                    {link.name}
+                  </a>
+                ))}
+              </nav>
+            </div>
           </div>
 
-          {/* Office */}
-          <div className="text-center">
-            <div className="flex items-center justify-center mb-4">
-              <div className="w-10 h-10 rounded bg-white flex items-center justify-center">
-                <RoomOutlinedIcon className="w-5 h-5 text-primary" />
-              </div>
-            </div>
-            <h3 className="text-lg font-semibold mb-2 text-white">
-              {" "}
-              {t("footer.office")}
-            </h3>
+          {/* App Stores centrés */}
+          <div className="flex flex-col sm:flex-row items-center justify-center space-y-2 sm:space-y-0 sm:space-x-4">
             <a
-              dir="ltr"
-              href={googleMapsUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#"
+              className="transition-transform duration-300 hover:scale-105"
+              aria-label="Télécharger sur l'App Store"
             >
-              {supportAddress}
+              <img
+                src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&releaseDate=1280376000"
+                alt="Download on the App Store"
+                className="h-14 w-auto object-contain"
+                style={{ width: '140px' }}
+              />
+            </a>
+            <a
+              href="#"
+              className="transition-transform duration-300 hover:scale-105"
+              aria-label="Obtenir sur Google Play"
+            >
+              <img
+                src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                alt="Get it on Google Play"
+                className="h-18 w-auto object-contain"
+                style={{ width: '180px' }}
+              />
             </a>
           </div>
         </div>
-
-        {/* Bottom Links */}
-        <div className=" pt-2 border-t border-white">
-          <div className="flex flex-col md:flex-row items-center justify-between">
-            <div className="flex items-center space-x-6 mb-4 gap-2 md:mb-0">
-              <Link
-                to={"/privacy"}
-                onClick={() => handleNavigation()}
-                className="text-sm text-white"
-              >
-                {t("footer.privacyPolicy")}
-              </Link>
-              <Link
-                to={"/terms"}
-                onClick={() => handleNavigation()}
-                className="text-sm text-white"
-              >
-                {t("footer.termsAndConditions")}
-              </Link>
-              <Link
-                to={"/contact-us"}
-                onClick={() => handleNavigation()}
-                className="text-sm text-white"
-              >
-                {t("footer.contactUs")}
-              </Link>
-            </div>
-            <div dir="ltr" className="text-sm text-white">
-              © 2025 {footerProjectName}
-            </div>
-          </div>
-        </div>
       </Container>
-    </div>
+    </footer>
   );
 };
 

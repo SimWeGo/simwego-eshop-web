@@ -7,7 +7,7 @@ import MissionSection from "./components/MissionSection";
 const AboutUs = () => {
   return (
     <div className="min-h-screen overflow-x-hidden">
-      <div className="pt-8 pb-8 px-4 space-y-8">
+      <div className="pt-4 sm:pt-6 md:pt-8 pb-6 sm:pb-8 px-2 sm:px-4 space-y-6 sm:space-y-8">
         <HeroSection />
         <FoundersSection />
         <ADNSection />

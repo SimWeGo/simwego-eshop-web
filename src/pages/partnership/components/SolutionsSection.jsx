@@ -121,7 +121,7 @@ const SolutionsSection = () => {
   ];
 
   return (
-    <div id="solutions" className="w-full py-6 md:py-8">
+    <div id="solutions" className="w-full py-6 md:py-8s">
       <Container>
         <div className="text-center mb-12 md:mb-16 px-4">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-title mb-4 md:mb-6">
