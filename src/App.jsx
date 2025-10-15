@@ -27,6 +27,7 @@ function App() {
 
   useEffect(() => {
     setDayjsLocale(i18n.language); // set locale whenever the language changes
+    document.documentElement.dir = i18n.language === "ar" ? "rtl" : "ltr";
   }, [i18n.language]);
 
   useEffect(() => {
@@ -47,10 +48,6 @@ function App() {
       dispatch(fetchUserInfo());
     }
   }, [dispatch]);
-
-  useEffect(() => {
-    document.documentElement.dir = i18n.language === "ar" ? "rtl" : "ltr";
-  }, [i18n.language]);
 
   const whatsappNumberUpdate = useMemo(() => {
     return whatsapp_number?.split("-")?.join("");
