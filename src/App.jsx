@@ -46,9 +46,11 @@ function App() {
     } else {
       dispatch(fetchUserInfo());
     }
+  }, [dispatch]);
 
+  useEffect(() => {
     document.documentElement.dir = i18n.language === "ar" ? "rtl" : "ltr";
-  }, [i18n.language, dispatch]);
+  }, [i18n.language]);
 
   const whatsappNumberUpdate = useMemo(() => {
     return whatsapp_number?.split("-")?.join("");
