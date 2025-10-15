@@ -33,36 +33,32 @@ export const languages = [
   { code: "fr", name: "Français", flag: "FR" },
 ];
 
-export const useBenefits = () => {
-  const { t } = useTranslation();
-
-  return [
-    {
-      icon: <CheckCircleOutlineOutlinedIcon sx={{ color: "white" }} />,
-      bg: "bg-warning",
-      title: t("home.easyToAcquire"),
-      description: t("home.easyToAcquireDesc"),
-    },
-    {
-      icon: <AirplanemodeActiveOutlinedIcon sx={{ color: "white" }} />,
-      bg: "bg-secondary",
-      title: t("home.travelHassleFree"),
-      description: t("home.travelHassleFreeDesc"),
-    },
-    {
-      icon: <MonetizationOnOutlinedIcon sx={{ color: "white" }} />,
-      bg: "bg-primary-300",
-      title: t("home.aMoneySaver"),
-      description: t("home.aMoneySaverDesc"),
-    },
-    {
-      icon: <PublicOutlinedIcon sx={{ color: "white" }} />,
-      bg: "bg-primary-900",
-      title: t("home.saveThePlanet"),
-      description: t("home.saveThePlanetDesc"),
-    },
-  ];
-};
+export const benefits = [
+  {
+    icon: <CheckCircleOutlineOutlinedIcon sx={{ color: "white" }} />,
+    bg: "bg-warning",
+    title: "easyToAcquire",
+    description: "easyToAcquireDesc",
+  },
+  {
+    icon: <AirplanemodeActiveOutlinedIcon sx={{ color: "white" }} />,
+    bg: "bg-secondary",
+    title: "travelHassleFree",
+    description: "travelHassleFreeDesc",
+  },
+  {
+    icon: <MonetizationOnOutlinedIcon sx={{ color: "white" }} />,
+    bg: "bg-primary-300",
+    title: "aMoneySaver",
+    description: "aMoneySaverDesc",
+  },
+  {
+    icon: <PublicOutlinedIcon sx={{ color: "white" }} />,
+    bg: "bg-primary-900",
+    title: "saveThePlanet",
+    description: "saveThePlanetDesc",
+  },
+];
 
 export const iOSSteps = [
   {

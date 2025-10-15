@@ -11,12 +11,12 @@ import { ConnectSVG } from "../../assets/icons/Home";
 import ContactForm from "../../components/ContactForm";
 import Container from "../../components/Container";
 import Plans from "../plans/Plans";
-import { useBenefits } from "../../core/variables/StaticVariables";
+import { benefits } from "../../core/variables/StaticVariables";
 import ReferrAndEarnSwiper from "../../components/swiper/ReferrAndEarnSwiper";
 
 const Home = () => {
   const { t } = useTranslation();
-  const benefits = useBenefits();
+
   const sea_option = useSelector((state) => state.currency?.sea_option);
   const featuresRef = useRef(null);
 
@@ -120,8 +120,10 @@ const Home = () => {
                         "flex flex-1 flex-col gap-[0.3rem] text-content-600"
                       }
                     >
-                      <h3 className="text-xl font-bold ">{benefit.title}</h3>
-                      <p>{benefit.description}</p>
+                      <h3 className="text-xl font-bold ">
+                        {t(`home.${benefit.title}`)}
+                      </h3>
+                      <p>{t(`home.${benefit.description}`)}</p>
                     </div>
                   </div>
                 ))}
@@ -135,7 +137,7 @@ const Home = () => {
         <Container>
           <div className="text-center mb-16 flex flex-col gap-[1rem] items-center justify-center">
             <h2 className="text-4xl font-bold">
-              {t("home.howToSetUpMontyEsim")}?
+              {t("home.howToSetUpMontyEsim")}
             </h2>
             <p className="text-gray-600">{t("home.worksForAllUsers")}</p>
 
@@ -163,7 +165,13 @@ const Home = () => {
       {/* Contact Form Section */}
       <ContactForm bg={"bg-content-300 rounded-md p-10"} />
 
-      {supportPromo && <ReferrAndEarnSwiper />}
+      {supportPromo && (
+        <section className={"py-24"}>
+          <Container>
+            <ReferrAndEarnSwiper />
+          </Container>
+        </section>
+      )}
     </div>
   );
 };
