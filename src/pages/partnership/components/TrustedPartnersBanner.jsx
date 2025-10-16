@@ -5,7 +5,6 @@ import Container from "../../../components/Container";
 import BraiseLogo from "../../../assets/images/partnership/partener/braise.png";
 import CelesteTelLogo from "../../../assets/images/partnership/partener/celestetel.png";
 import NumeumLogo from "../../../assets/images/partnership/partener/numeum.png";
-import SafeBagLogo from "../../../assets/images/partnership/partener/safebag.png";
 import SmartRipsLogo from "../../../assets/images/partnership/partener/smartrips.png";
 import TelecomValleyLogo from "../../../assets/images/partnership/partener/telecomvalley.png";
 import YupWegoLogo from "../../../assets/images/partnership/partener/yupwego.png";
@@ -16,7 +15,6 @@ const TrustedPartnersBanner = ({ className = "" }) => {
     { name: "Braise", logo: BraiseLogo },
     { name: "CelesteTel", logo: CelesteTelLogo },
     { name: "Numeum", logo: NumeumLogo },
-    { name: "SafeBag", logo: SafeBagLogo },
     { name: "SmartRips", logo: SmartRipsLogo },
     { name: "Telecom Valley", logo: TelecomValleyLogo },
     { name: "YupWego", logo: YupWegoLogo },
