@@ -7,7 +7,7 @@ import {
   FormInput,
   FormTextArea,
 } from "./shared/form-components/FormComponents";
-import { contactUs } from "../core/apis/homeAPI";
+import { sendContactEmail, isEmailConfigured } from "../services/emailService";
 import { toast } from "react-toastify";
 import { ConnectSVG } from "../assets/icons/Home";
 import clsx from "clsx";
@@ -52,24 +52,40 @@ const ContactForm = ({ bg }) => {
   const handleSubmitForm = async (payload) => {
     setIsSubmitting(true);
 
-    contactUs({ ...payload })
-      .then((res) => {
-        if (res?.data?.status === "success") {
-          toast.success(t("contactUs.messageSentSuccessfully"));
-        } else {
-          toast.error(res?.message);
-        }
-      })
-      .catch((e) => {
-        toast?.error(e?.message || t("contactUs.failedToSendMessage"));
-      })
-      .finally(() => {
-        reset({
-          email: "",
-          content: "",
-        });
-        setIsSubmitting(false);
+    // Vérifier si EmailJS est configuré
+    if (!isEmailConfigured()) {
+      toast.error("EmailJS n'est pas configuré. Veuillez configurer les variables d'environnement.");
+      setIsSubmitting(false);
+      return;
+    }
+
+    try {
+      // Préparer les paramètres pour EmailJS
+      const templateParams = {
+        from_email: payload.email,
+        from_name: payload.email,
+        message: payload.content,
+        to_email: "contact@simwego.com", // Email de destination
+        subject: "Nouveau message de contact - SimWego",
+      };
+
+      const res = await sendContactEmail(templateParams);
+      
+      if (res?.data?.status === "success") {
+        toast.success(t("contactUs.messageSentSuccessfully"));
+      } else {
+        toast.error(res?.message || t("contactUs.failedToSendMessage"));
+      }
+      
+      reset({
+        email: "",
+        content: "",
       });
+    } catch (e) {
+      toast.error(e?.message || t("contactUs.failedToSendMessage"));
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (

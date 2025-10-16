@@ -7,7 +7,7 @@ import {
   FormInput,
   FormTextArea,
 } from "../../../components/shared/form-components/FormComponents";
-import { contactUs } from "../../../core/apis/homeAPI";
+import { sendPartnershipEmail, isEmailConfigured } from "../../../services/emailService";
 import { toast } from "react-toastify";
 import { ConnectSVG } from "../../../assets/icons/Home";
 import { Button, TextField, MenuItem } from "@mui/material";
@@ -88,43 +88,53 @@ const PartnershipContactForm = () => {
   const handleSubmitForm = async (payload) => {
     setIsSubmitting(true);
 
-    const formattedPayload = {
-      ...payload,
-      content: `Partnership Inquiry:
+    // Vérifier si EmailJS est configuré
+    if (!isEmailConfigured()) {
+      toast.error("EmailJS n'est pas configuré. Veuillez configurer les variables d'environnement.");
+      setIsSubmitting(false);
+      return;
+    }
+
+    try {
+      // Préparer les paramètres pour EmailJS
+      const templateParams = {
+        from_email: payload.email,
+        from_name: `${payload.firstName} ${payload.lastName}`,
+        first_name: payload.firstName,
+        last_name: payload.lastName,
+        email: payload.email,
+        phone: payload.phoneNumber,
+        company: payload.company,
+        job_role: payload.jobRole,
+        partnership_type: payload.partnershipType,
+        message: payload.content,
+        to_email: "felicien.catteau@simwego.com", // Email de destination pour les partenariats
+        subject: "Nouvelle demande de partenariat - SimWego",
+      };
+
+      const res = await sendPartnershipEmail(templateParams);
       
-Name: ${payload.firstName} ${payload.lastName}
-Company: ${payload.company}
-Job Role: ${payload.jobRole}
-Phone: ${payload.phoneNumber}
-Partnership Type: ${payload.partnershipType}
-
-Message: ${payload.content}`
-    };
-
-    contactUs(formattedPayload)
-      .then((res) => {
-        if (res?.data?.status === "success") {
-          toast.success(t("partnership.contact.success"));
-        } else {
-          toast.error(res?.message);
-        }
-      })
-      .catch((e) => {
-        toast?.error(e?.message || t("partnership.contact.failed"));
-      })
-      .finally(() => {
-        reset({
-          firstName: "",
-          lastName: "",
-          email: "",
-          phoneNumber: "",
-          company: "",
-          jobRole: "",
-          partnershipType: "",
-          content: "",
-        });
-        setIsSubmitting(false);
+      if (res?.data?.status === "success") {
+        toast.success(t("partnership.contact.success"));
+      } else {
+        toast.error(res?.message || t("partnership.contact.failed"));
+      }
+      
+      reset({
+        firstName: "",
+        lastName: "",
+        email: "",
+        phoneNumber: "",
+        company: "",
+        jobRole: "",
+        partnershipType: "",
+        content: "",
       });
+    } catch (e) {
+      toast.error(e?.message || t("partnership.contact.failed"));
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const partnershipTypes = [

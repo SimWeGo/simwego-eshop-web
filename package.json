@@ -20,6 +20,7 @@
     "preview:production": "vite preview --outDir build --mode production"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
     "@fingerprintjs/fingerprintjs": "^4.6.1",
