@@ -3,17 +3,13 @@ import { useTranslation } from "react-i18next";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 //COMPONENT
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
-import { useSelector } from "react-redux";
-import { authMenuItems, menuItems } from "../../core/variables/StaticVariables";
+import { menuItems } from "../../core/variables/StaticVariables";
 import Container from "../Container";
 import LanguageSwitcher from "../LanguageSwitcher.jsx";
-import NotificationsMenu from "../NotificationsMenu";
-import UserMenu from "../UserMenu";
 import DrawerMenu from "../drawer/DrawerMenu";
 import IconImage from "../iconImage/IconImage";
 
 const Navbar = ({ main }) => {
-  const { isAuthenticated } = useSelector((state) => state.authentication);
   const { t } = useTranslation();
   const location = useLocation();
   const navigate = useNavigate();
@@ -23,10 +19,7 @@ const Navbar = ({ main }) => {
 
   const isActive = (path) => location.pathname === path;
 
-  const isHomePage =
-    import.meta.env.VITE_APP_HOME_VISIBLE === "true"
-      ? location.pathname === "/"
-      : false;
+  const isHomePage = false; // Partnership page should always show navbar
 
   const handleLogoClick = () => {
     navigate("/");
@@ -67,9 +60,8 @@ const Navbar = ({ main }) => {
   }, [isHomePage, showMenu]);
 
   const menuLinks = useMemo(() => {
-    if (main) return menuItems;
-    else return authMenuItems?.filter((e) => e?.visible);
-  }, [main]);
+    return menuItems;
+  }, []);
 
   return (
     <>
@@ -109,31 +101,12 @@ const Navbar = ({ main }) => {
             </div>
 
             {/* Right Section */}
-            {isAuthenticated ? (
-              <div className="hidden lg:flex flex items-center space-x-6">
-                <LanguageSwitcher />
-
-                <NotificationsMenu />
-
-                <UserMenu />
-              </div>
-            ) : (
-              <div className="hidden lg:flex items-center">
-                {location?.pathname !== "/signin" && (
-                  <Link
-                    to="/signin"
-                    className="inline-flex items-center px-6 py-2.5 text-sm font-medium rounded text-white bg-secondary hover:bg-secondary/90 transition-colors"
-                  >
-                    {t("nav.signIn")}
-                  </Link>
-                )}
-                <LanguageSwitcher />
-              </div>
-            )}
+            <div className="hidden lg:flex items-center">
+              <LanguageSwitcher />
+            </div>
 
             {/* Mobile menu button */}
             <div className="flex lg:hidden items-center space-x-4">
-              {isAuthenticated && <NotificationsMenu />}
               <LanguageSwitcher />
               <button
                 onClick={() => setToggleMenu(!toggleMenu)}

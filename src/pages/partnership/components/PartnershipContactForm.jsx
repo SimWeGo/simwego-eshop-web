@@ -108,7 +108,7 @@ const PartnershipContactForm = () => {
         job_role: payload.jobRole,
         partnership_type: payload.partnershipType,
         message: payload.content,
-        to_email: "felicien.catteau@simwego.com", // Email de destination pour les partenariats
+        to_email: "julien.falchero@simwego.com", // Email de destination pour les partenariats
         subject: "Nouvelle demande de partenariat - SimWego",
       };
 
