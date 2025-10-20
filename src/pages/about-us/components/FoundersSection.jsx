@@ -25,7 +25,7 @@ const FoundersSection = () => {
             <Typography variant="h6" className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed italic border-l-2 sm:border-l-4 border-secondary pl-3 sm:pl-4 mx-2 md:mx-0">
               {t("aboutUs.founders.quote")}
               <br /><br />
-              C'est cette expérience du voyage et du monde connecté qui nous a inspiré à créer SimWeGo : une solution simple, pensée par des voyageurs, pour tous ceux qui veulent rester connectés partout, sans contraintes.
+              {t("aboutUs.founders.inspiration")}
             </Typography>
           </div>
           
