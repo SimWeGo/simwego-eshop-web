@@ -27,7 +27,7 @@ export const TextGenerateEffect = ({
         }
       );
     }
-  }, [triggerOnScroll ? isInView : true, scope.current]);
+  }, [triggerOnScroll ? isInView : true, scope.current, words]);
 
   const renderWords = () => {
     return (
@@ -52,7 +52,7 @@ export const TextGenerateEffect = ({
   return (
     <div className={cn("font-bold", className)}>
       <div className="mt-4">
-        <div className="text-black dark:text-white text-2xl leading-snug tracking-wide">
+        <div className="text-2xl leading-snug tracking-wide">
           {renderWords()}
         </div>
       </div>

@@ -282,7 +282,8 @@
     "founders": {
       "title": "Two founders, one vision born from travel",
       "description": "Behind SimWeGo, there are two former high-level athletes who have spent a large part of their lives traveling to the four corners of the world. International competitions, training abroad, stays around the globe.",
-      "quote": "Our journeys taught us to live permanently between two planes, two cultures and two networks."
+      "quote": "Our journeys taught us to live permanently between two planes, two cultures and two networks.",
+      "inspiration": "It is this experience of travel and the connected world that inspired us to create SimWeGo: a simple solution, designed by travelers, for all those who want to stay connected everywhere, without constraints."
     },
     "adn": {
       "title": "SimWeGo DNA",
@@ -401,7 +402,7 @@
   "partnership": {
     "hero": {
       "title": "Boost Your Customers' Experience with eSIM",
-      "subtitle": "Offer your travelers instant and seamless mobile connectivity in +220 destinations.",
+      "subtitle": "Offer your travelers instant and seamless mobile connectivity in +200 destinations.",
       "cta": "Discover Our Solutions"
     },
     "problems": {
@@ -424,7 +425,7 @@
       "description": "Give your customers the ability to purchase and activate data plans directly through your app or website. We provide the technology, webstore, connectivity, and support.",
       "cta": "Discover Our Solutions",
       "stats": {
-        "destinations": "+220 destinations",
+        "destinations": "+200 destinations",
         "destinationsDesc": "Global connectivity",
         "activation": "10 seconds",
         "activationDesc": "eSIM activation"
