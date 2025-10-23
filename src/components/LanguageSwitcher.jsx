@@ -7,15 +7,14 @@ import { setDirection } from "../redux/reducers/directionSlice.jsx";
 import { queryClient } from "../main.jsx";
 import i18next from "i18next";
 import { updateUserInfo } from "../core/apis/authAPI.jsx";
-import { UpdateAuthInfo } from "../redux/reducers/authReducer.jsx";
 
 const LanguageSwitcher = () => {
   const [openModal, setOpenModal] = useState(false);
-  const { i18n } = useTranslation();
-  const dispatch = useDispatch();
   const { isAuthenticated, user_info } = useSelector(
     (state) => state.authentication
   );
+  const { i18n } = useTranslation();
+  const dispatch = useDispatch();
   const languages = [
     { code: "en", name: "English", flag: "EN" },
     { code: "fr", name: "Français", flag: "FR" },

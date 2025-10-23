@@ -11,12 +11,11 @@ import { ConnectSVG } from "../../assets/icons/Home";
 import ContactForm from "../../components/ContactForm";
 import Container from "../../components/Container";
 import Plans from "../plans/Plans";
-import { benefits } from "../../core/variables/StaticVariables";
 import ReferrAndEarnSwiper from "../../components/swiper/ReferrAndEarnSwiper";
+import { benefits } from "../../core/variables/StaticVariables";
 
 const Home = () => {
   const { t } = useTranslation();
-
   const sea_option = useSelector((state) => state.currency?.sea_option);
   const featuresRef = useRef(null);
 
@@ -91,8 +90,8 @@ const Home = () => {
             </div>
 
             <div>
-              <div className="flex flex-row items-end gap-[0.5rem]">
-                <p className="font-semibold text-content-600 text-lg">
+              <div className="flex flex-row items-end  gap-[0.5rem]">
+                <p className={"font-semibold text-content-600 text-lg"}>
                   {t("home.easyAndFast")}
                 </p>
                 <ConnectSVG flip={true} />
@@ -137,10 +136,10 @@ const Home = () => {
         <Container>
           <div className="text-center mb-16 flex flex-col gap-[1rem] items-center justify-center">
             <h2 className="text-4xl font-bold">
+              {" "}
               {t("home.howToSetUpMontyEsim")}
             </h2>
             <p className="text-gray-600">{t("home.worksForAllUsers")}</p>
-
             <Button
               variant="contained"
               className="action-button"

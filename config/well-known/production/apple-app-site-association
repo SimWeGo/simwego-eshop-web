@@ -1,20 +1,20 @@
 {
-    "activitycontinuation": {
-        "apps": [
-            "HAFLM5CVTF.com.simwego.esim"
+  "activitycontinuation": {
+    "apps": [
+      "HAFLM5CVTF.com.simwego.esim"
+    ]
+  },
+  "applinks": {
+    "apps": [
+      "HAFLM5CVTF.com.simwego.esim"
+    ],
+    "details": [
+      {
+        "appID": "HAFLM5CVTF.com.simwego.esim",
+        "paths": [
+          "*"
         ]
-    },
-    "applinks": {
-        "apps": [
-            "HAFLM5CVTF.com.simwego.esim"
-        ],
-        "details": [
-            {
-                "appID": "HAFLM5CVTF.com.simwego.esim",
-                "paths": [
-                    "*"
-                ]
-            }
-        ]
-    }
+      }
+    ]
+  }
 }

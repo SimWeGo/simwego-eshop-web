@@ -59,7 +59,6 @@ export const benefits = [
     description: "saveThePlanetDesc",
   },
 ];
-
 export const iOSSteps = [
   {
     description: "goto_settings",

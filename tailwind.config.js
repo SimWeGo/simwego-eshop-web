@@ -194,23 +194,16 @@ export default {
     function ({ addComponents, theme }) {
       addComponents({
         ".action-button": {
-          backgroundColor: `${theme("colors.secondary.DEFAULT")} !important`,
           color: `${theme("colors.white")} !important`,
           fontWeight: "600 !important",
           padding: "0.5rem 1rem !important",
-          borderRadius: `${theme("borderRadius.md")} !important`,
           transition:
             "background-color 0.2s ease, transform 0.2s ease !important",
           display: "inline-flex !important",
           alignItems: "center !important",
           justifyContent: "center !important",
         },
-        ".action-button:hover": {
-          backgroundColor: `${theme("colors.secondary.600")} !important`,
-        },
-        ".action-button:active": {
-          backgroundColor: `${theme("colors.secondary.700")} !important`,
-        },
+
         ".action-button:disabled": {
           opacity: "0.5 !important",
           cursor: "not-allowed !important",

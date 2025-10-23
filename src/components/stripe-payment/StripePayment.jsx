@@ -147,7 +147,7 @@ const InjectedCheckout = ({
 
         <div className={"flex flex-row gap-[0.5rem]"}>
           <Button
-            color="secondary"
+            color="primary"
             variant="contained"
             sx={{ width: "60%" }}
             disabled={isSubmitting}
@@ -156,8 +156,9 @@ const InjectedCheckout = ({
             {t("btn.payNow")}
           </Button>
           <Button
-            className="action-button"
+            color="secondary"
             variant="contained"
+            // className="action-button"
             sx={{ width: "60%" }}
             onClick={() => {
               if (fromUpgradeWallet) {
