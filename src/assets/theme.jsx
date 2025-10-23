@@ -196,6 +196,7 @@ export const appTheme = createTheme({
           textTransform: "none",
           boxShadow: "unset",
           textOverflow: "ellipsis",
+          display: "inline-block",
           overflow: "hidden",
           fontWeight: "600",
         },

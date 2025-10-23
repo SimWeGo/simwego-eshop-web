@@ -7,6 +7,7 @@ import { setDirection } from "../redux/reducers/directionSlice.jsx";
 import { queryClient } from "../main.jsx";
 import i18next from "i18next";
 import { updateUserInfo } from "../core/apis/authAPI.jsx";
+import { UpdateAuthInfo } from "../redux/reducers/authReducer.jsx";
 
 const LanguageSwitcher = () => {
   const [openModal, setOpenModal] = useState(false);
