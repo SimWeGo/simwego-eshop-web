@@ -134,6 +134,7 @@ const Profile = () => {
     updateUserInfo({
       ...finalPayload,
       currency: payload?.user_currency?.currency,
+      language: localStorage.getItem("i18nextLng"),
     })
       .then((res) => {
         const statusBool = res?.data?.status === "success";
@@ -175,9 +176,7 @@ const Profile = () => {
       should_notify: user_info?.should_notify || false,
       msisdn: user_info?.msisdn || "",
       user_currency: currencies
-        ? currencies?.find(
-            (el) => el?.currency == sessionStorage.getItem("user_currency")
-          )
+        ? currencies?.find((el) => el?.currency == user_info?.currency_code)
         : null,
     });
   }, [user_info, currencies]);
