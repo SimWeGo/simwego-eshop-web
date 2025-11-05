@@ -1,5 +1,4 @@
 //UTILTIIES
-import clsx from "clsx";
 import React, { useRef } from "react";
 import { useTranslation } from "react-i18next";
 
@@ -7,12 +6,13 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import { Button } from "@mui/material";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { ConnectSVG } from "../../assets/icons/Home";
-import ContactForm from "../../components/ContactForm";
 import Container from "../../components/Container";
-import ReferralSwiper from "../../components/swiper/ReferralSwiper";
-import { benefits } from "../../core/variables/StaticVariables";
 import Plans from "../plans/Plans";
+import WhySimWeGoSection from "./components/WhySimWeGoSection";
+import HowItWorksSection from "./components/HowItWorksSection";
+import TestimonialSection from "./components/TestimonialSection";
+import ProfessionalSection from "./components/ProfessionalSection";
+import FAQSection from "./components/FAQSection";
 
 const Home = () => {
   const { t } = useTranslation();
@@ -22,8 +22,6 @@ const Home = () => {
   const scrollToFeatures = () => {
     featuresRef.current?.scrollIntoView({ behavior: "smooth" });
   };
-
-  const supportPromo = import.meta.env.VITE_SUPPORT_PROMO == "true";
 
   return (
     <div className="min-h-screen overflow-x-hidden">
@@ -76,90 +74,21 @@ const Home = () => {
           <Plans cruises={sea_option} />
         </Container>
       </section>
-      {/* Benefits Section */}
-      <section className="py-24 bg-background">
-        <Container>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="relative">
-              <img
-                src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800"
-                alt="iPhone with Monty eSIM"
-                className="w-full rounded-3xl shadow-2xl"
-              />
-            </div>
 
-            <div>
-              <div className="flex flex-row items-end  gap-[0.5rem]">
-                <p className={"font-semibold text-content-600 text-lg"}>
-                  Easy and Fast
-                </p>
-                <ConnectSVG flip={true} />
-              </div>
-              <h2 className="text-4xl font-bold mb-12">
-                Unlock endless
-                <br />
-                benefits
-              </h2>
+      {/* Why SimWeGo Section */}
+      <WhySimWeGoSection />
 
-              <div className="space-y-8">
-                {benefits?.map((benefit, index) => (
-                  <div key={index} className="flex flex-row gap-[1rem]">
-                    <div
-                      className={clsx(
-                        benefit.bg,
-                        `w-12 h-12 sm-basis-[10%] rounded-xl flex items-center justify-center text-2xl`
-                      )}
-                    >
-                      {benefit.icon}
-                    </div>
-                    <div
-                      className={
-                        "flex flex-1 flex-col gap-[0.3rem] text-content-600"
-                      }
-                    >
-                      <h3 className="text-xl font-bold ">{benefit.title}</h3>
-                      <p>{benefit.description}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </Container>
-      </section>
-      {/* Setup Instructions Section */}
-      <section className="py-24 bg-background">
-        <Container>
-          <div className="text-center mb-16 flex flex-col gap-[1rem] items-center justify-center">
-            <h2 className="text-4xl font-bold">How to set up your eSIM?</h2>
-            <p className="text-gray-600">
-              Whether you're an iPhone or an Android user, here's how it works
-            </p>
-            <Button
-              variant="contained"
-              className="action-button"
-              component={Link}
-              onClick={() => window.scrollTo(0, 0)}
-              to={"/how-it-works"}
-              sx={{ width: "fit-content", padding: "10px 20px" }}
-            >
-              {t("btn.learn_more")}
-            </Button>
-          </div>
+      {/* How It Works Section */}
+      <HowItWorksSection />
 
-          <div className="relative max-w-3xl mx-auto">
-            <img
-              src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200"
-              alt="eSIM setup instructions"
-              className="w-full rounded-3xl shadow-lg"
-            />
-          </div>
-        </Container>
-      </section>
-      {/* Contact Form Section */}
-      <ContactForm bg={"bg-content-300 rounded-md p-10"} />
+      {/* Testimonial Section */}
+      <TestimonialSection />
 
-      {supportPromo && <ReferralSwiper />}
+      {/* Professional Section */}
+      <ProfessionalSection />
+
+      {/* FAQ Section */}
+      <FAQSection />
     </div>
   );
 };

@@ -45,6 +45,7 @@
     "dayjs": "^1.11.13",
     "dompurify": "^3.2.4",
     "dotenv": "^16.4.7",
+    "embla-carousel-react": "^8.6.0",
     "file-saver": "^2.0.5",
     "firebase": "^11.4.0",
     "formik": "^2.4.5",

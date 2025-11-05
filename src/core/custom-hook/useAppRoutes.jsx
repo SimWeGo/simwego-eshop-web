@@ -24,6 +24,8 @@ import Partnership from "../../pages/partnership/Partnership";
 import MyWallet from "../../pages/my-wallet/MyWallet";
 import ReferAndEarn from "../../pages/refer-earn/ReferAndEarn";
 import Referral from "../../pages/referral/Referral";
+import Blog from "../../pages/blog/Blog";
+import BlogArticle from "../../pages/blog/BlogArticle";
 
 export const useAppRoutes = () => {
   const login_type = useSelector((state) => state?.currency?.login_type);
@@ -94,6 +96,14 @@ export const useAppRoutes = () => {
       {
         path: "/partnership",
         element: <Partnership />,
+      },
+      {
+        path: "/blog",
+        element: <Blog />,
+      },
+      {
+        path: "/blog/:articleId",
+        element: <BlogArticle />,
       },
       {
         path: "/signin",
