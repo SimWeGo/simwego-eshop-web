@@ -2,20 +2,29 @@ import React, { useState, useRef, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import clsx from "clsx";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { setDirection } from "../redux/reducers/directionSlice.jsx";
 import { queryClient } from "../main.jsx";
 import i18next from "i18next";
+import { updateUserInfo } from "../core/apis/authAPI.jsx";
+import { UpdateAuthInfo } from "../redux/reducers/authReducer.jsx";
 
 const LanguageSwitcher = () => {
   const [openModal, setOpenModal] = useState(false);
+  const { isAuthenticated, user_info } = useSelector(
+    (state) => state.authentication
+  );
   const { i18n } = useTranslation();
   const dispatch = useDispatch();
   const languages = [
     { code: "en", name: "English", flag: "EN" },
+<<<<<<< HEAD
     { code: "ar", name: "العربية", flag: "ع" },
     { code: "fr", name: "Français", flag: "FR" },
     { code: "es", name: "Español", flag: "ES" },
+=======
+    { code: "fr", name: "Français", flag: "FR" },
+>>>>>>> main
   ];
   const modalRef = useRef(null);
 
@@ -27,6 +36,13 @@ const LanguageSwitcher = () => {
     document.documentElement.dir = direction;
     setOpenModal(false);
     queryClient.invalidateQueries();
+    if (isAuthenticated) {
+      updateUserInfo({ ...user_info, language: lng }).then((res) => {
+        if (res?.data?.status === "success") {
+          dispatch(UpdateAuthInfo(res?.data?.data?.user_info));
+        }
+      });
+    }
   };
 
   useEffect(() => {

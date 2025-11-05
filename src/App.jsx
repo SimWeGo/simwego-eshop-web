@@ -9,8 +9,10 @@ import AppRouter from "./core/routes/AppRouter";
 import { fetchUserInfo, SignOut } from "./redux/reducers/authReducer";
 import { fetchCurrencyInfo } from "./redux/reducers/currencyReducer";
 import { setDayjsLocale } from "./components/dayjsSetup.js";
+import { useAbortOnRouteChange } from "./core/custom-hook/useAbortOnRouteChange.jsx";
 
 function App() {
+  useAbortOnRouteChange();
   const dispatch = useDispatch();
   const whatsapp_number = useSelector(
     (state) => state.currency?.whatsapp_number || ""
@@ -27,6 +29,7 @@ function App() {
 
   useEffect(() => {
     setDayjsLocale(i18n.language); // set locale whenever the language changes
+    document.documentElement.dir = i18n.language === "ar" ? "rtl" : "ltr";
   }, [i18n.language]);
 
   useEffect(() => {
@@ -46,9 +49,7 @@ function App() {
     } else {
       dispatch(fetchUserInfo());
     }
-
-    document.documentElement.dir = i18n.language === "ar" ? "rtl" : "ltr";
-  }, [i18n.language, dispatch]);
+  }, [dispatch]);
 
   const whatsappNumberUpdate = useMemo(() => {
     return whatsapp_number?.split("-")?.join("");

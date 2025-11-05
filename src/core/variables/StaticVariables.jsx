@@ -1,4 +1,12 @@
 import React from "react";
+<<<<<<< HEAD
+=======
+import MonetizationOnOutlinedIcon from "@mui/icons-material/MonetizationOnOutlined";
+import PublicOutlinedIcon from "@mui/icons-material/PublicOutlined";
+import CheckCircleOutlineOutlinedIcon from "@mui/icons-material/CheckCircleOutlineOutlined";
+import AirplanemodeActiveOutlinedIcon from "@mui/icons-material/AirplanemodeActiveOutlined";
+import { useTranslation } from "react-i18next";
+>>>>>>> main
 
 const isSupportPromo = import.meta.env.VITE_SUPPORT_PROMO == "true";
 
@@ -27,9 +35,38 @@ export const authResponsiveMenuItems = [
 export const languages = [
   { code: "en", name: "English", flag: "EN" },
   { code: "ar", name: "العربية", flag: "ع" },
-  // { code: "fr", name: "Français", flag: "FR" },
+  { code: "fr", name: "Français", flag: "FR" },
 ];
 
+<<<<<<< HEAD
+=======
+export const benefits = [
+  {
+    icon: <CheckCircleOutlineOutlinedIcon sx={{ color: "white" }} />,
+    bg: "bg-warning",
+    title: "easyToAcquire",
+    description: "easyToAcquireDesc",
+  },
+  {
+    icon: <AirplanemodeActiveOutlinedIcon sx={{ color: "white" }} />,
+    bg: "bg-secondary",
+    title: "travelHassleFree",
+    description: "travelHassleFreeDesc",
+  },
+  {
+    icon: <MonetizationOnOutlinedIcon sx={{ color: "white" }} />,
+    bg: "bg-primary-300",
+    title: "aMoneySaver",
+    description: "aMoneySaverDesc",
+  },
+  {
+    icon: <PublicOutlinedIcon sx={{ color: "white" }} />,
+    bg: "bg-primary-900",
+    title: "saveThePlanet",
+    description: "saveThePlanetDesc",
+  },
+];
+>>>>>>> main
 export const iOSSteps = [
   {
     description: "goto_settings",

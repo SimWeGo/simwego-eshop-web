@@ -45,6 +45,7 @@ const Home = () => {
             <h1 className="text-6xl font-bold mb-6 text-white">
               {t("landing.hero.title")}
             </h1>
+
             <Button
               component={Link}
               to={"/plans"}

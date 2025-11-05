@@ -4,26 +4,26 @@
 
 /* EXPLANATION : woff : for compression and faster loading time */
 @font-face {
-  font-family: "quicksand-light";
-  src: url("/fonts/quicksand/Quicksand-Light.ttf") format("woff2");
+  font-family: "inter-light";
+  src: url("/fonts/inter/Inter_18pt-Light.ttf") format("woff2");
 }
 
 @font-face {
-  font-family: "quicksand-regular";
-  src: url("/fonts/quicksand/Quicksand-Regular.ttf") format("woff2");
+  font-family: "inter-regular";
+  src: url("/fonts/inter/Inter_18pt-Regular.ttf") format("woff2");
 }
 @font-face {
-  font-family: "quicksand-medium";
-  src: url("/fonts/quicksand/Quicksand-Medium.ttf") format("woff2");
+  font-family: "inter-medium";
+  src: url("/fonts/inter/Inter_18pt-Medium.ttf") format("woff2");
 }
 
 @font-face {
-  font-family: "quicksand-semibold";
-  src: url("/fonts/quicksand/Quicksand-SemiBold.ttf") format("woff2");
+  font-family: "inter-semibold";
+  src: url("/fonts/inter/Inter_18pt-SemiBold.ttf") format("woff2");
 }
 @font-face {
-  font-family: "quicksand-bold";
-  src: url("/fonts/quicksand/Quicksand-Bold.ttf") format("woff2");
+  font-family: "inter-bold";
+  src: url("/fonts/inter/Inter_18pt-Bold.ttf") format("woff2");
 }
 
 .Toastify__toast--error.Toastify__toast {
@@ -72,7 +72,7 @@
 }
 
 .PhoneInputCountrySelectArrow {
-  @apply mx-3; 
+  @apply mx-3;
 }
 
 /* Aceternity UI Animations */

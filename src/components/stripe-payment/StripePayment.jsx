@@ -113,8 +113,6 @@ const InjectedCheckout = ({
             toast.error(result.error?.message);
           } else {
             if (fromUpgradeWallet) {
-              dispatch(fetchUserInfo());
-              queryClient.invalidateQueries({ queryKey: ["user-rewards"] });
               toast.success(t("stripe.wallet_topped_up_successfully"));
               return onClose();
             }
@@ -147,7 +145,7 @@ const InjectedCheckout = ({
 
         <div className={"flex flex-row gap-[0.5rem]"}>
           <Button
-            color="secondary"
+            olor="primary"
             variant="contained"
             sx={{ width: "60%" }}
             disabled={isSubmitting}
@@ -156,7 +154,7 @@ const InjectedCheckout = ({
             {t("btn.payNow")}
           </Button>
           <Button
-            className="action-button"
+            color="secondary"
             variant="contained"
             sx={{ width: "60%" }}
             onClick={() => {

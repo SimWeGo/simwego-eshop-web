@@ -1,25 +1,20 @@
 {
-  "applinks": {
-    "apps": [],
-    "details": [
-      {
-        "appIDs": [
-          ""
-        ],
-        "paths": [
-          "*"
-        ],
-        "components": [
-          {
-            "/": "/*"
-          }
-        ]
-      }
+  "activitycontinuation": {
+    "apps": [
+      "HAFLM5CVTF.com.simwego.esim"
     ]
   },
-  "webcredentials": {
+  "applinks": {
     "apps": [
-      ""
+      "HAFLM5CVTF.com.simwego.esim"
+    ],
+    "details": [
+      {
+        "appID": "HAFLM5CVTF.com.simwego.esim",
+        "paths": [
+          "*"
+        ]
+      }
     ]
   }
 }

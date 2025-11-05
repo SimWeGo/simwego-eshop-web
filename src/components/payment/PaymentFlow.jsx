@@ -6,13 +6,10 @@ import { useTranslation } from "react-i18next";
 import { useSelector } from "react-redux";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
 import { toast } from "react-toastify";
-import {
-  assignBundle,
-  assignTopupBundle,
-  cancelOrder,
-} from "../../core/apis/userAPI";
+import { assignBundle, assignTopupBundle } from "../../core/apis/userAPI";
 import OtpVerification from "../OtpVerification";
 import { FormRadioGroup } from "../shared/form-components/FormComponents";
+import NoDataFound from "../shared/no-data-found/NoDataFound";
 import { StripePayment } from "../stripe-payment/StripePayment";
 import ComingSoon from "../wallet/ComingSoon";
 import WalletPayment from "../wallet/WalletPayment";
@@ -57,7 +54,7 @@ const PaymentFlow = (props) => {
   const [selectedType, setSelectedType] = useState(null);
   const [orderDetail, setOrderDetail] = useState(null);
   const [loading, setLoading] = useState(false);
-
+  const [otpRequested, setOtpRequested] = useState(false);
   const related_search_test = {
     related_search: {
       region: null,
@@ -92,7 +89,7 @@ const PaymentFlow = (props) => {
       .then((res) => {
         setOrderDetail(res?.data?.data);
         setOrderId(res?.data?.data?.order_id);
-
+        setOtpRequested(true);
         if (res?.data?.data?.payment_status == "COMPLETED") {
           handleSuccessOrder(res?.data?.data?.order_id);
         } else {
@@ -103,6 +100,7 @@ const PaymentFlow = (props) => {
         }
       })
       .catch((e) => {
+        console.log(e, "checking cancel error 2", e);
         setLoading(false);
 
         toast?.error(e?.message || t("payment.failedToLoadPaymentInput"));
@@ -111,7 +109,6 @@ const PaymentFlow = (props) => {
 
   useEffect(() => {
     const currentPrice = state?.new_price ?? props?.bundle?.price;
-
     if (currentPrice == 0) {
       setSelectedType("card");
       setCheckedMethod(true);
@@ -148,43 +145,50 @@ const PaymentFlow = (props) => {
   return (
     <div className={"flex flex-col gap-2 w-full sm:basis-[50%] shrink-0"}>
       <h1>{t("checkout.paymentMethod")}</h1>
-      {!checkedMethod && (
-        <div className={"flex flex-col gap-[1rem]"}>
-          <FormRadioGroup
-            data={filteredPaymentTypes}
-            value={selectedType}
-            onChange={(value) => setSelectedType(value)}
-          />
+      {!checkedMethod ? (
+        filteredPaymentTypes?.length !== 0 ? (
+          <div className={"flex flex-col gap-[1rem]"}>
+            <FormRadioGroup
+              data={filteredPaymentTypes}
+              value={selectedType}
+              onChange={(value) => setSelectedType(value)}
+            />
 
-          <div className={"flex flex-row "}>
-            <Button
-              variant={"contained"}
-              className="action-button"
-              disabled={loading}
-              onClick={() => {
-                setCheckedMethod(true);
-                if (selectedType?.toLowerCase() !== "wallet") {
-                  assignMethod(selectedType);
+            <div className={"flex flex-row "}>
+              <Button
+                variant={"contained"}
+                className="action-button"
+                disabled={loading || !selectedType}
+                onClick={() => {
+                  setCheckedMethod(true);
+                  if (selectedType?.toLowerCase() !== "wallet") {
+                    assignMethod(selectedType);
+                  }
+                }}
+                endIcon={
+                  <ArrowForwardIosOutlinedIcon
+                    fontSize="small"
+                    sx={{
+                      fontSize: 16, // or any px you want
+                      ...(localStorage.getItem("i18nextLng") === "ar"
+                        ? { transform: "scale(-1,1)", marginRight: "10px" }
+                        : {}),
+                    }}
+                  />
                 }
-              }}
-              endIcon={
-                <ArrowForwardIosOutlinedIcon
-                  sx={{
-                    fontSize: 16, // or any px you want
-                    ...(localStorage.getItem("i18nextLng") === "ar"
-                      ? { transform: "scale(-1,1)", marginRight: "10px" }
-                      : {}),
-                  }}
-                />
-              }
-              sx={{
-                width: "50%",
-              }}
-            >
-              {loading ? t("btn.Loading") : t("btn.Checkout")}
-            </Button>
+                sx={{
+                  width: "50%",
+                }}
+              >
+                {loading ? t("btn.loading") : t("btn.Checkout")}
+              </Button>
+            </div>
           </div>
-        </div>
+        ) : (
+          <NoDataFound text={t("checkout.noPaymentMethodsFound")} />
+        )
+      ) : (
+        ""
       )}
 
       {checkedMethod && (
@@ -194,10 +198,15 @@ const PaymentFlow = (props) => {
               {...props}
               clientSecret={clientSecret}
               stripePromise={stripePromise}
+              key={orderDetail}
               orderDetail={orderDetail}
               related_search={related_search}
               loading={loading}
-              verifyBy={login_type == "phone" ? "sms" : "email"}
+              verifyBy={
+                login_type == "phone" || login_type == "email_phone"
+                  ? "sms"
+                  : "email"
+              }
               phone={user_info?.phone}
               checkout={true}
               recallAssign={() => assignMethod("wallet")}

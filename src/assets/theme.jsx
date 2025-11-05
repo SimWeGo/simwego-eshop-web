@@ -8,6 +8,7 @@ export const appTheme = createTheme({
   palette: {
     secondary: {
       main: tailwindConfig.theme.colors.secondary.DEFAULT,
+      contrastText: "#fff",
     },
     primary: {
       main: tailwindConfig.theme.colors.primary.DEFAULT,
@@ -82,7 +83,7 @@ export const appTheme = createTheme({
         root: {
           "& .MuiOutlinedInput-root": {
             backgroundColor: "#ffffff",
-            borderRadius: tailwindConfig.theme.borderRadius.DEFAULT,
+            borderRadius: tailwindConfig.theme.borderRadius.md,
             "&:hover fieldset": {
               border: `2px solid ${tailwindConfig.theme.colors.primary.DEFAULT}`,
             },
@@ -188,21 +189,22 @@ export const appTheme = createTheme({
           "&:focus": {
             outline: "none",
           },
-          minHeight: "30px",
-          borderRadius: tailwindConfig.theme.borderRadius.DEFAULT,
+          minHeight: "40px !important",
+          borderRadius: tailwindConfig.theme.borderRadius.md,
           width: "100%",
           whiteSpace: "nowrap",
           textTransform: "none",
           boxShadow: "unset",
           textOverflow: "ellipsis",
           overflow: "hidden",
+          fontWeight: "600",
         },
       },
     },
     MuiIconButton: {
       styleOverrides: {
         root: {
-          borderRadius: tailwindConfig.theme.borderRadius.DEFAULT,
+          borderRadius: tailwindConfig.theme.borderRadius.md,
           "&:focus": {
             outline: "none",
           },

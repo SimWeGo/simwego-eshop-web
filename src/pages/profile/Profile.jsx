@@ -22,6 +22,7 @@ import { Info } from "@mui/icons-material";
 import { queryClient } from "../../main";
 import { useTranslation } from "react-i18next";
 import { languages } from "../../core/variables/StaticVariables";
+import { onlyCountries } from "../../core/variables/ProjectVariables";
 
 const Profile = () => {
   const { t } = useTranslation();
@@ -34,7 +35,7 @@ const Profile = () => {
 
   const schema = yup.object().shape({
     email:
-      login_type === "email"
+      login_type === "email" || login_type == "email_phone"
         ? yup
             .string()
             .email(t("profile.errors.emailInvalid"))
@@ -80,7 +81,7 @@ const Profile = () => {
       .string()
       .label(t("profile.phoneNumber"))
       .when("$signinType", {
-        is: () => login_type === "phone",
+        is: () => login_type === "phone" || login_type === "email_phone",
         then: (schema) => schema.required(t("profile.errors.phoneRequired")),
         otherwise: (schema) => schema.notRequired(),
       })
@@ -132,6 +133,8 @@ const Profile = () => {
       email && email.trim() !== "" ? { ...rest, email: email } : rest;
     updateUserInfo({
       ...finalPayload,
+      currency: payload?.user_currency?.currency,
+      language: localStorage.getItem("i18nextLng"),
     })
       .then((res) => {
         const statusBool = res?.data?.status === "success";
@@ -173,9 +176,7 @@ const Profile = () => {
       should_notify: user_info?.should_notify || false,
       msisdn: user_info?.msisdn || "",
       user_currency: currencies
-        ? currencies?.find(
-            (el) => el?.currency == sessionStorage.getItem("user_currency")
-          )
+        ? currencies?.find((el) => el?.currency == user_info?.currency_code)
         : null,
     });
   }, [user_info, currencies]);
@@ -205,7 +206,9 @@ const Profile = () => {
                     <FormInput
                       placeholder={t("checkout.enterEmail")}
                       value={value}
-                      disabled={login_type == "email"}
+                      disabled={
+                        login_type == "email" || login_type == "email_phone"
+                      }
                       helperText={error?.message}
                       onChange={(value) => onChange(value)}
                     />
@@ -259,8 +262,14 @@ const Profile = () => {
                     fieldState: { error },
                   }) => (
                     <FormPhoneInput
+                      onlyCountries={onlyCountries}
                       value={value}
-                      disabled={login_type == "phone"}
+                      disabled={
+                        login_type == "phone" || login_type == "email_phone"
+                      }
+                      defaultCountry={
+                        onlyCountries?.length !== 0 ? onlyCountries?.[0] : "lb"
+                      }
                       helperText={error?.message}
                       onChange={(value, country) => onChange(value)}
                     />
@@ -339,7 +348,10 @@ const Profile = () => {
                 disabled={isSubmitting || !isDirty}
                 variant={"contained"}
                 color="primary"
-                sx={{ width: "150px" }}
+                sx={{
+                  maxWidth: "150px",
+                  display: "inline-block",
+                }}
               >
                 {isSubmitting ? t("btn.savingChanges") : t("btn.saveChanges")}
               </Button>
