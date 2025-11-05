@@ -4,7 +4,7 @@ import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 import { FloatingIcons } from "@/components/ui/floating-icons";
 import { useTranslation } from "react-i18next";
-import heroImage from "../../../assets/images/partnership/hero/simwe.png";
+import heroImage from "../../../assets/images/partnership/hero/simwe.gif";
 
 const HeroSection = () => {
   const { t, i18n } = useTranslation();
@@ -66,13 +66,11 @@ const HeroSection = () => {
             </div>
             
             <div className="hidden lg:flex justify-center lg:justify-end mt-6 lg:mt-0">
-              <div className="animate-fadeInRight">
-                <img
-                  src={heroImage}
-                  alt="Illustration eSIM"
-                  className="max-w-full h-auto max-h-[400px] object-contain"
-                />
-              </div>
+              <img
+                src={heroImage}
+                alt="Illustration eSIM"
+                className="max-w-full h-auto max-h-[400px] object-contain"
+              />
             </div>
           </div>
         </div>

@@ -130,6 +130,7 @@
     "plans": "Forfaits",
     "howItWorks": "Comment ça marche",
     "partnership": "Simwego Pro",
+    "blog": "Blog",
     "aboutUs": "À propos",
     "contactUs": "Contact",
     "signIn": "Connexion",
@@ -525,6 +526,53 @@
         "api": "Partenariat API",
         "affiliation": "Affiliation",
         "whitelabel": "Marque blanche"
+      }
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "Guides et conseils pour voyageurs connectés",
+    "readMore": "Lire l'article",
+    "minRead": "min de lecture",
+    "backToBlog": "Retour au blog",
+    "relatedArticles": "Articles similaires",
+    "noArticlesYet": "Aucun article disponible pour le moment",
+    "comingSoon": "Restez connectés, de nouveaux articles arrivent bientôt !",
+    "categories": {
+      "all": "Tous",
+      "guides": "Guides",
+      "tips": "Astuces",
+      "news": "Actualités"
+    },
+    "articles": {
+      "travelAgencies": {
+        "title": "Comment les agences de voyage peuvent facilement vendre des eSIM et améliorer l'expérience client",
+        "excerpt": "Découvrez comment les agences de voyage et OTA peuvent renforcer la fidélité et la satisfaction client en proposant des eSIM grâce aux outils API, webstore, apps et affiliation de Simwego.",
+        "section1Title": "L'essor des eSIM dans l'industrie du voyage",
+        "section1Content": "Les voyageurs d'aujourd'hui attendent simplicité, rapidité et praticité à chaque étape de leur parcours. De la réservation en ligne à l'enregistrement et à la communication à l'étranger, toute l'expérience de voyage est désormais numérique. Pourtant, un point de friction subsiste : rester connecté facilement lors de voyages internationaux. C'est là que la technologie eSIM change tout. Avec un simple scan de code QR, les voyageurs peuvent activer des données mobiles en quelques secondes, sans avoir besoin d'acheter ou d'échanger des cartes SIM physiques. Pour les agences de voyage, intégrer les eSIM est un moyen simple d'ajouter de la valeur, de simplifier l'expérience du voyageur et de renforcer la fidélité client.",
+        "section2Title": "Pourquoi proposer des eSIM renforce les relations clients",
+        "section2Intro": "L'expérience client est devenue le principal moteur de fidélité dans l'industrie du voyage. Les voyageurs ne choisissent plus une marque uniquement pour le prix, mais pour la commodité, la fiabilité et la personnalisation.",
+        "section2Benefits": "En fournissant des eSIM dans le cadre de vos services, vous aidez vos clients à rester connectés dès leur arrivée à destination. Ce petit geste crée un impact majeur : tranquillité d'esprit, voyage plus fluide et raison de faire confiance à votre agence pour de futurs voyages. De plus, chaque activation d'eSIM génère des revenus pour votre agence, créant un nouveau flux de revenus récurrents. En résumé, les eSIM vous aident à :",
+        "benefit1": "Améliorer la satisfaction client en éliminant une frustration courante du voyage",
+        "benefit2": "Renforcer votre image de marque en tant qu'entreprise technologique et centrée sur le voyageur",
+        "benefit3": "Rester dans l'esprit des clients lorsqu'ils planifient leur prochain voyage",
+        "benefit4": "Créer un nouveau flux de revenus récurrents",
+        "section3Title": "Intégration simplifiée avec Simwego",
+        "section3Content": "Chez Simwego, nous facilitons l'intégration rapide des eSIM pour toute entreprise de voyage, sans complexité technique. Que vous soyez une agence de voyage locale, une plateforme de réservation en ligne ou un voyagiste, nous proposons des solutions flexibles qui s'adaptent à vos besoins.",
+        "integration1Title": "Intégration API",
+        "integration1Desc": "permet de connecter les services eSIM directement à votre site web, application ou système de réservation, offrant une expérience entièrement intégrée à vos clients.",
+        "integration2Title": "Webstore en marque blanche",
+        "integration2Desc": "vous permet de lancer votre propre boutique eSIM sous votre nom de marque. Les voyageurs peuvent acheter des forfaits de données directement via vous, tandis que Simwego gère le backend.",
+        "integration3Title": "Programme d'affiliation",
+        "integration3Desc": "vous permet de partager des offres eSIM via des liens de parrainage. C'est un moyen rapide et sans effort d'ajouter de la valeur à vos services avec une configuration minimale.",
+        "integration4Title": "Agent WhatsApp IA",
+        "integration4Desc": "vous permet d'assister les voyageurs même après la réservation. Via WhatsApp, vos clients peuvent discuter avec un agent intelligent qui recommande, vend et active des eSIM instantanément.",
+        "section4Title": "Créer un parcours de voyage fluide",
+        "section4Content": "L'intégration des eSIM dans votre parcours client vous aide à créer une expérience de voyage plus complète et sans stress. Vous pouvez proposer des eSIM comme service optionnel pendant le processus de réservation, dans les e-mails pré-départ, ou même via votre application de voyage ou chatbot. Cet ajout simple élimine l'une des parties les plus frustrantes du voyage international : trouver des données mobiles à l'étranger. Cela montre que votre agence anticipe les besoins de vos clients et se soucie de leur confort au-delà de la réservation elle-même. Lorsque les voyageurs se sentent soutenus et bien préparés, ils sont plus susceptibles de partager des commentaires positifs, de recommander votre marque et de réserver à nouveau.",
+        "section5Title": "Lancez rapidement et ravissez vos clients",
+        "section5Content": "Avec Simwego, le lancement de votre service eSIM ne prend que quelques jours. Après avoir configuré votre compte partenaire, vous pouvez choisir la méthode d'intégration qui convient à votre entreprise, personnaliser votre image de marque et commencer à proposer des eSIM immédiatement. Simwego fournit du matériel marketing, un support client et des analyses en temps réel pour vous aider à comprendre comment vos clients utilisent et apprécient votre nouveau service de connectivité. Le résultat : un voyage plus fluide pour les voyageurs et une relation plus forte et de confiance avec votre marque.",
+        "conclusionTitle": "Conclusion",
+        "conclusionContent": "Dans un monde où les voyageurs apprécient la commodité par-dessus tout, chaque point de contact compte. En proposant des eSIM, les agences de voyage peuvent simplifier le parcours client, éliminer les points de friction courants et fidéliser à long terme. Avec les solutions d'intégration faciles de Simwego, vous pouvez offrir à vos clients ce qu'ils veulent vraiment : une expérience de voyage connectée et sans souci du début à la fin. Améliorez votre parcours client dès aujourd'hui avec Simwego et rendez chaque voyage plus simple, plus intelligent et plus connecté."
       }
     }
   }

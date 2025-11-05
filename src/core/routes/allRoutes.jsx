@@ -22,6 +22,7 @@ import PolicyPage from "../../pages/privacy-policy/PolicyPage";
 import Partnership from "../../pages/partnership/Partnership";
 import MyWallet from "../../pages/my-wallet/MyWallet";
 import ReferAndEarn from "../../pages/refer-earn/ReferAndEarn";
+import Blog from "../../pages/blog/Blog";
 
 const isSupportPromo = import.meta.env.VITE_SUPPORT_PROMO === "true";
 export const allRoutes = [
@@ -86,6 +87,10 @@ export const allRoutes = [
   {
     path: "/partnership",
     element: <Partnership />,
+  },
+  {
+    path: "/blog",
+    element: <Blog />,
   },
   {
     path: "/signin",
