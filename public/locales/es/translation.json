@@ -326,7 +326,23 @@
     "privacyPolicy": "Política de Privacidad",
     "office": "Oficina",
     "email": "Email",
-    "phone": "Teléfono"
+    "phone": "Teléfono",
+    "tagline": "WeGo Connected",
+    "navigation": "Navegación",
+    "support": "Soporte",
+    "legalMentions": "Legal",
+    "home": "Inicio",
+    "about": "Nosotros",
+    "partnership": "Asociación",
+    "blog": "Blog",
+    "contact": "Contacto",
+    "helpCenter": "Centro de ayuda",
+    "technicalSupport": "Soporte técnico",
+    "userGuide": "Guía de usuario",
+    "terms": "Términos y Condiciones",
+    "privacy": "Política de Privacidad",
+    "legalNotice": "Aviso Legal",
+    "cookies": "Cookies"
   },
   "stripe": {
     "failedToLoadPaymentInput": "Error al cargar entrada de pago",
@@ -399,6 +415,52 @@
     "failedToLoadPrivacyPolicyData": "Error al cargar Datos de Política de Privacidad",
     "noContentAvailable": "No hay contenido disponible en este momento",
     "Privacy Policy": "Política de Privacidad"
+  },
+  "landing": {
+    "hero": {
+      "title": "¡Mantente Conectado Mientras Viajas!",
+      "subtitle": "Disfruta de conectividad instantánea en más de 220 destinos en todo el mundo.",
+      "cta": "Ver todos los planes"
+    },
+    "whySimwego": {
+      "title": "¿Por qué elegir SimWeGo?",
+      "subtitle": "La solución eSIM que simplifica tus viajes",
+      "benefit1Title": "Configuración instantánea",
+      "benefit1Desc": "Recibe y activa tu eSIM en segundos",
+      "benefit2Title": "Cobertura global",
+      "benefit2Desc": "Más de 220 destinos disponibles",
+      "benefit3Title": "Precios transparentes",
+      "benefit3Desc": "Sin tarifas ocultas, sin sorpresas",
+      "benefit4Title": "Soporte 24/7",
+      "benefit4Desc": "Nuestro equipo está aquí para ayudarte en cualquier momento",
+      "benefit5Title": "Activación flexible",
+      "benefit5Desc": "Activa tu eSIM cuando quieras"
+    },
+    "howItWorks": {
+      "title": "Conéctate en 3 simples pasos",
+      "subtitle": "Un proceso simple y rápido para mantenerte conectado en todas partes",
+      "step1Title": "Elige tu destino y plan",
+      "step1Desc": "Explora nuestros planes para más de 220 destinos en todo el mundo.",
+      "step2Title": "Compra tu eSIM e instálala en 1 clic",
+      "step2Desc": "Proceso de compra ultra-simple y seguro. Código QR recibido al instante.",
+      "step3Title": "Activa al llegar y disfruta de Internet en todas partes",
+      "step3Desc": "Tu eSIM se activa automáticamente al llegar a tu destino.",
+      "ctaButton": "¿Cómo funciona?"
+    },
+    "testimonials": {
+      "title": "Lo que dicen nuestros clientes",
+      "subtitle": "Miles de viajeros confían en nosotros"
+    },
+    "professional": {
+      "title": "SimWeGo Pro",
+      "subtitle": "Soluciones profesionales para empresas",
+      "description": "Ofrece a tus clientes conectividad instantánea en más de 200 destinos.",
+      "cta": "Saber más"
+    },
+    "faq": {
+      "title": "Preguntas Frecuentes",
+      "subtitle": "Todo lo que necesitas saber"
+    }
   },
   "partnership": {
     "hero": {

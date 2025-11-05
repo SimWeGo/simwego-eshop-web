@@ -43,9 +43,7 @@ const Home = () => {
         <div className="relative h-full flex items-center">
           <div className="max-w-2xl text-white ml-[5%]">
             <h1 className="text-6xl font-bold mb-6 text-white">
-              Stay Connected
-              <br />
-              while Traveling!
+              {t("landing.hero.title")}
             </h1>
             <Button
               component={Link}
@@ -54,7 +52,7 @@ const Home = () => {
               sx={{ width: "fit-content", padding: "10px 20px" }}
               className="action-button"
             >
-              {t("btn.view_all_plans")}
+              {t("landing.hero.cta")}
             </Button>
           </div>
         </div>

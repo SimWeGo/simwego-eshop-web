@@ -296,7 +296,23 @@
     "privacyPolicy": "سياسة الخصوصية",
     "office": "المكتب",
     "email": "البريد الإلكتروني",
-    "phone": "الهاتف"
+    "phone": "الهاتف",
+    "tagline": "WeGo Connected",
+    "navigation": "التنقل",
+    "support": "الدعم",
+    "legalMentions": "قانوني",
+    "home": "الرئيسية",
+    "about": "من نحن",
+    "partnership": "الشراكة",
+    "blog": "المدونة",
+    "contact": "اتصل بنا",
+    "helpCenter": "مركز المساعدة",
+    "technicalSupport": "الدعم الفني",
+    "userGuide": "دليل المستخدم",
+    "terms": "الشروط والأحكام",
+    "privacy": "سياسة الخصوصية",
+    "legalNotice": "إشعار قانوني",
+    "cookies": "ملفات تعريف الارتباط"
   },
   "stripe": {
     "failedToLoadPaymentInput": "فشل في تحميل معلومات الدفع",
@@ -368,6 +384,52 @@
     "failedToLoadPrivacyPolicyData": "فشل في تحميل بيانات سياسة الخصوصية",
     "noContentAvailable": "لا يوجد محتوى متاح في هذه اللحظة",
     "Privacy Policy": "سياسة الخصوصية"
+  },
+  "landing": {
+    "hero": {
+      "title": "ابقَ متصلاً أثناء السفر!",
+      "subtitle": "استمتع بالاتصال الفوري في أكثر من 220 وجهة حول العالم.",
+      "cta": "عرض جميع الباقات"
+    },
+    "whySimwego": {
+      "title": "لماذا تختار SimWeGo؟",
+      "subtitle": "حل eSIM الذي يبسط رحلاتك",
+      "benefit1Title": "إعداد فوري",
+      "benefit1Desc": "استلم وقم بتفعيل بطاقة eSIM الخاصة بك في ثوانٍ",
+      "benefit2Title": "تغطية عالمية",
+      "benefit2Desc": "أكثر من 220 وجهة متاحة",
+      "benefit3Title": "أسعار شفافة",
+      "benefit3Desc": "لا توجد رسوم خفية، ولا مفاجآت",
+      "benefit4Title": "دعم على مدار الساعة",
+      "benefit4Desc": "فريقنا هنا لمساعدتك في أي وقت",
+      "benefit5Title": "تفعيل مرن",
+      "benefit5Desc": "قم بتفعيل بطاقة eSIM الخاصة بك عندما تريد"
+    },
+    "howItWorks": {
+      "title": "اتصل في 3 خطوات بسيطة",
+      "subtitle": "عملية بسيطة وسريعة للبقاء متصلاً في كل مكان",
+      "step1Title": "اختر وجهتك وخطتك",
+      "step1Desc": "تصفح خططنا لأكثر من 220 وجهة حول العالم.",
+      "step2Title": "اشترِ بطاقة eSIM الخاصة بك وقم بتثبيتها بنقرة واحدة",
+      "step2Desc": "عملية شراء بسيطة للغاية وآمنة. رمز QR يتم استلامه على الفور.",
+      "step3Title": "قم بالتفعيل عند الوصول واستمتع بالإنترنت في كل مكان",
+      "step3Desc": "تنشط بطاقة eSIM الخاصة بك تلقائياً عند وصولك إلى وجهتك.",
+      "ctaButton": "كيف يعمل؟"
+    },
+    "testimonials": {
+      "title": "ما يقوله عملاؤنا",
+      "subtitle": "آلاف المسافرين يثقون بنا"
+    },
+    "professional": {
+      "title": "SimWeGo Pro",
+      "subtitle": "حلول احترافية للشركات",
+      "description": "قدم لعملائك اتصالاً فورياً في أكثر من 200 وجهة.",
+      "cta": "اعرف المزيد"
+    },
+    "faq": {
+      "title": "الأسئلة المتكررة",
+      "subtitle": "كل ما تحتاج إلى معرفته"
+    }
   },
   "partnership": {
     "hero": {

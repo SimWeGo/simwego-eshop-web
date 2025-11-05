@@ -326,7 +326,23 @@
     "privacyPolicy": "Privacy Policy",
     "office": "Office",
     "email": "Email",
-    "phone": "Phone"
+    "phone": "Phone",
+    "tagline": "WeGo Connected",
+    "navigation": "Navigation",
+    "support": "Support",
+    "legalMentions": "Legal",
+    "home": "Home",
+    "about": "About",
+    "partnership": "Partnership",
+    "blog": "Blog",
+    "contact": "Contact",
+    "helpCenter": "Help Center",
+    "technicalSupport": "Technical Support",
+    "userGuide": "User Guide",
+    "terms": "Terms & Conditions",
+    "privacy": "Privacy Policy",
+    "legalNotice": "Legal Notice",
+    "cookies": "Cookies"
   },
   "stripe": {
     "failedToLoadPaymentInput": "Failed to load payment input",
@@ -530,8 +546,28 @@
     }
   },
   "landing": {
+    "hero": {
+      "title": "Stay Connected while Traveling!",
+      "subtitle": "Enjoy instant connectivity in over 220 destinations worldwide.",
+      "cta": "View all plans"
+    },
+    "whySimwego": {
+      "title": "Why choose SimWeGo?",
+      "subtitle": "The eSIM solution that simplifies your travels",
+      "benefit1Title": "Instant setup",
+      "benefit1Desc": "Receive and activate your eSIM in seconds",
+      "benefit2Title": "Global coverage",
+      "benefit2Desc": "Over 220 destinations available",
+      "benefit3Title": "Transparent pricing",
+      "benefit3Desc": "No hidden fees, no surprises",
+      "benefit4Title": "24/7 Support",
+      "benefit4Desc": "Our team is here to help you anytime",
+      "benefit5Title": "Flexible activation",
+      "benefit5Desc": "Activate your eSIM when you want"
+    },
     "howItWorks": {
       "title": "Get connected in 3 simple steps",
+      "subtitle": "A simple and fast process to stay connected everywhere",
       "step1Title": "Choose your destination and plan",
       "step1Desc": "Browse our plans for over 220 destinations worldwide.",
       "step2Title": "Buy your eSIM and install it in 1 click",
@@ -539,6 +575,20 @@
       "step3Title": "Activate on arrival and enjoy Internet everywhere",
       "step3Desc": "Your eSIM activates automatically upon arrival at your destination.",
       "ctaButton": "How does it work?"
+    },
+    "testimonials": {
+      "title": "What our customers say",
+      "subtitle": "Thousands of travelers trust us"
+    },
+    "professional": {
+      "title": "SimWeGo Pro",
+      "subtitle": "Professional solutions for businesses",
+      "description": "Offer your customers instant connectivity in over 200 destinations.",
+      "cta": "Learn more"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Everything you need to know"
     }
   },
   "blog": {

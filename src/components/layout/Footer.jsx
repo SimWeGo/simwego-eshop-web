@@ -1,34 +1,37 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import Container from "../Container";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   const handleNavigation = () => {
     window.scrollTo(0, 0);
   };
 
   const navigationLinks = [
-    { name: "Accueil", path: "/" },
-    { name: "À propos", path: "/about-us" },
-    { name: "Partenariat", path: "/partnership" },
-    { name: "Blog", path: "/blog" },
-    { name: "Contact", path: "/contact-us" }
+    { name: t("footer.home"), path: "/" },
+    { name: t("footer.about"), path: "/about-us" },
+    { name: t("footer.partnership"), path: "/partnership" },
+    { name: t("footer.blog"), path: "/blog" },
+    { name: t("footer.contact"), path: "/contact-us" }
   ];
 
   const supportLinks = [
-    { name: "Centre d'aide", path: "/contact-us" },
-    { name: "Support technique", path: "/contact-us" },
-    { name: "Guide d'utilisation", path: "/how-it-works" }
+    { name: t("footer.helpCenter"), path: "/contact-us" },
+    { name: t("footer.technicalSupport"), path: "/contact-us" },
+    { name: t("footer.userGuide"), path: "/how-it-works" }
   ];
 
   const legalLinks = [
-    { name: "Conditions générales", href: "#" },
-    { name: "Politique de confidentialité", href: "#" },
-    { name: "Mentions légales", href: "#" },
-    { name: "Cookies", href: "#" }
+    { name: t("footer.terms"), href: "#" },
+    { name: t("footer.privacy"), href: "#" },
+    { name: t("footer.legalNotice"), href: "#" },
+    { name: t("footer.cookies"), href: "#" }
   ];
 
   return (
@@ -46,7 +49,7 @@ const Footer = () => {
                 className="h-20 sm:h-24 w-auto object-contain mb-4 mx-auto sm:mx-0"
               />
               <p className="text-gray-600 font-semibold text-base sm:text-lg mb-6">
-                WeGo Connected
+                {t("footer.tagline")}
               </p>
               
               {/* Réseaux sociaux */}
@@ -83,7 +86,7 @@ const Footer = () => {
 
             {/* Colonne Navigation */}
             <div className="text-center sm:text-left">
-              <h3 className="text-gray-800 font-semibold text-base sm:text-lg mb-4 sm:mb-6">Navigation</h3>
+              <h3 className="text-gray-800 font-semibold text-base sm:text-lg mb-4 sm:mb-6">{t("footer.navigation")}</h3>
               <nav className="space-y-3">
                 {navigationLinks.map((link, index) => (
                   <Link
@@ -100,7 +103,7 @@ const Footer = () => {
 
             {/* Colonne Support */}
             <div className="text-center sm:text-left">
-              <h3 className="text-gray-800 font-semibold text-base sm:text-lg mb-4 sm:mb-6">Support</h3>
+              <h3 className="text-gray-800 font-semibold text-base sm:text-lg mb-4 sm:mb-6">{t("footer.support")}</h3>
               <nav className="space-y-3">
                 {supportLinks.map((link, index) => (
                   <Link
@@ -117,7 +120,7 @@ const Footer = () => {
 
             {/* Colonne Mentions légales */}
             <div className="text-center sm:text-left">
-              <h3 className="text-gray-800 font-semibold text-base sm:text-lg mb-4 sm:mb-6">Mentions légales</h3>
+              <h3 className="text-gray-800 font-semibold text-base sm:text-lg mb-4 sm:mb-6">{t("footer.legalMentions")}</h3>
               <nav className="space-y-3">
                 {legalLinks.map((link, index) => (
                   <a
