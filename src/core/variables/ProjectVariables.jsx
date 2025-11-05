@@ -3,6 +3,10 @@ export const onlyCountries = [];
 export const excludedCountries = ["il"];
 export const supportEmail = "support@simwego.com";
 export const supportPhone = "+44 207 370 53 10";
+export const supportedLanguages = [
+  { code: "en", name: "English", flag: "EN" },
+  { code: "fr", name: "Français", flag: "FR" },
+];
 export const supportWhatsappPhone = "+442073705310";
 export const supportedPrefix = ["93", "99"];
 export const dcbMessage = "dcbMessage";

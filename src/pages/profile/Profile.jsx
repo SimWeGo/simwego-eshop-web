@@ -21,8 +21,10 @@ import { UpdateCurrency } from "../../redux/reducers/currencyReducer";
 import { Info } from "@mui/icons-material";
 import { queryClient } from "../../main";
 import { useTranslation } from "react-i18next";
-import { languages } from "../../core/variables/StaticVariables";
-import { onlyCountries } from "../../core/variables/ProjectVariables";
+import {
+  onlyCountries,
+  supportedLanguages,
+} from "../../core/variables/ProjectVariables";
 
 const Profile = () => {
   const { t } = useTranslation();
@@ -144,7 +146,7 @@ const Profile = () => {
               "user_currency",
               payload?.user_currency?.currency
             );
-            languages?.map((el) => {
+            supportedLanguages?.map((el) => {
               localStorage.removeItem(`home_countries_cache_${el?.code}`);
             });
           } else {
@@ -206,9 +208,7 @@ const Profile = () => {
                     <FormInput
                       placeholder={t("checkout.enterEmail")}
                       value={value}
-                      disabled={
-                        login_type == "email" || login_type == "email_phone"
-                      }
+                      disabled
                       helperText={error?.message}
                       onChange={(value) => onChange(value)}
                     />

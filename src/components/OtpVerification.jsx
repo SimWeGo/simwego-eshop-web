@@ -39,7 +39,7 @@ const OtpVerification = ({
   verifyBy,
   handleSuccessOrder,
   checkout = false,
-  recallAssign,
+  loading = false,
   otpRequested = false,
   otpExpiration,
 }) => {
@@ -59,6 +59,7 @@ const OtpVerification = ({
   const [expiresAt, setExpiresAt] = useState(
     Date.now() + (otpExpiration ?? orderDetail?.otp_expiration ?? 120) * 1000
   );
+
   const [timer, setTimer] = useState(
     Math.max(0, Math.floor((expiresAt - Date.now()) / 1000))
   );
@@ -110,6 +111,8 @@ const OtpVerification = ({
   };
 
   useEffect(() => {
+    if (loading) return;
+
     const interval = setInterval(() => {
       const remaining = Math.max(
         0,
@@ -124,7 +127,7 @@ const OtpVerification = ({
     }, 1000);
 
     return () => clearInterval(interval);
-  }, [expiresAt]);
+  }, [expiresAt, loading]);
 
   useEffect(() => {
     setVerifiedBy(otp_channel?.[0]);
@@ -416,37 +419,46 @@ const OtpVerification = ({
         </div>
 
         <div className="flex flex-row flex-wrap gap-[0.5rem] w-full justify-center text-center text-sm">
-          {!resend ? (
-            <>
-              {t("auth.didntReceiveCode")}{" "}
-              <span
-                role="button"
-                tabIndex={0}
-                onClick={handleResendOtp}
-                onKeyDown={(e) => {
-                  if (e.key === "Enter" || e.key === " ") handleResendOtp();
-                }}
-                className="text-secondary underline cursor-pointer"
-              >
-                {t("auth.resendNow")}
-              </span>
-            </>
+          {!loading ? (
+            !resend ? (
+              <>
+                {t("auth.didntReceiveCode")}{" "}
+                <span
+                  role="button"
+                  tabIndex={0}
+                  onClick={handleResendOtp}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter" || e.key === " ") handleResendOtp();
+                  }}
+                  className="text-secondary underline cursor-pointer"
+                >
+                  {t("auth.resendNow")}
+                </span>
+              </>
+            ) : (
+              <p className="text-secondary font-bold">
+                {timer == null || isNaN(timer) || timer == 0 ? (
+                  <Skeleton
+                    variant="text"
+                    width={80}
+                    height={30}
+                    className="!bg-gray-300 rounded-md"
+                  />
+                ) : (
+                  <>
+                    {t("auth.resendCode")} {Math.floor(timer / 60)}:
+                    {(timer % 60).toString().padStart(2, "0")}
+                  </>
+                )}
+              </p>
+            )
           ) : (
-            <p className="text-secondary font-bold">
-              {timer == null || isNaN(timer) ? (
-                <Skeleton
-                  variant="text"
-                  width={80}
-                  height={30}
-                  className="!bg-gray-300 rounded-md"
-                />
-              ) : (
-                <>
-                  {t("auth.resendCode")} {Math.floor(timer / 60)}:
-                  {(timer % 60).toString().padStart(2, "0")}
-                </>
-              )}
-            </p>
+            <Skeleton
+              variant="text"
+              width={80}
+              height={30}
+              className="!bg-gray-300 rounded-md"
+            />
           )}
         </div>
       </div>
