@@ -1,11 +1,32 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useLocation } from "react-router-dom";
 
-const PaymentSummary = ({ data }) => {
+const PaymentSummary = ({ data, rewardfulDiscountPercent }) => {
   const { t } = useTranslation();
   const location = useLocation();
   const state = location.state;
+  const [rewardfulCoupon, setRewardfulCoupon] = useState(null);
+
+  console.log('📊 PaymentSummary - Received props:', { data: data?.bundle_code, rewardfulDiscountPercent });
+
+  useEffect(() => {
+    console.log('📊 PaymentSummary - useEffect triggered, discount:', rewardfulDiscountPercent);
+    // Use discount from backend if provided
+    if (rewardfulDiscountPercent) {
+      console.log('✅ PaymentSummary - Setting coupon with discount:', rewardfulDiscountPercent);
+      setRewardfulCoupon({
+        id: "affiliate-discount",
+        name: "Affiliate Discount",
+        percent_off: rewardfulDiscountPercent,
+        duration: "once"
+      });
+    } else {
+      console.log('❌ PaymentSummary - No discount to apply');
+    }
+  }, [rewardfulDiscountPercent]);
+
+  console.log('📊 PaymentSummary - Current rewardfulCoupon state:', rewardfulCoupon);
 
   return (
     <div
@@ -49,6 +70,30 @@ const PaymentSummary = ({ data }) => {
             {state?.new_price_display || data?.price_display}
           </p>
         </div>
+
+        {/* Rewardful Coupon Discount */}
+        {rewardfulCoupon && (
+          <div className={"flex flex-row justify-between items-start gap-[1rem]"}>
+            <label className={"flex-1 font-semibold text-green-600"}>
+              {rewardfulCoupon.name || "Affiliate Discount"}
+              {rewardfulCoupon.percent_off && ` (-${rewardfulCoupon.percent_off}%)`}
+            </label>
+            <p
+              dir={"ltr"}
+              className={`flex-1 font-bold text-green-600 ${
+                localStorage.getItem("i18nextLng") === "en"
+                  ? "text-right"
+                  : "text-left"
+              }`}
+            >
+              {rewardfulCoupon.percent_off
+                ? `-${((data?.price || 0) * rewardfulCoupon.percent_off / 100).toFixed(2)} ${data?.currency_code || 'EUR'}`
+                : rewardfulCoupon.amount_off
+                ? `-${(rewardfulCoupon.amount_off / 100).toFixed(2)} ${rewardfulCoupon.currency?.toUpperCase()}`
+                : ''}
+            </p>
+          </div>
+        )}
       </div>
       <hr />
       <div className={"flex flex-row justify-between items-start gap-[1rem]"}>
@@ -61,7 +106,11 @@ const PaymentSummary = ({ data }) => {
               : "text-left"
           }`}
         >
-          {state?.new_price_display || data?.price_display}
+          {rewardfulCoupon && rewardfulCoupon.percent_off
+            ? `${((data?.price || 0) * (1 - rewardfulCoupon.percent_off / 100)).toFixed(2)} ${data?.currency_code || 'EUR'}`
+            : rewardfulCoupon && rewardfulCoupon.amount_off
+            ? `${((data?.price || 0) - rewardfulCoupon.amount_off / 100).toFixed(2)} ${data?.currency_code || 'EUR'}`
+            : state?.new_price_display || data?.price_display}
         </p>
       </div>
     </div>

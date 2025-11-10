@@ -18,13 +18,9 @@ const LanguageSwitcher = () => {
   const dispatch = useDispatch();
   const languages = [
     { code: "en", name: "English", flag: "EN" },
-<<<<<<< HEAD
     { code: "ar", name: "العربية", flag: "ع" },
     { code: "fr", name: "Français", flag: "FR" },
     { code: "es", name: "Español", flag: "ES" },
-=======
-    { code: "fr", name: "Français", flag: "FR" },
->>>>>>> main
   ];
   const modalRef = useRef(null);
 

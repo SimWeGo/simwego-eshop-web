@@ -1,12 +1,9 @@
 import React from "react";
-<<<<<<< HEAD
-=======
 import MonetizationOnOutlinedIcon from "@mui/icons-material/MonetizationOnOutlined";
 import PublicOutlinedIcon from "@mui/icons-material/PublicOutlined";
 import CheckCircleOutlineOutlinedIcon from "@mui/icons-material/CheckCircleOutlineOutlined";
 import AirplanemodeActiveOutlinedIcon from "@mui/icons-material/AirplanemodeActiveOutlined";
 import { useTranslation } from "react-i18next";
->>>>>>> main
 
 const isSupportPromo = import.meta.env.VITE_SUPPORT_PROMO == "true";
 
@@ -38,8 +35,6 @@ export const languages = [
   { code: "fr", name: "Français", flag: "FR" },
 ];
 
-<<<<<<< HEAD
-=======
 export const benefits = [
   {
     icon: <CheckCircleOutlineOutlinedIcon sx={{ color: "white" }} />,
@@ -66,7 +61,6 @@ export const benefits = [
     description: "saveThePlanetDesc",
   },
 ];
->>>>>>> main
 export const iOSSteps = [
   {
     description: "goto_settings",
