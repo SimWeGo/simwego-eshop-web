@@ -1,5 +1,5 @@
 //UTILITIES
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useQuery } from "react-query";
 import { useDispatch, useSelector } from "react-redux";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
@@ -29,8 +29,14 @@ const Checkout = () => {
   const location = useLocation();
   const [checkedMethod, setCheckedMethod] = useState(false);
   const [orderId, setOrderId] = useState(null);
+  const [rewardfulDiscountPercent, setRewardfulDiscountPercent] = useState(null);
 
   const state = location.state;
+
+  // Log when rewardful discount changes
+  useEffect(() => {
+    console.log('🏪 Checkout - rewardfulDiscountPercent changed:', rewardfulDiscountPercent);
+  }, [rewardfulDiscountPercent]);
 
   const { data, isLoading, error } = useQuery({
     queryKey: [`${id}-details`],
@@ -64,6 +70,25 @@ const Checkout = () => {
     const searchParams = new URLSearchParams(location.search);
     searchParams.set("order_id", id ? id : orderId);
     localStorage.removeItem("referral_code");
+
+    // Track Rewardful conversion
+    if (window.rewardful && typeof window.rewardful === 'function') {
+      try {
+        const conversionData = {
+          email: user_info?.email || user_info?.phone,
+        };
+
+        // Add order amount if available
+        if (data?.price) {
+          conversionData.amount = state?.new_price ?? data?.price;
+        }
+
+        window.rewardful('convert', conversionData);
+        console.log('✅ Rewardful conversion tracked successfully');
+      } catch (error) {
+        console.error('❌ Failed to track Rewardful conversion:', error);
+      }
+    }
 
     setTimeout(() => {
       queryClient.invalidateQueries({ queryKey: ["my-esim"] });
@@ -171,9 +196,10 @@ const Checkout = () => {
             handleCancelOrder={handleCancelOrder}
             handleSuccessOrder={handleSuccessOrder}
             setOrderId={setOrderId}
+            setRewardfulDiscountPercent={setRewardfulDiscountPercent}
           />
         )}
-        <PaymentSummary data={data} />
+        <PaymentSummary data={data} rewardfulDiscountPercent={rewardfulDiscountPercent} isCheckoutPage={confirmed} />
       </div>
     </div>
   );

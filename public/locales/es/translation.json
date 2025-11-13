@@ -1,0 +1,650 @@
+{
+  "common": {
+    "hooray": "¡Hurra!",
+    "notAvailable": "N/A",
+    "pageNotFound": "Página No Encontrada",
+    "pageNotExistMessage": "Lo sentimos, la página que buscas no existe."
+  },
+  "account": {
+    "delete_account": "Eliminar Cuenta",
+    "delete_account_paragraph": "Esto eliminará tu cuenta de la aplicación monty esim. Siempre podrás acceder a tu eSIM comprada y perfil activado a través de tu teléfono",
+    "delete_account_confirmation": "Por favor ingresa tu email para confirmar la eliminación de tu cuenta"
+  },
+  "notifications": {
+    "title": "Notificaciones",
+    "failedToLoadNotifications": "Error al cargar notificaciones",
+    "noNotificationsYet": "Aún no hay notificaciones",
+    "failedToMarkAsUnread": "Error al marcar como no leído",
+    "noNotificationsFound": "No Se Encontraron Notificaciones"
+  },
+  "noDataFound": {
+    "no_valid_iccid": "No se proporcionó ICCID. Por favor proporciona un ICCID válido.",
+    "no_data_matching_iccid": "No hay datos disponibles para el ICCID proporcionado",
+    "no_active_plans": "No hay planes activos",
+    "no_expired_plans": "No hay planes vencidos"
+  },
+  "label": {
+    "purchase_date": "Fecha de Compra",
+    "iccid number": "Número ICCID",
+    "order_id": "ID de Pedido",
+    "bundle_name": "Nombre del Paquete",
+    "link": "Enlace",
+    "enterName": "Ingresa nombre",
+    "eSIM_validity": "Validez de eSIM"
+  },
+  "bundle": {
+    "bundle_existence_title": "¡Has comprado una eSIM antes!",
+    "bundle_existence_text": "Si aún tienes la SIM en tu dispositivo y la vas a usar desde aquí, ¡es más rápido recargarla!"
+  },
+  "btn": {
+    "buy_new_esim": "Comprar nueva eSIM",
+    "top_up_existing_esim": "Recargar mi SIM existente",
+    "save": "Guardar",
+    "copy_link": "Copiar Enlace",
+    "user_guide": "Guía del Usuario",
+    "signin_signup": "Iniciar Sesión / Registrarse",
+    "resend_now": "Reenviar ahora",
+    "view_receipt": "Ver Recibo",
+    "download": "Descargar",
+    "view_more": "Ver Más",
+    "delete": "Eliminar",
+    "add_top_up": "Añadir Recarga",
+    "consumption": "Consumo",
+    "view_qr_code": "Ver Código QR",
+    "shop_now": "Comprar Ahora",
+    "learn_more": "Saber más",
+    "view_all_plans": "Ver todos los planes",
+    "buyNow": "Comprar ahora",
+    "checkingBundle": "Verificando Paquete...",
+    "countries": "Países",
+    "regions": "Regiones",
+    "global": "Global",
+    "viewLess": "Ver Menos",
+    "viewAllCountries": "Ver Todos los Países",
+    "copiedSuccessfully": "Copiado Exitosamente",
+    "confirm": "Confirmar",
+    "sending": "Enviando...",
+    "sendMessage": "Enviar mensaje",
+    "payNow": "Pagar Ahora",
+    "cancel": "Cancelar",
+    "savingChanges": "Guardando Cambios...",
+    "saveChanges": "Guardar Cambios"
+  },
+  "orders": {
+    "plan_history": "Historial de Planes",
+    "edit_name": "Editar Nombre",
+    "top_up_plan": "Recargar Plan",
+    "top_up_plan_text": "Recarga tu plan ahora y benefíciate de sus datos y cobertura",
+    "consumption_details": "Detalles de Consumo",
+    "consumption_details_text": "Esta es tu tasa de consumo hasta ahora",
+    "share_your_bundle_text": "Comparte tu paquete con amigos, familia o cualquier persona que creas que se beneficiaría de él",
+    "share_your_bundle": "Comparte Tu Paquete",
+    "qrcode_detail": "Detalles del Código QR",
+    "payment_successfull": "¡Tu pago se realizó exitosamente!",
+    "please_wait_to_fetch_order": "Por favor espera mientras obtenemos los detalles de tu pedido",
+    "qrcode_sent_text": "El código QR fue enviado a tu email. Puedes escanearlo aquí y compartirlo con tus amigos.",
+    "orders_history": "Historial de Pedidos",
+    "order_id": "ID del Pedido",
+    "order_status": "Estado del Pedido",
+    "payment_details": "Detalles de Pago",
+    "smdpAddress": "Dirección",
+    "activateCode": "Código de Activación",
+    "failedToLoad": "Error al cargar datos del pedido.",
+    "pleaseSignIn": "Por favor inicia sesión para ver más detalles",
+    "ordered": "Pedido",
+    "Amount": "Cantidad",
+    "Type": "Tipo",
+    "Validity": "Validez",
+    "Data": "Datos",
+    "Order ID": "ID del Pedido",
+    "Purchase Date": "Fecha de Compra",
+    "dataUsage": "consumido",
+    "failedToLoadEsimConsumption": "Error al cargar consumo de eSIM",
+    "qty": "Cant.",
+    "product": "Producto",
+    "unitPrice": "Precio Unitario",
+    "amount": "Cantidad",
+    "totalPrice": "Precio Total:",
+    "finalPrice": "Precio Final:",
+    "failedToLoadOrderReceiptDetails": "Error al cargar detalles del recibo del pedido",
+    "failedToLoadOrders": "Error al cargar pedidos",
+    "noOrdersYet": "Aún no hay pedidos",
+    "companyName": "Nombre de la Empresa",
+    "address": "Dirección",
+    "email": "Email",
+    "orderId": "ID del Pedido",
+    "orderType": "Tipo de Pedido",
+    "Primary Bundle": "Paquete Principal",
+    "TopUp Bundle": "Paquete de Recarga",
+    "labelRequired": "La etiqueta es un campo requerido",
+    "qrcode_loading": "Obteniendo datos del código QR. Solo un momento..."
+  },
+  "esim": {
+    "title": "Mi eSIM",
+    "current_plans": "Planes Actuales",
+    "expired_plans": "Planes Vencidos",
+    "esim_detail": "Detalle de Esim"
+  },
+  "nav": {
+    "home": "Inicio",
+    "plans": "Planes",
+    "howItWorks": "Cómo Funciona",
+    "partnership": "Simwego Pro",
+    "blog": "Blog",
+    "aboutUs": "Nosotros",
+    "contactUs": "Contáctanos",
+    "signIn": "Iniciar Sesión",
+    "myWallet": "Mi Cartera",
+    "myEsim": "Mi eSIM",
+    "ordersHistory": "Historial de Pedidos",
+    "accountInfo": "Información de Cuenta",
+    "deleteAccount": "Eliminar Cuenta",
+    "logout": "Cerrar Sesión"
+  },
+  "userGuide": {
+    "goto_settings": "Ve a Configuración",
+    "select_mobile_settings": "Selecciona Servicios Móviles",
+    "select_add_esim": "Selecciona Añadir eSIM",
+    "select_use_qr_code": "Selecciona Usar Código QR",
+    "place_qr_code": "Coloca el código QR que recibiste dentro del marco de la cámara del teléfono para escanear el código",
+    "go_mobile_data": "Regresa a Servicio Móvil y Selecciona en Opciones de Datos Móviles",
+    "toggle_data_roaming": "Selecciona el botón de alternancia junto a Roaming de Datos para activar o desactivar la función",
+    "good_to_go": "¡Estás listo!",
+    "slide_two_fingers": "Desliza dos dedos hacia abajo comenzando desde la parte superior de la pantalla",
+    "select_settings_icon": "Selecciona el icono de Configuración",
+    "select_connections": "Selecciona Conexiones",
+    "select_sim_manager": "Selecciona Administrador de SIM",
+    "go_back_connections": "Regresa a Conexiones y Selecciona Redes móviles",
+    "select_qr_code": "Selecciona Código QR",
+    "toggle_roaming": "Alternar Roaming"
+  },
+  "auth": {
+    "phone": "teléfono",
+    "signInTitle": "Iniciar sesión / Registrarse",
+    "newUser": "¿Usuario nuevo?",
+    "createAccount": "Crear una cuenta",
+    "email": "Email",
+    "password": "Contraseña",
+    "acceptTerms": "Acepto los",
+    "termsAndConditions": "Términos y Condiciones",
+    "signIn": "Iniciar Sesión",
+    "signingIn": "Iniciando sesión...",
+    "loginSuccess": "¡Sesión iniciada exitosamente!",
+    "orContinueWith": "O",
+    "signInWithGoogle": "Iniciar sesión con Google",
+    "signInWithFacebook": "Iniciar sesión con Facebook",
+    "verifyEmail": "¡Por favor verifica tu {{verifyBy}}!",
+    "sms": "SMS",
+    "whatsapp": "Whatsapp",
+    "dcbMessage": "Estás a punto de pagar usando tu número de teléfono. Se envió un código de verificación por {{verifyBy}}",
+    "syrialtelDcbMessage": "Estás a punto de pagar usando SyriaCash. Se envió un código de verificación por {{verifyBy}}",
+    "mtnDcbMessage": "Estás a punto de pagar usando tu saldo de tiempo aire MTN. Se envió un código de verificación por {{verifyBy}}",
+    "verificationCodeSent": "¡Casi listo! Se envió un código de verificación por {{verifyBy}}",
+    "verify": "Verificar",
+    "verifying": "Verificando...",
+    "didntReceiveCode": "¿No recibiste un código?",
+    "resendNow": "Reenviar ahora",
+    "didnt_receive_email": "¿No recibiste un email?",
+    "welcomeBackEnterEmail": "¡Bienvenido de vuelta! Por favor ingresa tu {{loginType}}.",
+    "confirmationRequired": "Se requiere confirmación",
+    "failedToVerifyOtp": "Error al verificar otp",
+    "resendCode": "Reenviar Código",
+    "signInSent": "{{method}} Enviado",
+    "signInEmailWithInstructionsSent": "Se envió un {{method}} de inicio de sesión con instrucciones adicionales",
+    "checkEmailToCompleteSignIn": "Revisa tu email para completar el inicio de sesión",
+    "phoneRequired": "El teléfono es requerido",
+    "invalidPhone": "Número de teléfono inválido",
+    "selectVerificationMethod": "Por favor selecciona un método de verificación",
+    "otpMustBeNumber": "OTP debe ser un número",
+    "otpRequired": "OTP es requerido",
+    "otpDigitLength": "Cada dígito OTP debe ser exactamente un carácter",
+    "otpSixDigits": "OTP debe tener exactamente 6 dígitos",
+    "signInInstructionsSent": "Se envió un <ltr>{{verifyBy}}</ltr> de inicio de sesión a <ltr>{{contact}}</ltr>. Revisa tu <ltr>{{verifyBy}}</ltr> e ingresa el OTP en la siguiente pantalla para completar el inicio de sesión.",
+    "phoneNumberRequired": "El campo Número de Teléfono es requerido",
+    "verifyByChannel": "Verificar por {{channel}}",
+    "invalidPhoneNumber": "Número de teléfono inválido",
+    "confirmValidAndNoTypos": "Confirmo que el {{login_type}} anterior es válido y no contiene errores tipográficos.",
+    "andIAcceptThe": "Y acepto los",
+    "andIUnderstandProductWorksWithESIM": "y entiendo que el producto solo funciona con dispositivos compatibles con eSIM y desbloqueados por operador.",
+    "emailMustBeValid": "El email debe ser un email válido",
+    "phoneNumber": "Número de Teléfono"
+  },
+  "plans": {
+    "restrictedCountriesSelection": "Solo puedes seleccionar hasta 3 países",
+    "chooseYourPlan": "Elige tu plan",
+    "please": "Por favor",
+    "dial": "marca",
+    "checkCompatibility": "para verificar compatibilidad del dispositivo, si existe EID entonces",
+    "compatibleDevice": "tu dispositivo es compatible",
+    "noPlansAvailable": "No hay planes disponibles en este momento. Por favor vuelve más tarde",
+    "atSea": "En el Mar",
+    "onLand": "En Tierra",
+    "searchByCountry": "Buscar por país",
+    "Plan Started": "Plan Iniciado",
+    "Plan Not Started": "Plan No Iniciado",
+    "Expired": "Vencido"
+  },
+  "bundles": {
+    "validity": "Validez",
+    "noBundlesAvailable": "Actualmente, no hay paquetes disponibles",
+    "noTopupsAvailable": "Actualmente, no hay recargas disponibles",
+    "availableIn": "Disponible en",
+    "supportedCountries": "Países Compatibles",
+    "bundleIsntSupportedCountry": "Este paquete no es compatible en ningún país.",
+    "additionalInfo": "Información Adicional",
+    "planType": "Tipo de Plan",
+    "activationPolicy": "Política de Activación",
+    "compatibility": "Compatibilidad",
+    "findOut": "Descubre si tu dispositivo soporta eSIM marcando <0>{{code}}</0> y buscando <1>{{term}}</1>.",
+    "failedToLoadBundles": "Error al cargar paquetes",
+    "duration": "{{count}} {{unit}}",
+    "unit": {
+      "day": "día",
+      "day_plural": "días",
+      "month": "mes",
+      "month_plural": "meses",
+      "year": "año",
+      "year_plural": "años"
+    }
+  },
+  "checkout": {
+    "aliasEmailNotAllowed": "No se permiten emails con alias (con '+')",
+    "confirmationRequired": "Se requiere confirmación",
+    "emailRequired": "¡El email es un campo requerido!",
+    "failedToSendMessage": "Error al enviar mensaje",
+    "goBack": "Regresar",
+    "email": "Email",
+    "enterEmail": "Ingresa Email",
+    "emailConfirmationMessage": "Confirmo que el email anterior es válido y no contiene errores tipográficos.",
+    "terms": "Términos y Condiciones",
+    "esimCompatibilityNote": "y entiendo que el producto solo funciona con dispositivos compatibles con eSIM y desbloqueados por operador.",
+    "summary": "Resumen",
+    "bundleName": "Nombre del Paquete",
+    "subtotal": "Subtotal",
+    "estimatedTax": "Impuesto Estimado",
+    "total": "Total"
+  },
+  "howItWorks": {
+    "easyAndFast": "Fácil y rápido",
+    "howToSetUpMontyEsim": "Cómo configurar tu eSIM",
+    "step": "Paso",
+    "of": "de"
+  },
+  "aboutUs": {
+    "stayConnected": "Mantente Conectado",
+    "failedToLoadAboutUsData": "Error al cargar datos de Nosotros",
+    "noContentAvailable": "No hay contenido disponible en este momento",
+    "About us": "Nosotros",
+    "hero": {
+      "title": "Conectamos viajeros... en todo el mundo",
+      "subtitle": "En SimWeGo, cada viajero puede activar su eSIM con un clic, y cada empresa puede ofrecer esta experiencia perfecta a sus clientes.",
+      "cta": "Conoce Nuestra Historia"
+    },
+    "founders": {
+      "title": "Dos fundadores, una visión nacida del viaje",
+      "description": "Detrás de SimWeGo, hay dos ex atletas de alto nivel que han pasado gran parte de sus vidas viajando a los cuatro rincones del mundo. Competiciones internacionales, entrenamientos en el extranjero, estancias alrededor del globo.",
+      "quote": "Nuestros viajes nos enseñaron a vivir permanentemente entre dos aviones, dos culturas y dos redes.",
+      "inspiration": "Es esta experiencia de viaje y del mundo conectado lo que nos inspiró a crear SimWeGo: una solución simple, pensada por viajeros, para todos aquellos que quieren mantenerse conectados en todas partes, sin limitaciones."
+    },
+    "adn": {
+      "title": "ADN SimWeGo",
+      "performance": {
+        "title": "Rendimiento",
+        "description": "Heredado del deporte, donde cada detalle importa."
+      },
+      "simplicity": {
+        "title": "Simplicidad",
+        "description": "Una experiencia fluida, sin jerga ni tarifas ocultas."
+      },
+      "teamSpirit": {
+        "title": "Espíritu de Equipo",
+        "description": "Como en el deporte, avanzamos juntos y creamos valor compartido con nuestros socios."
+      }
+    },
+    "mission": {
+      "title": "Conectividad simple hoy. Universal mañana.",
+      "description": "Nuestra misión es clara: hacer que la conectividad de viaje sea fluida y justa, en todo el mundo."
+    }
+  },
+  "contactUs": {
+    "messageRequired": "El mensaje es un campo requerido",
+    "melIsTesting": "mel está probando",
+    "messageSentSuccessfully": "¡Tu mensaje ha sido enviado exitosamente!",
+    "failedToSendMessage": "Error al enviar mensaje",
+    "contactUs": "Contáctanos",
+    "needSomeHelp": "¿Necesitas ayuda?",
+    "contactInfo": "Para todas las consultas, por favor envíanos un email usando el formulario a continuación. ¡Nuestro equipo está aquí para ti 24/7!",
+    "message": "Mensaje",
+    "typeYourMessage": "Escribe tu mensaje",
+    "frequentlyAskedQuestions": "Preguntas frecuentes",
+    "subscribeDescription": "Suscríbete para aprender sobre nuevas características del producto, lo último en tecnología, soluciones y actualizaciones.",
+    "noFaqsMessage": "No pudimos encontrar ninguna FAQ en este momento. Si tienes preguntas, ¡no dudes en contactarnos!"
+  },
+  "partnership": {
+    "trustedPartners": "Nuestros Socios de Confianza"
+  },
+  "footer": {
+    "contactUs": "Contáctanos",
+    "termsAndConditions": "Términos y Condiciones",
+    "privacyPolicy": "Política de Privacidad",
+    "office": "Oficina",
+    "email": "Email",
+    "phone": "Teléfono",
+    "tagline": "WeGo Connected",
+    "navigation": "Navegación",
+    "support": "Soporte",
+    "legalMentions": "Legal",
+    "home": "Inicio",
+    "about": "Nosotros",
+    "partnership": "Asociación",
+    "blog": "Blog",
+    "contact": "Contacto",
+    "helpCenter": "Centro de ayuda",
+    "technicalSupport": "Soporte técnico",
+    "userGuide": "Guía de usuario",
+    "terms": "Términos y Condiciones",
+    "privacy": "Política de Privacidad",
+    "legalNotice": "Aviso Legal",
+    "cookies": "Cookies"
+  },
+  "stripe": {
+    "failedToLoadPaymentInput": "Error al cargar entrada de pago",
+    "paymentProcessingError": "El pago no puede ser procesado. Por favor contacta soporte IT.",
+    "paymentConfirmationFailed": "Error al confirmar pago",
+    "paymentMethod": "Método de Pago",
+    "failedToLoadPaymentInputs": "Error al cargar entradas de pago. Por favor intenta más tarde"
+  },
+  "planType": {
+    "Data only": "Solo datos"
+  },
+  "validity": {
+    "Day": "Día",
+    "day": "día",
+    "Week": "Semana",
+    "week": "semana",
+    "month": "mes",
+    "Month": "Mes",
+    "Year": "Año",
+    "year": "año"
+  },
+  "activity_policy": "El período de validez comienza cuando la eSIM se conecta a cualquier red compatible.",
+  "terms": {
+    "failedToLoadTermsData": "Error al cargar Datos de Términos",
+    "termsAndConditions": "Términos y Condiciones"
+  },
+  "errors": {
+    "maxCharacter": "{{field}} no debe contener más de {{character}} caracteres",
+    "customer_not_enougn_balance": "El msisdn del cliente no tiene suficiente saldo",
+    "invalid_otp": "OTP inválido",
+    "technical_error": "Error técnico",
+    "expired_otp": "OTP vencido"
+  },
+  "profile": {
+    "infoUpdatedSuccessfully": "Información Actualizada Exitosamente",
+    "failedToUpdateUserInfo": "Error al actualizar información del usuario",
+    "accountInformation": "Información de la Cuenta",
+    "firstName": "Nombre",
+    "enterFirstName": "Ingresa nombre",
+    "lastName": "Apellido",
+    "enterLastName": "Ingresa apellido",
+    "phoneNumber": "Número de Teléfono",
+    "defaultCurrency": "Moneda por Defecto",
+    "defaultCurrencyFallback": "Si no se especifica una moneda por defecto, el sistema utilizará {{system_currency}} como moneda por defecto.",
+    "selectDefaultCurrency": "Selecciona moneda por defecto",
+    "receiveUpdatesByEmail": "Recibir actualizaciones sobre nuestros servicios, noticias y ofertas por email",
+    "errors": {
+      "onlyLettersAllowed": "Solo se permiten letras",
+      "firstNameRequired": "El nombre es requerido",
+      "lastNameRequired": "El apellido es requerido",
+      "invalidPhone": "Número de teléfono inválido",
+      "phoneRequired": "El teléfono es requerido",
+      "emailRequired": "El email es requerido",
+      "emailInvalid": "El email debe ser un email válido",
+      "maxCharacter": "{{field}} debe tener como máximo {{character}} caracteres"
+    }
+  },
+  "status": {
+    "success": "Éxito",
+    "pending": "Pendiente",
+    "failed": "Fallido",
+    "failure": "Falla"
+  },
+  "payment": {
+    "paymentTypeNotAvailable": "Este tipo de pago no está disponible ahora",
+    "failedToLoadPaymentInput": "Error al cargar entrada de pago",
+    "paymentMethod": "Método de Pago"
+  },
+  "privacy": {
+    "failedToLoadPrivacyPolicyData": "Error al cargar Datos de Política de Privacidad",
+    "noContentAvailable": "No hay contenido disponible en este momento",
+    "Privacy Policy": "Política de Privacidad"
+  },
+  "landing": {
+    "hero": {
+      "title": "¡Mantente Conectado Mientras Viajas!",
+      "subtitle": "Disfruta de conectividad instantánea en más de 220 destinos en todo el mundo.",
+      "cta": "Ver todos los planes"
+    },
+    "whySimwego": {
+      "title": "¿Por qué elegir SimWeGo?",
+      "subtitle": "La solución eSIM que simplifica tus viajes",
+      "benefit1Title": "Configuración instantánea",
+      "benefit1Desc": "Recibe y activa tu eSIM en segundos",
+      "benefit2Title": "Cobertura global",
+      "benefit2Desc": "Más de 220 destinos disponibles",
+      "benefit3Title": "Precios transparentes",
+      "benefit3Desc": "Sin tarifas ocultas, sin sorpresas",
+      "benefit4Title": "Soporte 24/7",
+      "benefit4Desc": "Nuestro equipo está aquí para ayudarte en cualquier momento",
+      "benefit5Title": "Activación flexible",
+      "benefit5Desc": "Activa tu eSIM cuando quieras"
+    },
+    "howItWorks": {
+      "title": "Conéctate en 3 simples pasos",
+      "subtitle": "Un proceso simple y rápido para mantenerte conectado en todas partes",
+      "step1Title": "Elige tu destino y plan",
+      "step1Desc": "Explora nuestros planes para más de 220 destinos en todo el mundo.",
+      "step2Title": "Compra tu eSIM e instálala en 1 clic",
+      "step2Desc": "Proceso de compra ultra-simple y seguro. Código QR recibido al instante.",
+      "step3Title": "Activa al llegar y disfruta de Internet en todas partes",
+      "step3Desc": "Tu eSIM se activa automáticamente al llegar a tu destino.",
+      "ctaButton": "¿Cómo funciona?"
+    },
+    "testimonials": {
+      "title": "Lo que dicen nuestros clientes",
+      "subtitle": "Miles de viajeros confían en nosotros"
+    },
+    "professional": {
+      "title": "SimWeGo Pro",
+      "subtitle": "Soluciones profesionales para empresas",
+      "description": "Ofrece a tus clientes conectividad instantánea en más de 200 destinos.",
+      "cta": "Saber más"
+    },
+    "faq": {
+      "title": "Preguntas Frecuentes",
+      "subtitle": "Todo lo que necesitas saber"
+    }
+  },
+  "partnership": {
+    "hero": {
+      "title": "Potencia la Experiencia de tus Clientes con eSIM",
+      "subtitle": "Ofrece a tus viajeros conectividad móvil instantánea y sin problemas en +200 destinos.",
+      "cta": "Descubre Nuestras Soluciones"
+    },
+    "problems": {
+      "title": "Hoy en día, los viajeros quieren estar conectados al llegar, pero las soluciones actuales decepcionan.",
+      "unreliable": {
+        "title": "Poco confiable",
+        "description": "Wi-Fi público: conveniente para ti, perfecto para hackers."
+      },
+      "expensive": {
+        "title": "Demasiado caro",
+        "description": "¿Publicar un selfie por 60€? Ese es el precio de olvidar tu eSIM."
+      },
+      "complex": {
+        "title": "Demasiado complejo",
+        "description": "¿Perder 1 hora por una SIM? La eSIM toma 10 segundos."
+      }
+    },
+    "roaming": {
+      "title": "Roaming caro, experiencias frustrantes... ¡Tus clientes merecen algo mejor!",
+      "description": "Dale a tus clientes la capacidad de comprar y activar planes de datos directamente a través de tu app o sitio web. Proporcionamos la tecnología, webstore, conectividad y soporte.",
+      "cta": "Descubre Nuestras Soluciones",
+      "stats": {
+        "destinations": "+200 destinos",
+        "destinationsDesc": "Conectividad global",
+        "activation": "10 segundos",
+        "activationDesc": "Activación eSIM"
+      }
+    },
+    "solutions": {
+      "title": "Nuestras Soluciones de Asociación",
+      "api": {
+        "title": "Integración API",
+        "description": "Integra la venta de planes eSIM directamente en tu aplicación móvil existente",
+        "features": {
+          "restApi": "API REST completa",
+          "sdk": "SDK iOS/Android",
+          "documentation": "Documentación técnica",
+          "support": "Soporte para desarrolladores",
+          "analytics": "Analytics detalladas"
+        },
+        "cta": "Documentación",
+        "learnMore": "Saber Más"
+      },
+      "whiteLabel": {
+        "title": "Solución de Marca Blanca",
+        "description": "Webstore y/o aplicaciones iOS/Android proporcionadas por SimWeGo, con tu marca, integrables en tu sitio",
+        "features": {
+          "webstore": "Webstore completa con tus colores",
+          "apps": "Aplicaciones iOS/Android personalizadas",
+          "support": "Soporte técnico incluido",
+          "customization": "Personalización completa",
+          "multiLanguage": "Soporte multi-idioma"
+        },
+        "cta": "Descubrir",
+        "learnMore": "Saber Más",
+        "popular": "Popular"
+      },
+      "affiliate": {
+        "title": "Programa de Afiliados",
+        "description": "Gana comisiones recomendando SimWeGo a tus clientes a través de nuestro programa de socios",
+        "features": {
+          "commissions": "Comisiones atractivas",
+          "links": "Enlaces de referencia personalizados",
+          "dashboard": "Panel de seguimiento",
+          "payments": "Pagos mensuales",
+          "tracking": "Seguimiento avanzado"
+        },
+        "cta": "Únete",
+        "learnMore": "Saber Más",
+        "welcomeMessage": "🎉 Has sido referido",
+        "byCompany": "por",
+        "discountMessage": "Disfruta de un descuento exclusivo en tu primera compra.",
+        "discount": "Descuento de Afiliado",
+        "discountReminder": "Descuento de Afiliado Disponible",
+        "discountAppliedNextStep": "Tu descuento se aplicará automáticamente en el siguiente paso durante el pago."
+      }
+        },
+    "benefits": {
+      "title": "Una solución diseñada para ti... y para tus clientes",
+      "experience": {
+        "title": "Experiencia",
+        "description": "Mejora la experiencia de tus clientes, desde su llegada al destino."
+      },
+      "integration": {
+        "title": "Integración",
+        "description": "Integración simple y rápida, sin restricciones técnicas."
+      },
+      "positioning": {
+        "title": "Posicionamiento",
+        "description": "Fortalece tu posicionamiento con un servicio digital innovador."
+      },
+      "revenue": {
+        "title": "Ingresos",
+        "description": "Una nueva fuente de ingresos, sin gestión operacional."
+      }
+    },
+    "contact": {
+      "title": "¿Listo para ser socio?",
+      "subtitle": "Completa el formulario a continuación y nuestro equipo de socios se pondrá en contacto contigo en 24 horas.",
+      "firstName": "Nombre",
+      "lastName": "Apellido",
+      "phoneNumber": "Número de teléfono",
+      "company": "Empresa",
+      "jobRole": "Puesto de trabajo",
+      "partnershipType": "Tipo de asociación",
+      "partnershipTypePlaceholder": "Ingresa el tipo de asociación deseada",
+      "selectPartnershipType": "Selecciona el tipo de asociación",
+      "messagePartnership": "Cuéntanos sobre tus objetivos de asociación y cómo podemos trabajar juntos...",
+      "sendInquiry": "Enviar consulta de asociación",
+      "sending": "Enviando consulta de asociación...",
+      "inquiryLabel": "Consulta de asociación",
+      "success": "¡Consulta de asociación enviada exitosamente!",
+      "failed": "Error al enviar la consulta de asociación",
+      "firstNameRequired": "El nombre es requerido",
+      "lastNameRequired": "El apellido es requerido",
+      "phoneRequired": "El número de teléfono es requerido",
+      "companyRequired": "La empresa es requerida",
+      "jobRoleRequired": "El puesto de trabajo es requerido",
+      "partnershipTypeRequired": "El tipo de asociación es requerido",
+      "enterFirstName": "Ingresa tu nombre",
+      "enterLastName": "Ingresa tu apellido",
+      "enterPhone": "Ingresa tu número de teléfono",
+      "enterCompany": "Ingresa el nombre de tu empresa",
+      "enterJobRole": "Ingresa tu puesto de trabajo",
+      "partnershipTypes": {
+        "api": "Asociación API",
+        "affiliation": "Afiliación",
+        "whitelabel": "Marca blanca"
+      }
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "Guías y consejos para viajeros conectados",
+    "readMore": "Leer artículo",
+    "minRead": "min de lectura",
+    "backToBlog": "Volver al blog",
+    "relatedArticles": "Artículos relacionados",
+    "noArticlesYet": "Aún no hay artículos disponibles",
+    "comingSoon": "¡Mantente atento, nuevos artículos próximamente!",
+    "categories": {
+      "all": "Todos",
+      "guides": "Guías",
+      "tips": "Consejos",
+      "news": "Noticias"
+    },
+    "articles": {
+      "travelAgencies": {
+        "title": "Cómo las Agencias de Viajes Pueden Vender Fácilmente eSIMs y Mejorar la Experiencia del Cliente",
+        "excerpt": "Descubre cómo las agencias de viajes y OTAs pueden aumentar la lealtad y satisfacción del cliente ofreciendo eSIMs a través de las herramientas de API, webstore, apps y afiliación de Simwego.",
+        "section1Title": "El Auge de las eSIMs en la Industria de Viajes",
+        "section1Content": "Los viajeros de hoy esperan simplicidad, rapidez y conveniencia en cada paso de su viaje. Desde la reserva en línea hasta el check-in y la comunicación en el extranjero, toda la experiencia de viaje es ahora digital. Sin embargo, queda un punto de fricción: mantenerse conectado fácilmente al viajar internacionalmente. Aquí es donde la tecnología eSIM lo cambia todo. Con un rápido escaneo de código QR, los viajeros pueden activar datos móviles en segundos, sin necesidad de comprar o cambiar tarjetas SIM físicas. Para las agencias de viajes, integrar eSIMs es una forma simple de agregar valor, simplificar la experiencia del viajero y fortalecer la lealtad del cliente.",
+        "section2Title": "Por Qué Ofrecer eSIMs Construye Relaciones Más Fuertes con los Clientes",
+        "section2Intro": "La experiencia del cliente se ha convertido en el principal impulsor de lealtad en la industria de viajes. Los viajeros ya no eligen una marca solo por el precio, sino por la conveniencia, confiabilidad y personalización.",
+        "section2Benefits": "Al proporcionar eSIMs como parte de tus servicios, ayudas a tus clientes a mantenerse conectados desde el momento en que llegan a su destino. Ese pequeño gesto crea un gran impacto: tranquilidad, un viaje más fluido y una razón para confiar en tu agencia nuevamente para futuros viajes. Además, cada activación de eSIM genera ingresos para tu agencia, creando un nuevo flujo de ingresos recurrentes. En resumen, las eSIMs te ayudan a:",
+        "benefit1": "Mejorar la satisfacción del cliente eliminando una frustración común del viaje",
+        "benefit2": "Fortalecer tu imagen de marca como una empresa tecnológica y enfocada en el viajero",
+        "benefit3": "Permanecer en la mente de los clientes cuando planifiquen su próximo viaje",
+        "benefit4": "Crear un nuevo flujo de ingresos recurrentes",
+        "section3Title": "Integración Simplificada con Simwego",
+        "section3Content": "En Simwego, facilitamos que cualquier negocio de viajes integre eSIMs rápidamente, sin complejidad técnica. Ya seas una agencia de viajes local, una plataforma de reservas en línea o un operador turístico, ofrecemos soluciones flexibles que se adaptan a tus necesidades.",
+        "integration1Title": "Integración API",
+        "integration1Desc": "te permite conectar servicios eSIM directamente a tu sitio web, app o sistema de reservas, ofreciendo una experiencia completamente integrada para tus clientes.",
+        "integration2Title": "Webstore de Marca Blanca",
+        "integration2Desc": "te permite lanzar tu propia tienda eSIM bajo tu nombre de marca. Los viajeros pueden comprar planes de datos directamente a través de ti, mientras Simwego gestiona el backend.",
+        "integration3Title": "Programa de Afiliación",
+        "integration3Desc": "te permite compartir ofertas de eSIM a través de enlaces de referidos. Es una forma rápida y sin esfuerzo de agregar valor a tus servicios con una configuración mínima.",
+        "integration4Title": "Agente de WhatsApp IA",
+        "integration4Desc": "te permite asistir a los viajeros incluso después de la reserva. A través de WhatsApp, tus clientes pueden chatear con un agente inteligente que recomienda, vende y activa eSIMs al instante.",
+        "section4Title": "Creando un Viaje sin Complicaciones",
+        "section4Content": "Integrar eSIMs en tu recorrido del cliente te ayuda a crear una experiencia de viaje más completa y sin estrés. Puedes ofrecer eSIMs como un servicio opcional durante el proceso de reserva, en correos electrónicos previos a la salida, o incluso a través de tu app de viajes o chatbot. Esta pequeña adición elimina una de las partes más frustrantes de los viajes internacionales: encontrar datos móviles en el extranjero. Muestra que tu agencia anticipa las necesidades de tus clientes y se preocupa por su comodidad más allá de la reserva en sí. Cuando los viajeros se sienten apoyados y bien preparados, es más probable que compartan comentarios positivos, recomienden tu marca y reserven nuevamente.",
+        "section5Title": "Lanza Rápidamente y Deleita a tus Clientes",
+        "section5Content": "Con Simwego, lanzar tu servicio eSIM toma solo unos días. Después de configurar tu cuenta de socio, puedes elegir el método de integración que se ajuste a tu negocio, personalizar tu marca y comenzar a ofrecer eSIMs de inmediato. Simwego proporciona materiales de marketing, soporte al cliente y análisis en tiempo real para ayudarte a comprender cómo tus clientes usan y valoran tu nuevo servicio de conectividad. El resultado: un viaje más fluido para los viajeros y una relación más fuerte y confiable con tu marca.",
+        "conclusionTitle": "Conclusión",
+        "conclusionContent": "En un mundo donde los viajeros valoran la conveniencia por encima de todo, cada punto de contacto importa. Al ofrecer eSIMs, las agencias de viajes pueden simplificar el recorrido del cliente, eliminar puntos de dolor comunes y construir lealtad a largo plazo. Con las soluciones de integración fácil de Simwego, puedes dar a tus clientes lo que realmente quieren: una experiencia de viaje conectada y sin preocupaciones de principio a fin. Mejora tu recorrido del cliente hoy con Simwego y haz que cada viaje sea más simple, más inteligente y más conectado."
+      }
+    }
+  }
+}

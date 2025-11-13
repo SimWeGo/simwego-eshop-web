@@ -18,6 +18,8 @@ i18n
   .init({
     fallbackLng: import.meta.env.VITE_DEFAULT_LANGUAGE || "fr", // fallback only
     debug: false,
+    ns: ["translation", "blog"], // Namespaces disponibles
+    defaultNS: "translation", // Namespace par défaut
     interpolation: {
       escapeValue: false,
     },
@@ -26,9 +28,9 @@ i18n
       caches: ["localStorage"], // cache detected language in localStorage automatically
       lookupLocalStorage: "i18nextLng",
     },
-    supportedLngs: ["en", "ar", "fr"],
+    supportedLngs: ["en", "ar", "fr", "es"],
     backend: {
-      loadPath: "/locales/{{lng}}/translation.json",
+      loadPath: "/locales/{{lng}}/{{ns}}.json", // Charge translation.json ET blog.json
     },
     react: {
       useSuspense: true,

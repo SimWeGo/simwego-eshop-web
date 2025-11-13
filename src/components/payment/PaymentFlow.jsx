@@ -44,6 +44,7 @@ const PaymentFlow = (props) => {
     setOrderId,
     filteredPaymentTypes,
     handleSuccessOrder,
+    setRewardfulDiscountPercent,
   } = props;
 
   const { related_search } = useSelector((state) => state.search);
@@ -72,6 +73,17 @@ const PaymentFlow = (props) => {
 
     let handleAPI = iccid ? assignTopupBundle : assignBundle;
     let typeSelected = typeMap?.[type.toLowerCase()];
+
+    // Récupérer le referral ID et coupon de Rewardful
+    const referralId = window.Rewardful && window.Rewardful.referral;
+    const couponData = window.Rewardful && window.Rewardful.coupon;
+    // Extract coupon ID if coupon is an object
+    const couponCode = couponData && typeof couponData === 'object' ? couponData.id : couponData;
+    console.log('🎫 Rewardful referral ID captured:', referralId);
+    console.log('🎟️  Rewardful coupon data captured:', couponData);
+    console.log('🎟️  Rewardful coupon ID extracted:', couponCode);
+    console.log('🌐 Full Rewardful object:', window.Rewardful);
+
     //this api is for creating a  payment intent to get client secret
     /*|| "cc3d8d05-6bcc-453e-b6a5-3204489907f3"*/
     handleAPI({
@@ -85,10 +97,24 @@ const PaymentFlow = (props) => {
         : { iccid: iccid }),
 
       affiliate_code: "",
+      rewardful_referral: referralId || null,
+      rewardful_coupon: couponCode || null,
     })
       .then((res) => {
+        console.log('🔍 PaymentFlow - Full API Response:', res?.data?.data);
+        console.log('🎯 Rewardful discount percent from backend:', res?.data?.data?.rewardful_discount_percent);
+
         setOrderDetail(res?.data?.data);
         setOrderId(res?.data?.data?.order_id);
+
+        // Pass rewardful discount to parent if available
+        if (setRewardfulDiscountPercent && res?.data?.data?.rewardful_discount_percent) {
+          console.log('✅ Setting rewardful discount to parent:', res?.data?.data?.rewardful_discount_percent);
+          setRewardfulDiscountPercent(res?.data?.data?.rewardful_discount_percent);
+        } else {
+          console.log('❌ No rewardful discount found or callback not provided');
+        }
+
         setOtpRequested(true);
         if (res?.data?.data?.payment_status == "COMPLETED") {
           handleSuccessOrder(res?.data?.data?.order_id);

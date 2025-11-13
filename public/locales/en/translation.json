@@ -7,6 +7,14 @@
     "referral_message": "Check this out and use my referral code:",
     "noOptions": "No Options"
   },
+  "affiliate": {
+    "welcomeMessage": "🎉 You've been referred",
+    "byCompany": "by",
+    "discountMessage": "Enjoy an exclusive discount on your first purchase.",
+    "discount": "Affiliate Discount",
+    "discountReminder": "Affiliate Discount Available",
+    "discountAppliedNextStep": "Your discount will be automatically applied at the next step during payment."
+  },
   "account": {
     "delete_account": "Delete Account",
     "delete_account_paragraph": "This will delete your account from monty esim app. You can always access your bought eSIM and activated profile through your phone",
@@ -141,7 +149,8 @@
     "home": "Home",
     "plans": "Plans",
     "howItWorks": "How It Works",
-    "partnership": "Partnership",
+    "partnership": "Simwego Pro",
+    "blog": "Blog",
     "aboutUs": "About Us",
     "contactUs": "Contact Us",
     "signIn": "Sign In",
@@ -300,7 +309,37 @@
     "stayConnected": "Stay Connected",
     "failedToLoadAboutUsData": "Failed to load About us Data",
     "noContentAvailable": "No content available at this moment",
-    "About us": "About Us"
+    "About us": "About Us",
+    "hero": {
+      "title": "We connect travelers... everywhere in the world",
+      "subtitle": "At SimWeGo, every traveler can activate their eSIM with one click, and every business can offer this seamless experience to their customers.",
+      "cta": "Learn Our Story"
+    },
+    "founders": {
+      "title": "Two founders, one vision born from travel",
+      "description": "Behind SimWeGo, there are two former high-level athletes who have spent a large part of their lives traveling to the four corners of the world. International competitions, training abroad, stays around the globe.",
+      "quote": "Our journeys taught us to live permanently between two planes, two cultures and two networks.",
+      "inspiration": "It is this experience of travel and the connected world that inspired us to create SimWeGo: a simple solution, designed by travelers, for all those who want to stay connected everywhere, without constraints."
+    },
+    "adn": {
+      "title": "SimWeGo DNA",
+      "performance": {
+        "title": "Performance",
+        "description": "Inherited from sport, where every detail matters."
+      },
+      "simplicity": {
+        "title": "Simplicity",
+        "description": "A smooth experience, without jargon or hidden fees."
+      },
+      "teamSpirit": {
+        "title": "Team Spirit",
+        "description": "Like in sport, we move forward together and create shared value with our partners."
+      }
+    },
+    "mission": {
+      "title": "Simple connectivity today. Universal tomorrow.",
+      "description": "Our mission is clear: make travel connectivity smooth and fair, everywhere in the world."
+    }
   },
   "contactUs": {
     "messageRequired": "Message is a required field",
@@ -315,13 +354,32 @@
     "subscribeDescription": "Subscribe to learn about new product features, the latest in technology, solutions, and updates.",
     "noFaqsMessage": "We couldn't find any FAQs right now. If you have questions, feel free to contact us!"
   },
+  "partnership": {
+    "trustedPartners": "Our Trusted Partners"
+  },
   "footer": {
     "contactUs": "Contact Us",
     "termsAndConditions": "Terms & Conditions",
     "privacyPolicy": "Privacy Policy",
     "office": "Office",
     "email": "Email",
-    "phone": "Phone"
+    "phone": "Phone",
+    "tagline": "WeGo Connected",
+    "navigation": "Navigation",
+    "support": "Support",
+    "legalMentions": "Legal",
+    "home": "Home",
+    "about": "About",
+    "partnership": "Partnership",
+    "blog": "Blog",
+    "contact": "Contact",
+    "helpCenter": "Help Center",
+    "technicalSupport": "Technical Support",
+    "userGuide": "User Guide",
+    "terms": "Terms & Conditions",
+    "privacy": "Privacy Policy",
+    "legalNotice": "Legal Notice",
+    "cookies": "Cookies"
   },
   "stripe": {
     "failedToLoadPaymentInput": "Failed to load payment input",
@@ -408,71 +466,226 @@
     "noContentAvailable": "No content available at this moment",
     "Privacy Policy": "Privacy Policy"
   },
-  "myWallet": {
-    "wallet": "Wallet",
-    "availableBalance": "Available Balance",
-    "enterVoucherCode": "Enter your voucher code",
-    "enterValidCode": "Please enter a valid voucher code.",
-    "voucherCodeRequiredMessage": "Voucher code is required.",
-    "voucherCode": "Voucher Code",
-    "redeemInstruction": "Please enter the code or scan the QR code to redeem",
-    "redeem": "Redeem",
-    "referAndEarn": "Refer & Earn",
-    "referAndEarnDescription": "Earn cash by inviting your friends and spend it as you wish. The QR\n          code was sent to your email. You can scan it here and share it with\n          your friends.",
-    "shareWithFriends": "Share with Friends",
-    "upgradeWallet": "Upgrade Wallet",
-    "enterAmountToAddFunds": "Enter the amount number to add funds to your wallet",
-    "enterAmount": "Enter amount",
-    "amountNumber": "Amount Number",
-    "upgrade": "Upgrade",
-    "rewardHistory": "Reward History",
-    "cashback": "Cashback",
-    "amountMustBeNumber": "Amount must be a number",
-    "amountMustBeGreaterThanZero": "Amount must be greater than 0",
-    "amountRequiredMessage": "Amount is required",
-    "referral": "Referral",
-    "noCashbackFound": "No Cashback history Found",
-    "noReferralFound": "No Referral Found",
-    "voucher_successfully_redeemed": "Voucher redeemed successfully",
-    "rewards": "rewards"
+  "partnership": {
+    "hero": {
+      "title": "Boost Your Customers' Experience with eSIM",
+      "subtitle": "Offer your travelers instant and seamless mobile connectivity in +200 destinations.",
+      "cta": "Discover Our Solutions"
+    },
+    "problems": {
+      "title": "Today, travelers want to be connected upon arrival — but current solutions disappoint.",
+      "unreliable": {
+        "title": "Unreliable",
+        "description": "Public Wi-Fi: convenient for you, perfect for hackers."
+      },
+      "expensive": {
+        "title": "Too Expensive",
+        "description": "Posting a selfie for €60? That's the price of forgetting your eSIM."
+      },
+      "complex": {
+        "title": "Too Complex",
+        "description": "Spending 1 hour for a SIM? eSIM takes 10 seconds."
+      }
+    },
+    "roaming": {
+      "title": "Expensive roaming, frustrating user experiences... Your customers deserve better!",
+      "description": "Give your customers the ability to purchase and activate data plans directly through your app or website. We provide the technology, webstore, connectivity, and support.",
+      "cta": "Discover Our Solutions",
+      "stats": {
+        "destinations": "+200 destinations",
+        "destinationsDesc": "Global connectivity",
+        "activation": "10 seconds",
+        "activationDesc": "eSIM activation"
+      }
+    },
+    "solutions": {
+      "title": "Our Partnership Solutions",
+      "api": {
+        "title": "API Integration",
+        "description": "Integrate eSIM plan sales directly into your existing mobile application",
+        "features": {
+          "restApi": "Complete REST API",
+          "sdk": "iOS/Android SDK",
+          "documentation": "Technical documentation",
+          "support": "Developer support",
+          "analytics": "Detailed analytics"
+        },
+        "cta": "Documentation",
+        "learnMore": "Learn More"
+      },
+      "whiteLabel": {
+        "title": "White Label Solution",
+        "description": "Webstore and/or iOS/Android apps provided by SimWeGo, branded with your colors, integrable into your site",
+        "features": {
+          "webstore": "Complete webstore in your colors",
+          "apps": "Custom iOS/Android applications",
+          "support": "Technical support included",
+          "customization": "Complete customization",
+          "multiLanguage": "Multi-language support"
+        },
+        "cta": "Discover",
+        "learnMore": "Learn More",
+        "popular": "Popular"
+      },
+      "affiliate": {
+        "title": "Affiliate Program",
+        "description": "Earn commissions by recommending SimWeGo to your customers through our partner program",
+        "features": {
+          "commissions": "Attractive commissions",
+          "links": "Personalized referral links",
+          "dashboard": "Tracking dashboard",
+          "payments": "Monthly payments",
+          "tracking": "Advanced tracking"
+        },
+        "cta": "Join",
+        "learnMore": "Learn More"
+      }
+    },
+    "benefits": {
+      "title": "A solution designed for you... and your customers",
+      "experience": {
+        "title": "Experience",
+        "description": "Enhance your customers' experience, from their arrival at destination."
+      },
+      "integration": {
+        "title": "Integration",
+        "description": "Simple and fast integration, without technical constraints."
+      },
+      "positioning": {
+        "title": "Positioning",
+        "description": "Strengthen your positioning with an innovative digital service."
+      },
+      "revenue": {
+        "title": "Revenue",
+        "description": "A new revenue stream, without operational management."
+      }
+    },
+    "contact": {
+      "title": "Ready to Partner with Us?",
+      "subtitle": "Fill out the form below and our partnership team will get back to you within 24 hours.",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "phoneNumber": "Phone Number",
+      "company": "Company",
+      "jobRole": "Job Role",
+      "partnershipType": "Partnership Type",
+      "partnershipTypePlaceholder": "Enter desired partnership type",
+      "selectPartnershipType": "Select partnership type",
+      "messagePartnership": "Tell us about your partnership goals and how we can work together...",
+      "sendInquiry": "Send Partnership Inquiry",
+      "sending": "Sending Partnership Inquiry...",
+      "inquiryLabel": "Partnership Inquiry",
+      "success": "Partnership inquiry sent successfully!",
+      "failed": "Failed to send partnership inquiry",
+      "firstNameRequired": "First name is required",
+      "lastNameRequired": "Last name is required",
+      "phoneRequired": "Phone number is required",
+      "companyRequired": "Company is required",
+      "jobRoleRequired": "Job role is required",
+      "partnershipTypeRequired": "Partnership type is required",
+      "enterFirstName": "Enter your first name",
+      "enterLastName": "Enter your last name",
+      "enterPhone": "Enter your phone number",
+      "enterCompany": "Enter your company name",
+      "enterJobRole": "Enter your job role",
+      "partnershipTypes": {
+        "api": "API Partnership",
+        "affiliation": "Affiliation",
+        "whitelabel": "White Label"
+      }
+    }
   },
-  "referAndEarn": {
-    "referAndEarnTitle": "Refer & Earn",
-    "shareYourReferralCode": "Share Your Referral Code",
-    "referAndEarnDescriptionFull": "Get {{amount}} credit for every friend that signs up and completes a purchase. Your friends get {{amount}} off their first purchase.",
-    "yourReferralCode": "Your Referral Code",
-    "refferral_code_saved": "Referral code saved successfully",
-    "invalid_referral_code": "Invalid referral code"
+  "landing": {
+    "hero": {
+      "title": "Stay Connected while Traveling!",
+      "subtitle": "Enjoy instant connectivity in over 220 destinations worldwide.",
+      "cta": "View all plans"
+    },
+    "whySimwego": {
+      "title": "Why choose SimWeGo?",
+      "subtitle": "The eSIM solution that simplifies your travels",
+      "benefit1Title": "Instant setup",
+      "benefit1Desc": "Receive and activate your eSIM in seconds",
+      "benefit2Title": "Global coverage",
+      "benefit2Desc": "Over 220 destinations available",
+      "benefit3Title": "Transparent pricing",
+      "benefit3Desc": "No hidden fees, no surprises",
+      "benefit4Title": "24/7 Support",
+      "benefit4Desc": "Our team is here to help you anytime",
+      "benefit5Title": "Flexible activation",
+      "benefit5Desc": "Activate your eSIM when you want"
+    },
+    "howItWorks": {
+      "title": "Get connected in 3 simple steps",
+      "subtitle": "A simple and fast process to stay connected everywhere",
+      "step1Title": "Choose your destination and plan",
+      "step1Desc": "Browse our plans for over 220 destinations worldwide.",
+      "step2Title": "Buy your eSIM and install it in 1 click",
+      "step2Desc": "Ultra-simple and secure purchase process. QR code received instantly.",
+      "step3Title": "Activate on arrival and enjoy Internet everywhere",
+      "step3Desc": "Your eSIM activates automatically upon arrival at your destination.",
+      "ctaButton": "How does it work?"
+    },
+    "testimonials": {
+      "title": "What our customers say",
+      "subtitle": "Thousands of travelers trust us"
+    },
+    "professional": {
+      "title": "SimWeGo Pro",
+      "subtitle": "Professional solutions for businesses",
+      "description": "Offer your customers instant connectivity in over 200 destinations.",
+      "cta": "Learn more"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Everything you need to know"
+    }
   },
-  "swiper": {
-    "refer_banner_title": "Refer Your Friends",
-    "refer_banner_subtitle": "Invite your friends to experience",
-    "discount_banner_title": "Discount for Your Friends",
-    "cashback_banner_title": "Cashback for Your Friends",
-    "discount_banner_subtitle": "Your friends get {{amount}} off their first eSIM purchase using your referral code",
-    "refer_reward_banner_title": "Referral Rewards for You",
-    "refer_reward_banner_subtitle": "You'll earn {{amount}} wallet credit for each successful referral",
-    "start_sharing": "Start Sharing",
-    "discount_amount_description": "Your friends get {{amount}} off their first eSIM purchase using your referral code",
-    "discount_percentage_description": "Your friends get {{amount}} off their first eSIM purchase using your referral code",
-    "cashback_amount_description": "Your friends get {{amount}} cashback on their first eSIM purchase using your referral code",
-    "cashback_percentage_description": "Your friends get {{amount}} cashback on their first eSIM purchase using your referral code"
-  },
-  "home": {
-    "stayConnected": "Stay Connected",
-    "whileTraveling": "while Traveling!",
-    "easyAndFast": "Easy and Fast",
-    "unlockEndless": "Unlock endless",
-    "benefits": "benefits",
-    "easyToAcquire": "Easy to acquire",
-    "easyToAcquireDesc": "Acquiring an eSIM is often easier and faster than getting a traditional SIM card. Plus, the switch to eSIM can be done online, in minutes with only a few taps.",
-    "travelHassleFree": "Travel hassle-free",
-    "travelHassleFreeDesc": "You no longer have to worry about waiting in lines at airports or visiting a store to get your own sim card. The eSIM is a real time saver!",
-    "aMoneySaver": "A money saver",
-    "aMoneySaverDesc": "In addition to making your trip easier, eSIM will spare you excessive data charges. With Monty eSIM, you get to browse the best bundles at the most affordable prices!",
-    "saveThePlanet": "You get to save the planet",
-    "saveThePlanetDesc": "This virtual tool reduces CO2 emissions and plastic waste helping the planet breathe again.",
-    "howToSetUpMontyEsim": "How to set up your eSIM?",
-    "worksForAllUsers": "Whether you're an iPhone or an Android user, here's how it works"
+  "blog": {
+    "title": "Blog",
+    "description": "Guides and tips for connected travelers",
+    "readMore": "Read article",
+    "minRead": "min read",
+    "backToBlog": "Back to blog",
+    "relatedArticles": "Related articles",
+    "noArticlesYet": "No articles available yet",
+    "comingSoon": "Stay tuned, new articles coming soon!",
+    "categories": {
+      "all": "All",
+      "guides": "Guides",
+      "tips": "Tips",
+      "news": "News"
+    },
+    "articles": {
+      "travelAgencies": {
+        "title": "How Travel Agencies Can Easily Sell eSIMs and Enhance Customer Experience",
+        "excerpt": "Learn how travel agencies and OTAs can boost customer loyalty and satisfaction by offering eSIMs through Simwego's API, webstore, apps, and affiliate tools.",
+        "section1Title": "The Rise of eSIMs in the Travel Industry",
+        "section1Content": "Today's travelers expect simplicity, speed, and convenience at every step of their journey. From online booking to check-in and communication abroad, the entire travel experience is now digital. Yet one pain point remains: staying connected easily when traveling internationally. This is where eSIM technology changes everything. With a quick QR code scan, travelers can activate mobile data in seconds—no need to buy or swap physical SIM cards. For travel agencies, integrating eSIMs is a simple way to add value, simplify the traveler's experience, and strengthen customer loyalty.",
+        "section2Title": "Why Offering eSIMs Builds Stronger Customer Relationships",
+        "section2Intro": "Customer experience has become the main driver of loyalty in the travel industry. Travelers no longer choose a brand only for price—they choose it for convenience, reliability, and personalization.",
+        "section2Benefits": "By providing eSIMs as part of your services, you help your customers stay connected from the moment they arrive at their destination. That small gesture creates a big impact: peace of mind, a smoother journey, and a reason to trust your agency again for future trips. Also every eSIM activation generates money for your agency, creating a new recurring revenue stream. In short, eSIMs help you:",
+        "benefit1": "Improve customer satisfaction by removing a common travel frustration",
+        "benefit2": "Strengthen your brand image as a tech-forward, traveler-focused company",
+        "benefit3": "Stay top of mind when customers plan their next trip",
+        "benefit4": "Create a new recurring revenue stream",
+        "section3Title": "Integration Made Simple with Simwego",
+        "section3Content": "At Simwego, we make it easy for any travel business to integrate eSIMs quickly, without technical complexity. Whether you are a local travel agency, an online booking platform, or a tour operator, we offer flexible solutions that adapt to your needs.",
+        "integration1Title": "API Integration",
+        "integration1Desc": "allows you to connect eSIM services directly to your website, app, or booking system, offering a fully integrated experience for your customers.",
+        "integration2Title": "White-Label Webstore",
+        "integration2Desc": "lets you launch your own eSIM shop under your brand name. Travelers can purchase data plans directly through you, while Simwego manages the backend.",
+        "integration3Title": "Affiliate Program",
+        "integration3Desc": "enables you to share eSIM offers through referral links. It's a fast and effortless way to add value to your services with minimal setup.",
+        "integration4Title": "AI WhatsApp Agent",
+        "integration4Desc": "allows you to assist travelers even after booking. Through WhatsApp, your customers can chat with an intelligent agent who recommends, sells, and activates eSIMs instantly.",
+        "section4Title": "Creating a Seamless Travel Journey",
+        "section4Content": "Integrating eSIMs into your customer journey helps you create a more complete and stress-free travel experience. You can offer eSIMs as an optional service during the booking process, in pre-departure emails, or even through your travel app or chatbot. This small addition removes one of the most frustrating parts of international travel: finding mobile data abroad. It shows that your agency anticipates your clients' needs and cares about their comfort beyond the booking itself. When travelers feel supported and well-prepared, they are more likely to share positive feedback, recommend your brand, and book again.",
+        "section5Title": "Launch Quickly and Delight Your Customers",
+        "section5Content": "With Simwego, launching your eSIM service takes only a few days. After setting up your partner account, you can choose the integration method that fits your business, personalize your branding, and start offering eSIMs immediately. Simwego provides marketing materials, customer support, and real-time analytics to help you understand how your clients use and value your new connectivity service. The result: a smoother journey for travelers and a stronger, more trusted relationship with your brand.",
+        "conclusionTitle": "Conclusion",
+        "conclusionContent": "In a world where travelers value convenience above all, every touchpoint matters. By offering eSIMs, travel agencies can simplify the customer journey, remove common pain points, and build long-term loyalty. With Simwego's easy integration solutions, you can give your clients what they truly want: a connected, worry-free travel experience from start to finish. Enhance your customer journey today with Simwego and make every trip simpler, smarter, and more connected."
+      }
+    }
   }
 }

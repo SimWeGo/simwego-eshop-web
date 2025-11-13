@@ -2,7 +2,7 @@ import React, { useMemo } from "react";
 import { useSelector } from "react-redux";
 import Home from "../../pages/home/Home";
 import HowItWorks from "../../pages/HowItWorks";
-import AboutUs from "../../pages/AboutUs";
+import AboutUs from "../../pages/about-us/AboutUs";
 import ContactUs from "../../pages/ContactUs";
 import SignIn from "../../pages/SignIn";
 import Terms from "../../pages/Terms";
@@ -19,10 +19,13 @@ import AuthValidation from "../../pages/auth-validation/AuthValidation";
 import Profile from "../../pages/profile/Profile";
 import UserNotifications from "../../pages/user-notification/UserNotifications";
 import EsimDetail from "../../pages/my-esim/esim-detail/EsimDetail";
-import PrivacyPolicy from "../../pages/privacy-policy/PrivacyPolicy";
+import PolicyPage from "../../pages/privacy-policy/PolicyPage";
+import Partnership from "../../pages/partnership/Partnership";
 import MyWallet from "../../pages/my-wallet/MyWallet";
 import ReferAndEarn from "../../pages/refer-earn/ReferAndEarn";
 import Referral from "../../pages/referral/Referral";
+import Blog from "../../pages/blog/Blog";
+import BlogArticle from "../../pages/blog/BlogArticle";
 
 export const useAppRoutes = () => {
   const login_type = useSelector((state) => state?.currency?.login_type);
@@ -88,7 +91,19 @@ export const useAppRoutes = () => {
       },
       {
         path: "/privacy",
-        element: <PrivacyPolicy />,
+        element: <PolicyPage />,
+      },
+      {
+        path: "/partnership",
+        element: <Partnership />,
+      },
+      {
+        path: "/blog",
+        element: <Blog />,
+      },
+      {
+        path: "/blog/:articleId",
+        element: <BlogArticle />,
       },
       {
         path: "/signin",

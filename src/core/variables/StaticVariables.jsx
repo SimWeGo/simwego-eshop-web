@@ -10,6 +10,8 @@ const isSupportPromo = import.meta.env.VITE_SUPPORT_PROMO == "true";
 export const menuItems = [
   { path: "/plans", label: "plans" },
   { path: "/how-it-works", label: "howItWorks" },
+  { path: "/partnership", label: "partnership" },
+  { path: "/blog", label: "blog" },
   { path: "/about-us", label: "aboutUs" },
   { path: "/contact-us", label: "contactUs" },
 ];

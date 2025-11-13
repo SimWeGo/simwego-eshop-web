@@ -1,121 +1,170 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import PhoneOutlinedIcon from "@mui/icons-material/PhoneOutlined";
-import MailOutlinedIcon from "@mui/icons-material/MailOutlined";
-import RoomOutlinedIcon from "@mui/icons-material/RoomOutlined";
-import Container from "../Container";
-import {
-  footerProjectName,
-  supportAddress,
-  supportEmail,
-  supportMap,
-  supportPhone,
-} from "../../core/variables/ProjectVariables";
 import { useTranslation } from "react-i18next";
-import { useSelector } from "react-redux";
+import Container from "../Container";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+
 const Footer = () => {
   const { t } = useTranslation();
 
-  const whatsapp_number = useSelector(
-    (state) => state.currency?.whatsapp_number || ""
-  );
   const handleNavigation = () => {
     window.scrollTo(0, 0);
   };
 
-  const googleMapsUrl = supportMap;
+  const navigationLinks = [
+    { name: t("footer.home"), path: "/" },
+    { name: t("footer.about"), path: "/about-us" },
+    { name: t("footer.partnership"), path: "/partnership" },
+    { name: t("footer.blog"), path: "/blog" },
+    { name: t("footer.contact"), path: "/contact-us" }
+  ];
+
+  const supportLinks = [
+    { name: t("footer.helpCenter"), path: "/contact-us" },
+    { name: t("footer.technicalSupport"), path: "/contact-us" },
+    { name: t("footer.userGuide"), path: "/how-it-works" }
+  ];
+
+  const legalLinks = [
+    { name: t("footer.terms"), href: "#" },
+    { name: t("footer.privacy"), href: "#" },
+    { name: t("footer.legalNotice"), href: "#" },
+    { name: t("footer.cookies"), href: "#" }
+  ];
 
   return (
-    <div className="bg-primary text-white">
-      <Container className="py-8 flex flex-col gap-[1rem]">
-        <div className="flex flex-col sm:flex-row items-center sm:items-baseline justify-around gap-[2rem]">
-          {/* Contact Info */}
-          {whatsapp_number?.trim() !== "" && (
-            <div className="text-center">
-              <div className="flex items-center justify-center mb-4">
-                <div className="w-10 h-10 rounded bg-white flex items-center justify-center">
-                  <PhoneOutlinedIcon className="w-5 h-5 text-primary" />
-                </div>
-              </div>
-              <h3 className="text-lg font-semibold mb-2 text-white">
-                {" "}
-                {t("footer.phone")}
-              </h3>
-              <p dir="ltr">
-                {whatsapp_number?.trim() === "" ? "N/A" : whatsapp_number}
+    <footer className="bg-white border-t border-gray-100">
+      <Container>
+        <div className="py-12 sm:py-16 px-4">
+          {/* Section principale avec colonnes */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 lg:gap-12 mb-8 sm:mb-12">
+            
+            {/* Logo et tagline */}
+            <div className="col-span-1 sm:col-span-2 lg:col-span-1 text-center sm:text-left">
+              <img
+                src="/logo/logocrop.png"
+                alt="SimWeGo Logo"
+                className="h-20 sm:h-24 w-auto object-contain mb-4 mx-auto sm:mx-0"
+              />
+              <p className="text-gray-600 font-semibold text-base sm:text-lg mb-6">
+                {t("footer.tagline")}
               </p>
-            </div>
-          )}
-
-          {/* Email */}
-          <div className="text-center">
-            <div className="flex items-center justify-center mb-4">
-              <div className="w-10 h-10 rounded bg-white flex items-center justify-center">
-                <MailOutlinedIcon className="w-5 h-5 text-primary" />
+              
+              {/* Réseaux sociaux */}
+              <div className="flex space-x-4 justify-center sm:justify-start">
+                <a
+                  href="https://facebook.com/simwego"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-8 h-8 sm:w-10 sm:h-10 bg-blue-900 text-white rounded-full flex items-center justify-center hover:bg-blue-800 hover:scale-110 transition-all duration-300"
+                  aria-label="Facebook"
+                >
+                  <FacebookIcon className="w-5 h-5" />
+                </a>
+                <a
+                  href="https://instagram.com/simwego"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-8 h-8 sm:w-10 sm:h-10 bg-blue-900 text-white rounded-full flex items-center justify-center hover:bg-blue-800 hover:scale-110 transition-all duration-300"
+                  aria-label="Instagram"
+                >
+                  <InstagramIcon className="w-5 h-5" />
+                </a>
+                <a
+                  href="https://linkedin.com/company/simwego"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-8 h-8 sm:w-10 sm:h-10 bg-blue-900 text-white rounded-full flex items-center justify-center hover:bg-blue-800 hover:scale-110 transition-all duration-300"
+                  aria-label="LinkedIn"
+                >
+                  <LinkedInIcon className="w-5 h-5" />
+                </a>
               </div>
             </div>
-            <h3 className="text-lg font-semibold mb-2 text-white">
-              {" "}
-              {t("footer.email")}
-            </h3>
-            <a href={`mailto:${supportEmail}`}>{supportEmail}</a>
+
+            {/* Colonne Navigation */}
+            <div className="text-center sm:text-left">
+              <h3 className="text-gray-800 font-semibold text-base sm:text-lg mb-4 sm:mb-6">{t("footer.navigation")}</h3>
+              <nav className="space-y-3">
+                {navigationLinks.map((link, index) => (
+                  <Link
+                    key={index}
+                    to={link.path}
+                    onClick={handleNavigation}
+                    className="block text-gray-600 hover:text-primary transition-colors duration-300 text-sm"
+                  >
+                    {link.name}
+                  </Link>
+                ))}
+              </nav>
+            </div>
+
+            {/* Colonne Support */}
+            <div className="text-center sm:text-left">
+              <h3 className="text-gray-800 font-semibold text-base sm:text-lg mb-4 sm:mb-6">{t("footer.support")}</h3>
+              <nav className="space-y-3">
+                {supportLinks.map((link, index) => (
+                  <Link
+                    key={index}
+                    to={link.path}
+                    onClick={handleNavigation}
+                    className="block text-gray-600 hover:text-primary transition-colors duration-300 text-sm"
+                  >
+                    {link.name}
+                  </Link>
+                ))}
+              </nav>
+            </div>
+
+            {/* Colonne Mentions légales */}
+            <div className="text-center sm:text-left">
+              <h3 className="text-gray-800 font-semibold text-base sm:text-lg mb-4 sm:mb-6">{t("footer.legalMentions")}</h3>
+              <nav className="space-y-3">
+                {legalLinks.map((link, index) => (
+                  <a
+                    key={index}
+                    href={link.href}
+                    className="block text-gray-600 hover:text-primary transition-colors duration-300 text-sm"
+                  >
+                    {link.name}
+                  </a>
+                ))}
+              </nav>
+            </div>
           </div>
 
-          {/* Office */}
-          <div className="text-center">
-            <div className="flex items-center justify-center mb-4">
-              <div className="w-10 h-10 rounded bg-white flex items-center justify-center">
-                <RoomOutlinedIcon className="w-5 h-5 text-primary" />
-              </div>
-            </div>
-            <h3 className="text-lg font-semibold mb-2 text-white">
-              {" "}
-              {t("footer.office")}
-            </h3>
+          {/* App Stores centrés */}
+          <div className="flex flex-col sm:flex-row items-center justify-center space-y-3 sm:space-y-0 sm:space-x-4">
             <a
-              dir="ltr"
-              href={googleMapsUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#"
+              className="transition-transform duration-300 hover:scale-105"
+              aria-label="Télécharger sur l'App Store"
             >
-              {supportAddress}
+              <img
+                src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&releaseDate=1280376000"
+                alt="Download on the App Store"
+                className="h-12 sm:h-14 w-auto object-contain"
+                style={{ width: '120px' }}
+              />
+            </a>
+            <a
+              href="#"
+              className="transition-transform duration-300 hover:scale-105"
+              aria-label="Obtenir sur Google Play"
+            >
+              <img
+                src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                alt="Get it on Google Play"
+                className="h-14 sm:h-18 w-auto object-contain"
+                style={{ width: '160px' }}
+              />
             </a>
           </div>
         </div>
-
-        {/* Bottom Links */}
-        <div className=" pt-2 border-t border-white">
-          <div className="flex flex-col md:flex-row items-center justify-between">
-            <div className="flex items-center space-x-6 mb-4 gap-2 md:mb-0">
-              <Link
-                to={"/privacy"}
-                onClick={() => handleNavigation()}
-                className="text-sm text-white"
-              >
-                {t("footer.privacyPolicy")}
-              </Link>
-              <Link
-                to={"/terms"}
-                onClick={() => handleNavigation()}
-                className="text-sm text-white"
-              >
-                {t("footer.termsAndConditions")}
-              </Link>
-              <Link
-                to={"/contact-us"}
-                onClick={() => handleNavigation()}
-                className="text-sm text-white"
-              >
-                {t("footer.contactUs")}
-              </Link>
-            </div>
-            <div dir="ltr" className="text-sm text-white">
-              © 2025 {footerProjectName}
-            </div>
-          </div>
-        </div>
       </Container>
-    </div>
+    </footer>
   );
 };
 

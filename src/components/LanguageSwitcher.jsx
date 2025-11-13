@@ -17,6 +17,12 @@ const LanguageSwitcher = () => {
   );
   const { i18n } = useTranslation();
   const dispatch = useDispatch();
+  const languages = [
+    { code: "en", name: "English", flag: "EN" },
+    { code: "ar", name: "العربية", flag: "ع" },
+    { code: "fr", name: "Français", flag: "FR" },
+    { code: "es", name: "Español", flag: "ES" },
+  ];
   const modalRef = useRef(null);
 
   const changeLanguage = (lng) => {
