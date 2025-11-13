@@ -7,7 +7,7 @@ import Backend from "i18next-http-backend";
 if (!localStorage.getItem("i18nextLng")) {
   localStorage.setItem(
     "i18nextLng",
-    import.meta.env.VITE_DEFAULT_LANGUAGE || "ar"
+    import.meta.env.VITE_DEFAULT_LANGUAGE || "fr"
   );
 }
 
@@ -16,7 +16,7 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    fallbackLng: import.meta.env.VITE_DEFAULT_LANGUAGE || "ar", // fallback only
+    fallbackLng: import.meta.env.VITE_DEFAULT_LANGUAGE || "fr", // fallback only
     debug: false,
     ns: ["translation", "blog"], // Namespaces disponibles
     defaultNS: "translation", // Namespace par défaut
