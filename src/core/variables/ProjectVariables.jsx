@@ -5,7 +5,9 @@ export const supportEmail = "support@simwego.com";
 export const supportPhone = "+44 207 370 53 10";
 export const supportedLanguages = [
   { code: "en", name: "English", flag: "EN" },
+  { code: "ar", name: "العربية", flag: "ع" },
   { code: "fr", name: "Français", flag: "FR" },
+  { code: "es", name: "Español", flag: "ES" },
 ];
 export const supportWhatsappPhone = "+442073705310";
 export const supportedPrefix = ["93", "99"];
