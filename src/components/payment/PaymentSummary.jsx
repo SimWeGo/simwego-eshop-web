@@ -107,7 +107,7 @@ const PaymentSummary = ({ data, rewardfulDiscountPercent, isCheckoutPage }) => {
         {rewardfulCoupon && (
           <div className={"flex flex-row justify-between items-start gap-[1rem]"}>
             <label className={"flex-1 font-semibold text-secondary"}>
-              {rewardfulCoupon.name || "Affiliate Discount"}
+              {rewardfulCoupon.name || t("affiliate.discount")}
               {rewardfulCoupon.percent_off && ` (-${rewardfulCoupon.percent_off}%)`}
             </label>
             <p

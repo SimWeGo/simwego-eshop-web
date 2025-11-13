@@ -541,6 +541,7 @@
         "welcomeMessage": "🎉 Has sido referido",
         "byCompany": "por",
         "discountMessage": "Disfruta de un descuento exclusivo en tu primera compra.",
+        "discount": "Descuento de Afiliado",
         "discountReminder": "Descuento de Afiliado Disponible",
         "discountAppliedNextStep": "Tu descuento se aplicará automáticamente en el siguiente paso durante el pago."
       }
