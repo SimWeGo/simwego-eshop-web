@@ -199,7 +199,7 @@ const Checkout = () => {
             setRewardfulDiscountPercent={setRewardfulDiscountPercent}
           />
         )}
-        <PaymentSummary data={data} rewardfulDiscountPercent={rewardfulDiscountPercent} />
+        <PaymentSummary data={data} rewardfulDiscountPercent={rewardfulDiscountPercent} isCheckoutPage={confirmed} />
       </div>
     </div>
   );

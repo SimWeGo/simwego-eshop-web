@@ -34,6 +34,7 @@ import OrderPopup from "../../components/order/OrderPopup";
 import DirectionsBoatFilledOutlinedIcon from "@mui/icons-material/DirectionsBoatFilledOutlined";
 import TerrainOutlinedIcon from "@mui/icons-material/TerrainOutlined";
 import { useTranslation } from "react-i18next";
+import AffiliateBanner from "../../components/affiliate/AffiliateBanner";
 
 const Plans = (props) => {
   const { t } = useTranslation();
@@ -135,6 +136,9 @@ const Plans = (props) => {
   return (
     <>
       <div className="flex flex-col gap-[2rem] max-w-2xl mx-auto mb-12">
+        {/* Affiliate Banner */}
+        <AffiliateBanner />
+
         {seaOption && (
           <div className="flex flex-row justify-center items-center">
             <RadioGroup

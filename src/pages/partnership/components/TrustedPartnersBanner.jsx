@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import Container from "../../../components/Container";
 
 // Import logos
@@ -11,6 +12,7 @@ import TelecomValleyLogo from "../../../assets/images/partnership/partener/telec
 import YupWegoLogo from "../../../assets/images/partnership/partener/yupwego.png";
 
 const TrustedPartnersBanner = ({ className = "" }) => {
+  const { t } = useTranslation();
 
   const partners = [
     { name: "Braise", logo: BraiseLogo },
@@ -31,7 +33,7 @@ const TrustedPartnersBanner = ({ className = "" }) => {
         {/* Title */}
         <div className="text-center mb-1">
           <h2 className="text-xl md:text-2xl font-bold text-blue-900 mb-2">
-            Nos Partenaires de Confiance
+            {t("partnership.trustedPartners", "Nos Partenaires de Confiance")}
           </h2>
         </div>
 

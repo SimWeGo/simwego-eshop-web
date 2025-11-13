@@ -320,6 +320,9 @@
     "subscribeDescription": "Suscríbete para aprender sobre nuevas características del producto, lo último en tecnología, soluciones y actualizaciones.",
     "noFaqsMessage": "No pudimos encontrar ninguna FAQ en este momento. Si tienes preguntas, ¡no dudes en contactarnos!"
   },
+  "partnership": {
+    "trustedPartners": "Nuestros Socios de Confianza"
+  },
   "footer": {
     "contactUs": "Contáctanos",
     "termsAndConditions": "Términos y Condiciones",
@@ -534,7 +537,12 @@
           "tracking": "Seguimiento avanzado"
         },
         "cta": "Únete",
-        "learnMore": "Saber Más"
+        "learnMore": "Saber Más",
+        "welcomeMessage": "🎉 Has sido referido",
+        "byCompany": "por",
+        "discountMessage": "Disfruta de un descuento exclusivo en tu primera compra.",
+        "discountReminder": "Descuento de Afiliado Disponible",
+        "discountAppliedNextStep": "Tu descuento se aplicará automáticamente en el siguiente paso durante el pago."
       }
         },
     "benefits": {

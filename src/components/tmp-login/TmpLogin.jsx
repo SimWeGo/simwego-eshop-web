@@ -31,6 +31,7 @@ const TmpLogin = () => {
   const { login_type, otp_channel, social_login } = useSelector(
     (state) => state.currency
   );
+
   const schema = ({ t }) =>
     yup.object().shape({
       phone: yup
@@ -248,6 +249,7 @@ const TmpLogin = () => {
           control={control}
         />
       </div>
+
       <div className={"flex flex-row justify-center sm:justify-start "}>
         <Button
           disabled={isSubmitting}

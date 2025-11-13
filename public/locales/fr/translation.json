@@ -5,6 +5,13 @@
     "pageNotFound": "Page introuvable",
     "pageNotExistMessage": "Désolé, la page que vous recherchez n'existe pas."
   },
+  "affiliate": {
+    "welcomeMessage": "🎉 Vous avez été parrainé",
+    "byCompany": "par",
+    "discountMessage": "Profitez d'une réduction exclusive sur votre premier achat.",
+    "discountReminder": "Réduction affiliée disponible",
+    "discountAppliedNextStep": "Votre réduction sera automatiquement appliquée à l'étape suivante lors du paiement."
+  },
   "account": {
     "delete_account": "Supprimer le compte",
     "delete_account_paragraph": "Ceci supprimera votre compte de l'application monty esim. Vous pourrez toujours accéder à votre eSIM achetée et au profil activé via votre téléphone",
@@ -295,7 +302,37 @@
     "stayConnected": "Restez connecté",
     "failedToLoadAboutUsData": "Échec du chargement des données À propos de nous",
     "noContentAvailable": "Aucun contenu disponible pour le moment",
-    "About us": "À propos de nous"
+    "About us": "À propos de nous",
+    "hero": {
+      "title": "Nous connectons les voyageurs... partout dans le monde",
+      "subtitle": "Chez SimWeGo, chaque voyageur peut activer son eSIM en un clic, et chaque entreprise peut offrir cette expérience fluide à ses clients.",
+      "cta": "Découvrir Notre Histoire"
+    },
+    "founders": {
+      "title": "Deux fondateurs, une vision née du voyage",
+      "description": "Derrière SimWeGo, il y a deux anciens athlètes de haut niveau qui ont passé une grande partie de leur vie à voyager aux quatre coins du monde. Compétitions internationales, entraînements à l'étranger, séjours autour du globe.",
+      "quote": "Nos parcours nous ont appris à vivre en permanence entre deux avions, deux cultures et deux réseaux.",
+      "inspiration": "C'est cette expérience du voyage et du monde connecté qui nous a inspirés à créer SimWeGo : une solution simple, conçue par des voyageurs, pour tous ceux qui veulent rester connectés partout, sans contraintes."
+    },
+    "adn": {
+      "title": "L'ADN de SimWeGo",
+      "performance": {
+        "title": "Performance",
+        "description": "Hérité du sport, où chaque détail compte."
+      },
+      "simplicity": {
+        "title": "Simplicité",
+        "description": "Une expérience fluide, sans jargon ni frais cachés."
+      },
+      "teamSpirit": {
+        "title": "Esprit d'Équipe",
+        "description": "Comme dans le sport, nous avançons ensemble et créons de la valeur partagée avec nos partenaires."
+      }
+    },
+    "mission": {
+      "title": "Connectivité simple aujourd'hui. Universelle demain.",
+      "description": "Notre mission est claire : rendre la connectivité en voyage fluide et équitable, partout dans le monde."
+    }
   },
   "contactUs": {
     "messageRequired": "Le message est un champ obligatoire",
@@ -309,6 +346,9 @@
     "frequentlyAskedQuestions": "Questions fréquemment posées",
     "subscribeDescription": "Abonnez-vous pour en savoir plus sur les nouvelles fonctionnalités du produit, les dernières technologies, les solutions et les mises à jour.",
     "noFaqsMessage": "Nous n'avons trouvé aucune FAQ pour le moment. Si vous avez des questions, n'hésitez pas à nous contacter !"
+  },
+  "partnership": {
+    "trustedPartners": "Nos Partenaires de Confiance"
   },
   "footer": {
     "contactUs": "Nous contacter",

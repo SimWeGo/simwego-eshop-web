@@ -74,9 +74,14 @@ const PaymentFlow = (props) => {
     let handleAPI = iccid ? assignTopupBundle : assignBundle;
     let typeSelected = typeMap?.[type.toLowerCase()];
 
-    // Récupérer le referral ID de Rewardful
+    // Récupérer le referral ID et coupon de Rewardful
     const referralId = window.Rewardful && window.Rewardful.referral;
+    const couponData = window.Rewardful && window.Rewardful.coupon;
+    // Extract coupon ID if coupon is an object
+    const couponCode = couponData && typeof couponData === 'object' ? couponData.id : couponData;
     console.log('🎫 Rewardful referral ID captured:', referralId);
+    console.log('🎟️  Rewardful coupon data captured:', couponData);
+    console.log('🎟️  Rewardful coupon ID extracted:', couponCode);
     console.log('🌐 Full Rewardful object:', window.Rewardful);
 
     //this api is for creating a  payment intent to get client secret
@@ -93,6 +98,7 @@ const PaymentFlow = (props) => {
 
       affiliate_code: "",
       rewardful_referral: referralId || null,
+      rewardful_coupon: couponCode || null,
     })
       .then((res) => {
         console.log('🔍 PaymentFlow - Full API Response:', res?.data?.data);

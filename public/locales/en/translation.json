@@ -7,6 +7,13 @@
     "referral_message": "Check this out and use my referral code:",
     "noOptions": "No Options"
   },
+  "affiliate": {
+    "welcomeMessage": "🎉 You've been referred",
+    "byCompany": "by",
+    "discountMessage": "Enjoy an exclusive discount on your first purchase.",
+    "discountReminder": "Affiliate Discount Available",
+    "discountAppliedNextStep": "Your discount will be automatically applied at the next step during payment."
+  },
   "account": {
     "delete_account": "Delete Account",
     "delete_account_paragraph": "This will delete your account from monty esim app. You can always access your bought eSIM and activated profile through your phone",
@@ -345,6 +352,9 @@
     "frequentlyAskedQuestions": "Frequently asked questions",
     "subscribeDescription": "Subscribe to learn about new product features, the latest in technology, solutions, and updates.",
     "noFaqsMessage": "We couldn't find any FAQs right now. If you have questions, feel free to contact us!"
+  },
+  "partnership": {
+    "trustedPartners": "Our Trusted Partners"
   },
   "footer": {
     "contactUs": "Contact Us",
