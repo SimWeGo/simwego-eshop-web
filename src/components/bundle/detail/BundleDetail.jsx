@@ -373,8 +373,7 @@ const BundleDetail = ({
                   {t("bundles.planType")}
                 </div>
                 <p className={"font-semibold break-words"}>
-                  {t(`planType.${selectedBundle?.plan_type}`) ||
-                    t("common.notAvailable")}
+                  {selectedBundle?.plan_type || t("common.notAvailable")}
                 </p>
               </div>
               <hr />
@@ -383,7 +382,7 @@ const BundleDetail = ({
                   {t("bundles.activationPolicy")}
                 </div>
                 <p className={"font-semibold break-words"}>
-                  {t(`activity_policy`) || t("common.notAvailable")}
+                  {selectedBundle?.activity_policy || t("common.notAvailable")}
                 </p>
               </div>
             </div>
