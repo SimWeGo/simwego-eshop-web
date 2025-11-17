@@ -88,9 +88,9 @@ const PaymentSummary = ({ data, orderDetail, loadingData }) => {
           <p
             dir={"ltr"}
             className={`font-bold text-2xl ${
-              localStorage.getItem("i18nextLng") === "en"
-                ? "text-right"
-                : "text-left"
+              localStorage.getItem("i18nextLng") === "ar"
+                ? "text-left"
+                : "text-right"
             }`}
           >
             {orderDetail?.has_tax
