@@ -114,7 +114,7 @@ const PaymentFlow = (props) => {
   };
 
   useEffect(() => {
-    if (!bundleDataLoading) {
+    if (!bundleDataLoading && confirmed) {
       const currentPrice = state?.new_price ?? props?.bundle?.price;
       if (currentPrice == 0) {
         setSelectedType("card");
@@ -143,6 +143,7 @@ const PaymentFlow = (props) => {
     state?.new_price,
     props?.bundle?.price,
     bundleDataLoading,
+    confirmed,
   ]);
 
   // Handle cleanup when user navigates away or closes browser
