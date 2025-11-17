@@ -198,7 +198,8 @@
     "LPALink": "LPA:1",
     "instructions": "تعليمات",
     "esim_instructions": "الإعدادات > الشبكة والإنترنت > شرائح SIM > إضافة eSIM > مسح رمز QR",
-    "esim_lpa_instructions": "الإعدادات > الشبكة والإنترنت > شرائح SIM > إضافة eSIM > استخدام رمز التفعيل > لصق الرمز أعلاه"
+    "esim_lpa_instructions": "الإعدادات > الشبكة والإنترنت > شرائح SIM > إضافة eSIM > استخدام رمز التفعيل > لصق الرمز أعلاه",
+    "installNowLinkonIOS": "ثبّت الآن على نظام iOS"
   },
   "esim": {
     "title": "شريحتي الإلكترونية",

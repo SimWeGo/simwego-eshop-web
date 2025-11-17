@@ -129,7 +129,8 @@
     "LPALink": "LPA:1",
     "instructions": "Instructions",
     "esim_instructions": "Settings > Network & Internet > SIMs > Add eSIM > Scan QR Code",
-    "esim_lpa_instructions": "Settings > Network & Internet > SIMs > Add eSIM > Use activation code > Paste the above"
+    "esim_lpa_instructions": "Settings > Network & Internet > SIMs > Add eSIM > Use activation code > Paste the above",
+    "installNowLinkonIOS": "Install now link on iOS"
   },
   "esim": {
     "title": "My eSIM",

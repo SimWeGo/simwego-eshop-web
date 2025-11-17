@@ -31,7 +31,7 @@ function App() {
   }, [i18n.language]);
 
   useEffect(() => {
-    console.log("app mounted");
+    console.log("app mounted.");
     const lang = i18n.language;
     document.documentElement.lang = lang;
     document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";

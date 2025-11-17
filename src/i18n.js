@@ -7,7 +7,7 @@ import Backend from "i18next-http-backend";
 if (!localStorage.getItem("i18nextLng")) {
   localStorage.setItem(
     "i18nextLng",
-    import.meta.env.VITE_DEFAULT_LANGUAGE || "fr"
+    import.meta.env.VITE_DEFAULT_LANGUAGE || "ar"
   );
 }
 
@@ -16,7 +16,7 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    fallbackLng: import.meta.env.VITE_DEFAULT_LANGUAGE || "fr", // fallback only
+    fallbackLng: import.meta.env.VITE_DEFAULT_LANGUAGE || "ar", // fallback only
     debug: false,
     interpolation: {
       escapeValue: false,
