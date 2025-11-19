@@ -10,7 +10,7 @@ export const supportedLanguages = [
 export const supportWhatsappPhone = "+442073705310";
 export const supportedPrefix = ["93", "99"];
 export const dcbMessage = "dcbMessage";
-export const footerProjectName = "eSIM Go";
+export const footerProjectName = "SimWeGo";
 export const supportAddress = (
   <>
     <p>1047 route des Dolines,</p>
