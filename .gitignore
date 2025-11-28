@@ -23,7 +23,7 @@ build/
 *.njsproj
 *.sln
 *.sw?
-
+.env.simwego
 # Ignore all files in 'coverage'
 
 coverage/*
